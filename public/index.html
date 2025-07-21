@@ -11,7 +11,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.ae9bd8f08f7439790d30603da82ea95df49609b526a4d0e9a36bb79a98df6628.css" integrity="sha256-rpvY8I90OXkNMGA9qC6pXfSWCbUmpNDpo2u3mpjfZig=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -60,121 +60,545 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Mold Inspection 247 (Alt + H)">Mold Inspection 247</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
+<body class="list" id="top"><header class="site-header">
+    <div class="header-container">
+      <h1 class="site-title"><a href="/">Mold Inspection 247</a></h1>
+      <nav class="site-nav">
+        <ul>
+            <li><a href="/why-choose-us/">Why Choose Us</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li class="has-dropdown">
+            <a href="/mold-services/">Mold Services</a>
+            <ul class="dropdown">
+              <li><a href="/residential-commercial-iaq/">Residential / Commercial IAQ Test</a></li>
+              <li><a href="/commercial-mold/">Commercial Mold Services</a></li>
+              <li><a href="/mold-only-how-it-works/">How It Works – Mold Only</a></li>
+              <li><a href="/video-fatal-fungus/">Video: Fatal Fungus</a></li>
+            </ul>
+          </li>
+          <li><a href="/advanced-testing/">Advanced Testing</a></li>
+          <li class="has-dropdown">
+            <a href="/church-property-iaq/">Church & Property IAQ</a>
+            <ul class="dropdown">
+              <li><a href="/church-iaq/">Church IAQ</a></li>
+              <li><a href="/faulty-spray-foam/">Faulty Spray Foam Insulation</a></li>
+            </ul>
+          </li>
+          <li><a href="/choosing-a-pro/">Choosing a Pro</a></li>
+          <li><a href="/contact/">Contact</a></li>
         </ul>
-    </nav>
-</header>
-<main class="main"> 
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Mold Inspection 247</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+      </nav>
+    </div>
+  </header>
+  
+  <style>
+    .site-header {
+      background-color: #383F51;
+      padding: 20px 40px;
+    }
+  
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .site-title a {
+      text-decoration: none;
+      color: #EFF7F6;
+      font-size: 1.8rem;
+      font-weight: bold;
     }
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
+    .site-nav a {
+        font-size: 1rem;
+        text-wrap: nowrap;
+    }
+  
+    .site-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+  
+    .site-nav ul li {
+      position: relative;
+    }
+  
+    .site-nav ul li a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #EFF7F6;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      padding: 8px 0;
+      display: block;
+    }
+  
+    .site-nav ul li a:hover {
+      color: #F15025;
+    }
+  
+    .has-dropdown .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #4281A4;
+      top: 100%;
+      left: 0;
+      min-width: 220px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+  
+    .has-dropdown:hover .dropdown {
+      display: block;
+    }
+  
+    .dropdown li a {
+      margin: 0;
+      padding: 10px 20px;
+      color: #EFF7F6;
+    }
+  
+    .dropdown li a:hover {
+      background-color: #6BB4DB;
+      color: #fff;
+    }
+  
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        text-align: center;
+      }
+  
+      .site-nav ul {
+        flex-direction: column;
+      }
+  
+      .site-nav ul li a {
+        margin: 10px 0;
+      }
+  
+      .has-dropdown .dropdown {
+        position: static;
+        box-shadow: none;
+      }
+  
+      .has-dropdown:hover .dropdown {
+        display: block;
+      }
+    }
+  </style>
+  <main class="main"> 
+<div class="post-content"><p><section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Mold Inspection 24/7</h1>
+        <p>Fast, reliable, and certified mold inspections to keep your property safe and healthy.</p>
+  
+        <div class="contact-info">
+          <h3>Contact Us</h3>
+          <p>Phone: <a href="tel:1234567890">123-456-7890</a></p>
+          <p>Email: <a href="mailto:info@moldinspection247.com">info@moldinspection247.com</a></p>
+          <a href="/contact" class="button">Get a Free Consultation</a>
+        </div>
+      </div>
+  
+      <div class="hero-image">
+        <img src="/images/hero.jpg" alt="Mold Inspection">
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    :root {
+      --color-background: #EFF7F6;
+      --color-primary-dark: #383F51;
+      --color-primary: #4281A4;
+      --color-primary-light: #6BB4DB;
+      --color-accent: #F15025;
+      --color-text-dark: #383F51;
+      --color-text-medium: #444;
+      --color-text-light: #555;
+      --color-link: #6BB4DB;
+    }
+  
+    .hero {
+      width: 100%;
+      padding: 60px 20px;
+      background: var(--color-background);
+      font-family: Arial, sans-serif;
+    }
+  
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .hero-content {
+      flex: 1 1 50%;
+      max-width: 600px;
+    }
+  
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: var(--color-primary-dark);
+    }
+  
+    .hero-content p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: var(--color-text-light);
+    }
+  
+    .contact-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--color-primary);
+    }
+  
+    .contact-info p {
+      font-size: 1.1rem;
+      margin: 0.3rem 0;
+      color: var(--color-text-medium);
+    }
+  
+    .contact-info a {
+      color: var(--color-link);
+      text-decoration: none;
+    }
+  
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+  
+    .button {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: var(--color-accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+    }
+  
+    .button:hover {
+      background-color: #c93a1b;  
+    }
+  
+    .hero-image {
+      flex: 1 1 50%;
+      text-align: right;
+    }
+  
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(56, 63, 81, 0.15);
+    }
+  
+    @media (max-width: 768px) {
+      .hero-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-content, .hero-image {
+        max-width: 100%;
+        flex: 1 1 100%;
+        text-align: center;
+      }
+      .hero-image {
+        margin-top: 20px;
+      }
+    }
+  </style>
+  
+<section class="why-choose-us">
+    <div class="container">
+      <h2>Certified Mold Inspection in Florida – 24/7 CIH-Led Response</h2>
+      <p class="section-intro">Professional, unbiased inspections with Certified Industrial Hygienist expertise for homes, condos, and commercial properties statewide.</p>
+  
+      <div class="cards-grid">
+  
+        <article class="card">
+          <h4>Certified Industrial Hygienists</h4>
+          <p>Our team includes certified industrial hygienists (CIH), ensuring the highest level of expertise.</p>
+        </article>
+  
+        <article class="card">
+          <h4>Legally Independent</h4>
+          <p>Florida law requires mold assessors to be completely separate from remediation companies. We provide clear, unbiased documentation your contractor must follow.</p>
+        </article>
+  
+        <article class="card">
+          <h4>Mold Inspections & Moisture Mapping</h4>
+          <p>We assess visible and hidden mold risks using infrared imaging, moisture meters, and sampling for actionable findings.</p>
+        </article>
+  
+        <article class="card">
+          <h4>Post-Remediation Verification</h4>
+          <p>We verify remediation work with independent testing to protect property value, tenant health, and legal compliance.</p>
+        </article>
+  
+        <article class="card">
+          <h4>Real Estate & Property Management</h4>
+          <p>Fast turnaround for buyers, sellers, landlords, and managers—clear reports without scare tactics.</p>
+        </article>
+  
+        <article class="card">
+          <h4>Who We Serve</h4>
+          <ul>
+            <li>Homeowners with moisture or health complaints</li>
+            <li>Attorneys, insurers, contractors needing CIH-level documentation</li>
+            <li>Commercial property managers</li>
+          </ul>
+        </article>
+  
+        <article class="card about-card">
+          <h4>About Mold Inspection 24/7</h4>
+          <p>Led by a CIH with 25+ years’ experience, we deliver clarity, confidence, and regulatory-level expertise without inflated pricing.</p>
+        </article>
+  
+      </div>
+  
+      <p class="cta">Schedule Your Mold Inspection Today</p>
+    </div>
+  </section>
+  
+  <style>
+  :root {
+    --color-bg-section: #EFF7F6;
+    --color-card-bg: #FFFFFF;
+    --color-card-border: #4281A4;
+    --color-primary-dark: #383F51;
+    --color-primary: #4281A4;
+    --color-accent: #F15025;
+  }
+  
+  .why-choose-us {
+    background: var(--color-bg-section);
+    padding: 60px 20px;
+  }
+  
+  .why-choose-us .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.25em;
+    color: var(--color-primary-dark);
+    text-align: center;
+  }
+  
+  .section-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2em auto;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background: var(--color-card-bg);
+    border-left: 6px solid var(--color-card-border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+  
+  .card h4 {
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+  }
+  
+  .card p, .card ul {
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .card ul {
+    padding-left: 1.2em;
+  }
+  
+  .about-card {
+    grid-column: 1 / -1;
+    background: #6BB4DB15;  
+  }
+  
+  .cta {
+    margin-top: 3rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    text-align: center;
+  }
+  
+   
+  @media (max-width: 600px) {
+    .why-choose-us h2 {
+      font-size: 2rem;
+    }
+    .section-intro {
+      font-size: 1rem;
+    }
+    .card h4 {
+      font-size: 1.1rem;
+    }
+  }
+  </style>
+  
+<section class="trusted-by">
+    <div class="container">
+      <h2>Trusted by Industry Leaders</h2>
+  
+      <div class="trusted-content">
+        <div class="trusted-column">
+          <h3>Clients & Partners</h3>
+          <ul class="companies">
+            <li>AIG</li>
+            <li>Samsung</li>
+            <li>JCPenney</li>
+            <li>Coors</li>
+            <li>Eckerd Pharmacy</li>
+            <li>U.S. Army Corps of Engineers</li>
+            <li>Travelers Insurance</li>
+            <li>Kaufmann Lynn Construction</li>
+            <li>AmWins</li>
+            <li>Everest Insurance</li>
+            <li>Dial Corp</li>
+            <li>Many, many more</li>
+          </ul>
+        </div>
+  
+        <div class="trusted-column">
+          <h3>Memberships & Affiliations</h3>
+          <ul class="affiliations">
+            <li>AIHA (American Industrial Hygiene Association)</li>
+            <li>ABIH (American Board of Industrial Hygiene)</li>
+            <li>ACGIH</li>
+            <li>IAQA</li>
+            <li>IICRC</li>
+            <li>ASSE</li>
+            <li>ASHRAE</li>
+            <li>NORMI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  :root {
+    --color-bg-section: #EFF7F6;
+    --color-primary-dark: #383F51;
+    --color-primary: #4281A4;
+    --color-accent: #F15025;
+  }
+  
+  .trusted-by {
+    background: var(--color-bg-section);
+    padding: 60px 20px;
+    color: var(--color-primary-dark);
+  }
+  
+  .trusted-by .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .trusted-by h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    color: var(--color-primary-dark);
+  }
+  
+  .trusted-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+  }
+  
+  .trusted-column {
+    flex: 1 1 400px;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  .trusted-column h3 {
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 0.5em;
+  }
+  
+  .trusted-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .trusted-column li {
+    margin-bottom: 0.75em;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  @media (max-width: 768px) {
+    .trusted-by h2 {
+      font-size: 2rem;
+    }
+  
+    .trusted-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .trusted-column {
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+  </style>
+  </p>
 
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
 
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
+</div>
+    </main>
+    <footer style="background: #f5f5f5; padding: 20px; text-align: center; margin-top: 50px;">
+    <p>&copy; 2025 Mold Inspection 247. All rights reserved.</p>
+  </footer>
+  </body>
 
 </html>

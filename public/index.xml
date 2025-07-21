@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Mold Inspection 247</title>
+    <title>Home on Mold Inspection 247</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Mold Inspection 247</description>
+    <description>Recent content in Home on Mold Inspection 247</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Choose Us</title>
+      <link>http://localhost:1313/why-choose-us/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/why-choose-us/</guid>
+      <description>&lt;section class=&#34;why-choose-us-page&#34;&gt;
+  &lt;div class=&#34;container&#34;&gt;
+
+    &lt;h1&gt;Why Choose Mold Inspection 24/7&lt;/h1&gt;
+    &lt;p class=&#34;intro&#34;&gt;We do more than “check for mold.” We use applied science, professional credentials, and decades of experience to investigate root causes and document risk clearly.&lt;/p&gt;
+
+    &lt;div class=&#34;grid&#34;&gt;
+      &lt;div class=&#34;grid-item&#34;&gt;
+        &lt;h2&gt;Why People Choose Us&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;Certified Industrial Hygienist (CIH)&lt;/strong&gt; — board-certified expert in exposure science&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Not tied to remediation&lt;/strong&gt; — we don’t sell cleanups, just truth&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Advanced diagnostics&lt;/strong&gt; — moisture mapping, building science, VOC screening&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Clear reports&lt;/strong&gt; — designed for legal defensibility&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Fast turnaround&lt;/strong&gt; — 24/7 availability for urgent cases&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Florida licensed mold assessor&lt;/strong&gt; — license #MRSA2531&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&#34;grid-item&#34;&gt;
+        &lt;h2&gt;What Makes a “Real” Expert?&lt;/h2&gt;
+        &lt;p&gt;Anyone can buy a mold test kit. Not everyone is trained in exposure pathways, airflow mechanics, or regulatory thresholds.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

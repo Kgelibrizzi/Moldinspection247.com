@@ -7,5 +7,7 @@
     <loc>http://localhost:1313/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/why-choose-us/</loc>
   </url>
 </urlset>

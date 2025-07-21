@@ -1,10 +1,50 @@
-.main {
-    position: relative;
-    min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    max-width: calc(var(--main-width) + var(--gap) * 2);
-    margin: auto;
-    padding: var(--gap);
+:root {
+    --color-background: #EFF7F6;  /* light, for backgrounds */
+    --color-primary-dark: #383F51; /* dark slate blue, great for headings */
+    --color-primary: #4281A4;      /* medium blue, main brand color */
+    --color-primary-light: #6BB4DB; /* lighter blue, accents, hover */
+    --color-accent: #F15025;       /* bright orange/red, for calls to action */
+    --color-text: #383F51;          /* text color matching primary-dark */
+    --color-white: #ffffff;         /* white */
+  }
+
+  @font-face {
+    font-family: 'Outfit';
+    src: url('/fonts/Outfit-Regular.woff2') format('woff2'),
+         url('/fonts/Outfit-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  h2, h3 {
+    color: var(--color-primary-dark);
+  }
+  
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--color-primary-light);
+  }
+  
+  
+
+.main {
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+  }
+  
 
 .page-header h1 {
     font-size: 40px;

@@ -1,0 +1,130 @@
+<section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Mold Inspection 24/7</h1>
+        <p>Fast, reliable, and certified mold inspections to keep your property safe and healthy.</p>
+  
+        <div class="contact-info">
+          <h3>Contact Us</h3>
+          <p>Phone: <a href="tel:1234567890">123-456-7890</a></p>
+          <p>Email: <a href="mailto:info@moldinspection247.com">info@moldinspection247.com</a></p>
+          <a href="/contact" class="button">Get a Free Consultation</a>
+        </div>
+      </div>
+  
+      <div class="hero-image">
+        <img src="/images/hero.jpg" alt="Mold Inspection">
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    :root {
+      --color-background: #EFF7F6;
+      --color-primary-dark: #383F51;
+      --color-primary: #4281A4;
+      --color-primary-light: #6BB4DB;
+      --color-accent: #F15025;
+      --color-text-dark: #383F51;
+      --color-text-medium: #444;
+      --color-text-light: #555;
+      --color-link: #6BB4DB;
+    }
+  
+    .hero {
+      width: 100%;
+      padding: 60px 20px;
+      background: var(--color-background);
+      font-family: Arial, sans-serif;
+    }
+  
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .hero-content {
+      flex: 1 1 50%;
+      max-width: 600px;
+    }
+  
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: var(--color-primary-dark);
+    }
+  
+    .hero-content p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: var(--color-text-light);
+    }
+  
+    .contact-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--color-primary);
+    }
+  
+    .contact-info p {
+      font-size: 1.1rem;
+      margin: 0.3rem 0;
+      color: var(--color-text-medium);
+    }
+  
+    .contact-info a {
+      color: var(--color-link);
+      text-decoration: none;
+    }
+  
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+  
+    .button {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: var(--color-accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+    }
+  
+    .button:hover {
+      background-color: #c93a1b; /* darker orange for hover */
+    }
+  
+    .hero-image {
+      flex: 1 1 50%;
+      text-align: right;
+    }
+  
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(56, 63, 81, 0.15);
+    }
+  
+    @media (max-width: 768px) {
+      .hero-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-content, .hero-image {
+        max-width: 100%;
+        flex: 1 1 100%;
+        text-align: center;
+      }
+      .hero-image {
+        margin-top: 20px;
+      }
+    }
+  </style>
+  

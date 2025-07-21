@@ -1,0 +1,119 @@
+<section class="trusted-by">
+    <div class="container">
+      <h2>Trusted by Industry Leaders</h2>
+  
+      <div class="trusted-content">
+        <div class="trusted-column">
+          <h3>Clients & Partners</h3>
+          <ul class="companies">
+            <li>AIG</li>
+            <li>Samsung</li>
+            <li>JCPenney</li>
+            <li>Coors</li>
+            <li>Eckerd Pharmacy</li>
+            <li>U.S. Army Corps of Engineers</li>
+            <li>Travelers Insurance</li>
+            <li>Kaufmann Lynn Construction</li>
+            <li>AmWins</li>
+            <li>Everest Insurance</li>
+            <li>Dial Corp</li>
+            <li>Many, many more</li>
+          </ul>
+        </div>
+  
+        <div class="trusted-column">
+          <h3>Memberships & Affiliations</h3>
+          <ul class="affiliations">
+            <li>AIHA (American Industrial Hygiene Association)</li>
+            <li>ABIH (American Board of Industrial Hygiene)</li>
+            <li>ACGIH</li>
+            <li>IAQA</li>
+            <li>IICRC</li>
+            <li>ASSE</li>
+            <li>ASHRAE</li>
+            <li>NORMI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  :root {
+    --color-bg-section: #EFF7F6;
+    --color-primary-dark: #383F51;
+    --color-primary: #4281A4;
+    --color-accent: #F15025;
+  }
+  
+  .trusted-by {
+    background: var(--color-bg-section);
+    padding: 60px 20px;
+    color: var(--color-primary-dark);
+  }
+  
+  .trusted-by .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .trusted-by h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    color: var(--color-primary-dark);
+  }
+  
+  .trusted-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+  }
+  
+  .trusted-column {
+    flex: 1 1 400px;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  .trusted-column h3 {
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 0.5em;
+  }
+  
+  .trusted-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .trusted-column li {
+    margin-bottom: 0.75em;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  @media (max-width: 768px) {
+    .trusted-by h2 {
+      font-size: 2rem;
+    }
+  
+    .trusted-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .trusted-column {
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+  </style>
+  

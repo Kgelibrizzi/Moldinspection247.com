@@ -1,149 +1,134 @@
-{{- /* theme-toggle is enabled */}}
-{{- if (not site.Params.disableThemeToggle) }}
-{{- /* theme is light */}}
-{{- if (eq site.Params.defaultTheme "light") }}
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    }
-
-</script>
-{{- /* theme is dark */}}
-{{- else if (eq site.Params.defaultTheme "dark") }}
-<script>
-    if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    }
-
-</script>
-{{- else }}
-{{- /* theme is auto */}}
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-{{- end }}
-{{- /* theme-toggle is disabled and theme is auto */}}
-{{- else if (and (ne site.Params.defaultTheme "light") (ne site.Params.defaultTheme "dark"))}}
-<script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-{{- end }}
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            {{- $label_text := (site.Params.label.text | default site.Title) }}
-            {{- if site.Title }}
-            <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
-                {{- if site.Params.label.icon }}
-                {{- $img := resources.Get site.Params.label.icon }}
-                {{- if $img }}
-                    {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
-                    {{- if hugo.IsExtended -}}
-                        {{- $processableFormats = $processableFormats | append "webp" -}}
-                    {{- end -}}
-                    {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
-                    {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
-                        {{- if site.Params.label.iconHeight }}
-                            {{- $img = $img.Resize (printf "x%d" site.Params.label.iconHeight) }}
-                        {{ else }}
-                            {{- $img = $img.Resize "x30" }}
-                        {{- end }}
-                    {{- end }}
-                    <img src="{{ $img.Permalink }}" alt="" aria-label="logo"
-                        height="{{- site.Params.label.iconHeight | default "30" -}}">
-                {{- else }}
-                <img src="{{- site.Params.label.icon | absURL -}}" alt="" aria-label="logo"
-                    height="{{- site.Params.label.iconHeight | default "30" -}}">
-                {{- end -}}
-                {{- else if hasPrefix site.Params.label.iconSVG "<svg" }}
-                    {{ site.Params.label.iconSVG | safeHTML }}
-                {{- end -}}
-                {{- $label_text -}}
-            </a>
-            {{- end }}
-            <div class="logo-switches">
-                {{- if (not site.Params.disableThemeToggle) }}
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-                {{- end }}
-
-                {{- $lang := .Lang}}
-                {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
-                {{- with site.Home.Translations }}
-                <ul class="lang-switch">
-                    {{- if $separator }}<li>|</li>{{ end }}
-                    {{- range . -}}
-                    {{- if ne $lang .Lang }}
-                    <li>
-                        <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
-                            aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
-                            {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
-                            {{- .Language.LanguageName | emojify -}}
-                            {{- else }}
-                            {{- .Lang | title -}}
-                            {{- end -}}
-                        </a>
-                    </li>
-                    {{- end -}}
-                    {{- end}}
-                </ul>
-                {{- end }}
-            </div>
-        </div>
-        {{- $currentPage := . }}
-        <ul id="menu">
-            {{- range site.Menus.main }}
-            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
-            {{- $page_url:= $currentPage.Permalink | absLangURL }}
-            {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
-            <li>
-                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
-                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
-                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
-                        {{- .Pre }}
-                        {{- .Name -}}
-                        {{ .Post -}}
-                    </span>
-                    {{- if (findRE "://" .URL) }}&nbsp;
-                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
-                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                        <path d="M15 3h6v6"></path>
-                        <path d="M10 14L21 3"></path>
-                    </svg>
-                    {{- end }}
-                </a>
-            </li>
-            {{- end }}
+<header class="site-header">
+    <div class="header-container">
+      <h1 class="site-title"><a href="/">Mold Inspection 247</a></h1>
+      <nav class="site-nav">
+        <ul>
+            <li><a href="/why-choose-us/">Why Choose Us</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li class="has-dropdown">
+            <a href="/mold-services/">Mold Services</a>
+            <ul class="dropdown">
+              <li><a href="/residential-commercial-iaq/">Residential / Commercial IAQ Test</a></li>
+              <li><a href="/commercial-mold/">Commercial Mold Services</a></li>
+              <li><a href="/mold-only-how-it-works/">How It Works – Mold Only</a></li>
+              <li><a href="/video-fatal-fungus/">Video: Fatal Fungus</a></li>
+            </ul>
+          </li>
+          <li><a href="/advanced-testing/">Advanced Testing</a></li>
+          <li class="has-dropdown">
+            <a href="/church-property-iaq/">Church & Property IAQ</a>
+            <ul class="dropdown">
+              <li><a href="/church-iaq/">Church IAQ</a></li>
+              <li><a href="/faulty-spray-foam/">Faulty Spray Foam Insulation</a></li>
+            </ul>
+          </li>
+          <li><a href="/choosing-a-pro/">Choosing a Pro</a></li>
+          <li><a href="/contact/">Contact</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </div>
+  </header>
+  
+  <style>
+    .site-header {
+      background-color: #383F51;
+      padding: 20px 40px;
+    }
+  
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .site-title a {
+      text-decoration: none;
+      color: #EFF7F6;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .site-nav a {
+        font-size: 1rem;
+        text-wrap: nowrap;
+    }
+  
+    .site-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+  
+    .site-nav ul li {
+      position: relative;
+    }
+  
+    .site-nav ul li a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #EFF7F6;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      padding: 8px 0;
+      display: block;
+    }
+  
+    .site-nav ul li a:hover {
+      color: #F15025;
+    }
+  
+    .has-dropdown .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #4281A4;
+      top: 100%;
+      left: 0;
+      min-width: 220px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+  
+    .has-dropdown:hover .dropdown {
+      display: block;
+    }
+  
+    .dropdown li a {
+      margin: 0;
+      padding: 10px 20px;
+      color: #EFF7F6;
+    }
+  
+    .dropdown li a:hover {
+      background-color: #6BB4DB;
+      color: #fff;
+    }
+  
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        text-align: center;
+      }
+  
+      .site-nav ul {
+        flex-direction: column;
+      }
+  
+      .site-nav ul li a {
+        margin: 10px 0;
+      }
+  
+      .has-dropdown .dropdown {
+        position: static;
+        box-shadow: none;
+      }
+  
+      .has-dropdown:hover .dropdown {
+        display: block;
+      }
+    }
+  </style>
+  
