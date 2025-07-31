@@ -5,7 +5,6 @@
         <p>Fast, reliable, and certified mold inspections to keep your property safe and healthy.</p>
   
         <div class="contact-info">
-          <!-- <h3>Contact Us</h3> -->
           <p>Phone: <a href="tel:1234567890">123-456-7890</a></p>
           <p>Email: <a href="mailto:info@moldinspection247.com">info@moldinspection247.com</a></p>
           <a href="/contact" class="button">Get a Free Consultation</a>
@@ -26,12 +25,13 @@
       --color-text-light: #f0f0f0;
       --color-link: #6BB4DB;
     }
+    
   
     .hero {
       position: relative;
       width: 100%;
-      height: 70vh;
-      background: url('/images/hero.jpg') no-repeat center center/cover;
+      min-height: 70vh;
+      background: url('/images/pic-for-site-14-1024x683.jpg') no-repeat center center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -39,49 +39,40 @@
   
     .hero-overlay {
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      inset: 0;
       background: linear-gradient(to bottom right, rgba(66, 129, 164, 0.7), rgba(56, 63, 81, 0.7));
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
   
     .hero-content {
-      max-width: 800px;
+      max-width: 700px;
       color: white;
       z-index: 2;
     }
   
     .hero-content h1 {
       font-size: 3rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
       color: #fff;
     }
   
     .hero-content p {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       margin-bottom: 2rem;
       color: var(--color-text-light);
     }
-
-    .contact-info {
-        text-decoration: none !important;
-    }
   
-    .contact-info h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      color: var(--color-primary-light);
+    .contact-info {
+      text-decoration: none;
     }
   
     .contact-info p {
-      font-size: 1.1rem;
-      margin: 0.3rem 0;
+      font-size: 1.05rem;
+      margin: 0.4rem 0;
     }
   
     .contact-info a {
@@ -92,10 +83,10 @@
     .button {
       display: inline-block;
       padding: 12px 30px;
-      background-color: #383F51;
+      background-color: var(--color-primary-dark);
       color: white;
-      text-decoration: none !important;
-      border-radius: 5px;
+      text-decoration: none;
+      border-radius: 6px;
       font-weight: bold;
       transition: background-color 0.3s ease;
       margin-top: 1rem;
@@ -107,21 +98,26 @@
   
     @media (max-width: 768px) {
       .hero {
-        height: auto;
-        padding: 60px 20px;
-      }
-  
-      .hero-overlay {
-        flex-direction: column;
-        padding: 40px 20px;
+        min-height: 50vh;
+        padding-top: 40px;
+        padding-bottom: 40px;
       }
   
       .hero-content {
-        width: 100%;
+        padding: 0 10px;
       }
   
       .hero-content h1 {
         font-size: 2rem;
+      }
+  
+      .hero-content p {
+        font-size: 1.05rem;
+      }
+  
+      .button {
+        padding: 10px 24px;
+        font-size: 1rem;
       }
     }
   </style>

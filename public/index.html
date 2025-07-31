@@ -80,9 +80,9 @@
             <button aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Mold Services</button>
             <ul class="dropdown">
               <li><a href="/residential-commercial-iaq/">Residential / Commercial IAQ Test</a></li>
-              <li><a href="/commercial-mold-services/">Commercial Mold Services</a></li>
+              <li><a href="residental-commercial-indoor-air-quality-test/">Commercial Mold Services</a></li>
               <li><a href="/mold-only-how-it-works/">How It Works – Mold Only</a></li>
-              <li><a href="/video-fatal-fungus/">Video: Fatal Fungus</a></li>
+              <li><a href="/videofatal-fungus-fungus-is-mold/">Video: Fatal Fungus</a></li>
             </ul>
           </li>
   
@@ -294,7 +294,6 @@
         <p>Fast, reliable, and certified mold inspections to keep your property safe and healthy.</p>
   
         <div class="contact-info">
-          
           <p>Phone: <a href="tel:1234567890">123-456-7890</a></p>
           <p>Email: <a href="mailto:info@moldinspection247.com">info@moldinspection247.com</a></p>
           <a href="/contact" class="button">Get a Free Consultation</a>
@@ -315,12 +314,13 @@
       --color-text-light: #f0f0f0;
       --color-link: #6BB4DB;
     }
+    
   
     .hero {
       position: relative;
       width: 100%;
-      height: 70vh;
-      background: url('/images/hero.jpg') no-repeat center center/cover;
+      min-height: 70vh;
+      background: url('/images/pic-for-site-14-1024x683.jpg') no-repeat center center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -328,49 +328,40 @@
   
     .hero-overlay {
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      inset: 0;
       background: linear-gradient(to bottom right, rgba(66, 129, 164, 0.7), rgba(56, 63, 81, 0.7));
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
   
     .hero-content {
-      max-width: 800px;
+      max-width: 700px;
       color: white;
       z-index: 2;
     }
   
     .hero-content h1 {
       font-size: 3rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
       color: #fff;
     }
   
     .hero-content p {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       margin-bottom: 2rem;
       color: var(--color-text-light);
     }
-
-    .contact-info {
-        text-decoration: none !important;
-    }
   
-    .contact-info h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      color: var(--color-primary-light);
+    .contact-info {
+      text-decoration: none;
     }
   
     .contact-info p {
-      font-size: 1.1rem;
-      margin: 0.3rem 0;
+      font-size: 1.05rem;
+      margin: 0.4rem 0;
     }
   
     .contact-info a {
@@ -381,10 +372,10 @@
     .button {
       display: inline-block;
       padding: 12px 30px;
-      background-color: #383F51;
+      background-color: var(--color-primary-dark);
       color: white;
-      text-decoration: none !important;
-      border-radius: 5px;
+      text-decoration: none;
+      border-radius: 6px;
       font-weight: bold;
       transition: background-color 0.3s ease;
       margin-top: 1rem;
@@ -396,182 +387,210 @@
   
     @media (max-width: 768px) {
       .hero {
-        height: auto;
-        padding: 60px 20px;
-      }
-  
-      .hero-overlay {
-        flex-direction: column;
-        padding: 40px 20px;
+        min-height: 50vh;
+        padding-top: 40px;
+        padding-bottom: 40px;
       }
   
       .hero-content {
-        width: 100%;
+        padding: 0 10px;
       }
   
       .hero-content h1 {
         font-size: 2rem;
       }
+  
+      .hero-content p {
+        font-size: 1.05rem;
+      }
+  
+      .button {
+        padding: 10px 24px;
+        font-size: 1rem;
+      }
     }
   </style>
   
-<section class="why-choose-us">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Choose Mold Inspection 24/7</title>
+  <style>
+    :root {
+      --dark-bg: #2D2E40;
+      --light-text: #F5F5F5;
+      --accent: #F15025;
+      --soft-blue: #6BB4DB;
+      --card-bg: #383F51;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--dark-bg);
+      color: var(--light-text);
+    }
+
+    .why-choose-us-v2 {
+      background: #FFF;
+      padding: 80px 20px;
+      color: var(--light-text);
+    }
+
+    .why-choose-us-v2 .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .why-choose-us-v2 h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5em;
+    }
+
+    .why-choose-us-v2 .intro {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 3em auto;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      padding: 25px;
+      border-radius: 10px;
+      text-align: left;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .feature-card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: var(--soft-blue);
+    }
+
+    .feature-card p,
+    .feature-card ul {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .feature-card ul {
+      padding-left: 20px;
+      margin-top: 5px;
+    }
+
+    .cta {
+      margin-top: 40px;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 30px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .intro-title {
+        color: #383F51;
+    }
+
+    .intro {
+        color: #383F51;
+    }
+
+    .cta-button:hover {
+      background: #d8431f;
+    }
+
+    @media (max-width: 600px) {
+      .why-choose-us-v2 h2 {
+        font-size: 2rem;
+      }
+
+      .feature-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="why-choose-us-v2">
     <div class="container">
-      <h2>Certified Mold Inspection in Florida – 24/7 CIH-Led Response</h2>
-      <p class="section-intro">Professional, unbiased inspections with Certified Industrial Hygienist expertise for homes, condos, and commercial properties statewide.</p>
-  
-      <div class="cards-grid">
-  
-        <article class="card">
+      <h2 class="intro-title">Why Choose Mold Inspection 24/7?</h2>
+      <p class="intro">Florida’s trusted, CIH-led mold inspection team—available 24/7 for homeowners, property managers, and legal teams.</p>
+
+      <div class="feature-grid">
+        <div class="feature-card">
           <h4>Certified Industrial Hygienists</h4>
-          <p>Our team includes certified industrial hygienists (CIH), ensuring the highest level of expertise.</p>
-        </article>
-  
-        <article class="card">
+          <p>Our CIHs deliver the highest level of mold investigation expertise—statewide.</p>
+        </div>
+        <div class="feature-card">
           <h4>Legally Independent</h4>
-          <p>Florida law requires mold assessors to be completely separate from remediation companies. We provide clear, unbiased documentation your contractor must follow.</p>
-        </article>
-  
-        <article class="card">
-          <h4>Mold Inspections & Moisture Mapping</h4>
-          <p>We assess visible and hidden mold risks using infrared imaging, moisture meters, and sampling for actionable findings.</p>
-        </article>
-  
-        <article class="card">
-          <h4>Post-Remediation Verification</h4>
-          <p>We verify remediation work with independent testing to protect property value, tenant health, and legal compliance.</p>
-        </article>
-  
-        <article class="card">
-          <h4>Real Estate & Property Management</h4>
-          <p>Fast turnaround for buyers, sellers, landlords, and managers—clear reports without scare tactics.</p>
-        </article>
-  
-        <article class="card">
-          <h4>Who We Serve</h4>
+          <p>We don’t perform remediation. That means honest, unbiased results you can trust.</p>
+        </div>
+        <div class="feature-card">
+          <h4>Advanced Detection Tools</h4>
+          <p>We use thermal imaging, moisture meters, and professional sampling to locate hidden risks.</p>
+        </div>
+        <div class="feature-card">
+          <h4>Real Estate & Legal-Ready</h4>
+          <p>Clear, CIH-certified documentation for buyers, sellers, landlords, attorneys, and insurers.</p>
+        </div>
+        <div class="feature-card">
+          <h4>Post-Remediation Testing</h4>
+          <p>Independent verification to ensure work was done right—and legally compliant.</p>
+        </div>
+        <div class="feature-card">
+          <h4>Who We Help</h4>
           <ul>
-            <li>Homeowners with moisture or health complaints</li>
-            <li>Attorneys, insurers, contractors needing CIH-level documentation</li>
-            <li>Commercial property managers</li>
+            <li>Homeowners & renters</li>
+            <li>Attorneys & adjusters</li>
+            <li>Property managers</li>
           </ul>
-        </article>
-  
-        <article class="card about-card">
-          <h4>About Mold Inspection 24/7</h4>
-          <p>Led by a CIH with 25+ years’ experience, we deliver clarity, confidence, and regulatory-level expertise without inflated pricing.</p>
-        </article>
-  
+        </div>
       </div>
-  
-      <p class="cta">Schedule Your Mold Inspection Today</p>
+
+      <div class="cta">
+        <p class="intro">Schedule your expert mold inspection today.</p>
+        <a href="/contact/" class="cta-button">Get Started</a>
+      </div>
     </div>
   </section>
-  
-  <style>
-  :root {
-    --color-bg-section: #EFF7F6;
-    --color-card-bg: #FFFFFF;
-    --color-card-border: #4281A4;
-    --color-primary-dark: #383F51;
-    --color-primary: #4281A4;
-    --color-accent: #F15025;
-  }
-  
-  .why-choose-us {
-    background: var(--color-bg-section);
-    padding: 60px 20px;
-  }
-  
-  .why-choose-us .container {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  
-  .why-choose-us h2 {
-    font-size: 2.5rem;
-    margin-bottom: 0.25em;
-    color: var(--color-primary-dark);
-    text-align: center;
-  }
-  
-  .section-intro {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 2em auto;
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    gap: 2rem;
-  }
-  
-  .card {
-    background: var(--color-card-bg);
-    border-left: 6px solid var(--color-card-border);
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-  }
-  
-  .card h4 {
-    color: var(--color-primary);
-    margin-bottom: 0.75rem;
-    font-size: 1.3rem;
-  }
-  
-  .card p, .card ul {
-    line-height: 1.6;
-    color: #444;
-  }
-  
-  .card ul {
-    padding-left: 1.2em;
-  }
-  
-  .about-card {
-    grid-column: 1 / -1;
-    background: #6BB4DB15;  
-  }
-  
-  .cta {
-    margin-top: 3rem;
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--color-accent);
-    text-align: center;
-  }
-  
-   
-  @media (max-width: 600px) {
-    .why-choose-us h2 {
-      font-size: 2rem;
-    }
-    .section-intro {
-      font-size: 1rem;
-    }
-    .card h4 {
-      font-size: 1.1rem;
-    }
-  }
-  </style>
-  
+</body>
+</html>
+
 <section class="trusted-by">
     <div class="container">
       <h2>Trusted by Industry Leaders</h2>
   
-      <div class="trusted-content">
+      <div class="trusted-lists">
         <div class="trusted-column">
           <h3>Clients & Partners</h3>
-          <ul class="companies">
+          <ul>
             <li>AIG</li>
             <li>Samsung</li>
             <li>JCPenney</li>
@@ -589,7 +608,7 @@
   
         <div class="trusted-column">
           <h3>Memberships & Affiliations</h3>
-          <ul class="affiliations">
+          <ul>
             <li>AIHA (American Industrial Hygiene Association)</li>
             <li>ABIH (American Board of Industrial Hygiene)</li>
             <li>ACGIH</li>
@@ -605,82 +624,83 @@
   </section>
   
   <style>
-  :root {
-    --color-bg-section: #EFF7F6;
-    --color-primary-dark: #383F51;
-    --color-primary: #4281A4;
-    --color-accent: #F15025;
-  }
-  
-  .trusted-by {
-    background: var(--color-bg-section);
-    padding: 60px 20px;
-    color: var(--color-primary-dark);
-  }
-  
-  .trusted-by .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .trusted-by h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1em;
-    color: var(--color-primary-dark);
-  }
-  
-  .trusted-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    text-align: left;
-  }
-  
-  .trusted-column {
-    flex: 1 1 400px;
-    background: #fff;
-    padding: 30px 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  }
-  
-  .trusted-column h3 {
-    margin-bottom: 1em;
-    font-size: 1.5rem;
-    color: var(--color-primary);
-    border-bottom: 2px solid var(--color-primary);
-    padding-bottom: 0.5em;
-  }
-  
-  .trusted-column ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .trusted-column li {
-    margin-bottom: 0.75em;
-    font-size: 1.1rem;
-    color: #444;
-  }
-  
-  @media (max-width: 768px) {
-    .trusted-by h2 {
-      font-size: 2rem;
+    :root {
+      --color-bg-section: #f4f9f9;
+      --color-primary-dark: #2b3a42;
+      --color-primary: #127681;
+      --color-accent: #f15a24;
     }
   
-    .trusted-content {
-      flex-direction: column;
-      align-items: center;
+    .trusted-by {
+      background-color: var(--color-bg-section);
+      padding: 80px 20px;
+      color: var(--color-primary-dark);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+  
+    .trusted-by .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    .trusted-by h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+  
+    .trusted-lists {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 60px;
+      text-align: left;
+      margin-top: 20px;
     }
   
     .trusted-column {
-      max-width: 500px;
-      width: 100%;
+      flex: 1 1 400px;
     }
-  }
+  
+    .trusted-column h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--color-primary);
+      border-bottom: 2px solid var(--color-primary);
+      padding-bottom: 0.5rem;
+    }
+  
+    .trusted-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .trusted-column li {
+      margin-bottom: 0.65rem;
+      font-size: 1.1rem;
+      position: relative;
+      padding-left: 1.2rem;
+      color: #333;
+    }
+  
+    .trusted-column li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: var(--color-accent);
+    }
+  
+    @media (max-width: 768px) {
+      .trusted-lists {
+        flex-direction: column;
+        gap: 40px;
+      }
+  
+      .trusted-by h2 {
+        font-size: 2rem;
+      }
+    }
   </style>
   </p>
 
