@@ -82,27 +82,39 @@
 <body class="" id="top"><header class="site-header">
     <div class="header-container">
       <h1 class="site-title"><a href="/">Mold Inspection 247</a></h1>
-      <nav class="site-nav">
+  
+      
+      <button id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+  
+      <nav class="site-nav" id="site-nav" aria-label="Primary Navigation">
         <ul>
-            <li><a href="/why-choose-us/">Why Choose Us</a></li>
+          <li><a href="/why-choose-us/">Why Choose Us</a></li>
           <li><a href="/about/">About Us</a></li>
+  
           <li class="has-dropdown">
-            <a href="/mold-services/">Mold Services</a>
+            <button aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Mold Services</button>
             <ul class="dropdown">
               <li><a href="/residential-commercial-iaq/">Residential / Commercial IAQ Test</a></li>
-              <li><a href="/commercial-mold/">Commercial Mold Services</a></li>
+              <li><a href="/commercial-mold-services/">Commercial Mold Services</a></li>
               <li><a href="/mold-only-how-it-works/">How It Works – Mold Only</a></li>
               <li><a href="/video-fatal-fungus/">Video: Fatal Fungus</a></li>
             </ul>
           </li>
+  
           <li><a href="/advanced-testing/">Advanced Testing</a></li>
+  
           <li class="has-dropdown">
-            <a href="/church-property-iaq/">Church & Property IAQ</a>
+            <button aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Church & Property IAQ</button>
             <ul class="dropdown">
               <li><a href="/church-iaq/">Church IAQ</a></li>
               <li><a href="/faulty-spray-foam/">Faulty Spray Foam Insulation</a></li>
             </ul>
           </li>
+  
           <li><a href="/choosing-a-pro/">Choosing a Pro</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>
@@ -115,7 +127,6 @@
       background-color: #383F51;
       padding: 20px 40px;
     }
-  
     .header-container {
       max-width: 1200px;
       margin: 0 auto;
@@ -123,45 +134,70 @@
       justify-content: space-between;
       align-items: center;
     }
-  
     .site-title a {
       text-decoration: none;
+      text-wrap: nowrap;
       color: #EFF7F6;
       font-size: 1.8rem;
       font-weight: bold;
     }
-
-    .site-nav a {
-        font-size: 1rem;
-        text-wrap: nowrap;
+  
+     
+    #hamburger-btn {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 25px;
+      height: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      z-index: 1100;
+    }
+    #hamburger-btn:focus {
+      outline: 2px solid #F15025;
+      outline-offset: 2px;
+    }
+    .hamburger-line {
+      width: 100%;
+      height: 3px;
+      background-color: #EFF7F6;
+      border-radius: 2px;
     }
   
+     
     .site-nav ul {
       list-style: none;
       margin: 0;
       padding: 0;
       display: flex;
       align-items: center;
+      text-wrap: nowrap;
+      font-size: 16px;
     }
-  
     .site-nav ul li {
       position: relative;
     }
-  
-    .site-nav ul li a {
+    .site-nav ul li a,
+    .site-nav ul li button.dropdown-toggle {
       margin-left: 20px;
       text-decoration: none;
       color: #EFF7F6;
       font-weight: 500;
       transition: color 0.3s ease;
       padding: 8px 0;
-      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font: inherit;
     }
-  
-    .site-nav ul li a:hover {
+    .site-nav ul li a:hover,
+    .site-nav ul li button.dropdown-toggle:hover {
       color: #F15025;
     }
   
+     
     .has-dropdown .dropdown {
       display: none;
       position: absolute;
@@ -172,46 +208,103 @@
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       z-index: 1000;
     }
-  
-    .has-dropdown:hover .dropdown {
-      display: block;
+     
+    @media (min-width: 769px) {
+      .has-dropdown:hover > .dropdown {
+        display: block;
+      }
     }
-  
     .dropdown li a {
       margin: 0;
       padding: 10px 20px;
       color: #EFF7F6;
+      display: block;
     }
-  
     .dropdown li a:hover {
       background-color: #6BB4DB;
       color: #fff;
     }
   
+     
     @media (max-width: 768px) {
-      .header-container {
-        flex-direction: column;
-        text-align: center;
+      #hamburger-btn {
+        display: flex;
       }
   
+      .site-nav {
+        position: fixed;
+        top: 70px;
+        right: 0;
+        background-color: #383F51;
+        width: 250px;
+        height: calc(100% - 70px);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        overflow-y: auto;
+        z-index: 1050;
+        padding-top: 20px;
+      }
+      .site-nav.open {
+        transform: translateX(0);
+      }
       .site-nav ul {
         flex-direction: column;
+        align-items: flex-start;
+      }
+      .site-nav ul li a,
+      .site-nav ul li button.dropdown-toggle {
+        margin-left: 0;
+        padding: 12px 24px;
+        width: 100%;
+        text-align: left;
       }
   
-      .site-nav ul li a {
-        margin: 10px 0;
-      }
-  
+       
       .has-dropdown .dropdown {
         position: static;
+        background-color: #4281A4;
         box-shadow: none;
+        display: none;
+        padding-left: 20px;
       }
-  
-      .has-dropdown:hover .dropdown {
+      .has-dropdown.open > .dropdown {
         display: block;
       }
     }
   </style>
+  
+  <script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const siteNav = document.getElementById('site-nav');
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+  
+    hamburgerBtn.addEventListener('click', () => {
+      const expanded = hamburgerBtn.getAttribute('aria-expanded') === 'true' || false;
+      hamburgerBtn.setAttribute('aria-expanded', !expanded);
+      siteNav.classList.toggle('open');
+    });
+  
+    dropdownToggles.forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        const parentLi = btn.parentElement;
+        const isOpen = parentLi.classList.contains('open');
+        
+        dropdownToggles.forEach(otherBtn => {
+          otherBtn.parentElement.classList.remove('open');
+          otherBtn.setAttribute('aria-expanded', 'false');
+        });
+        
+        if (!isOpen) {
+          parentLi.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        } else {
+          parentLi.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  </script>
   <main class="main">
 
 <article class="post-single">
@@ -255,7 +348,7 @@
       </div>
     </div>
 
-    <div class="who-we-serve">
+    <div class="grid-item">
       <h2>Who We Serve</h2>
       <ul>
         <li>Homeowners with persistent health or moisture issues</li>
@@ -373,8 +466,37 @@
   </footer>
 </article>
     </main>
-    <footer style="background: #f5f5f5; padding: 20px; text-align: center; margin-top: 50px;">
-    <p>&copy; 2025 Mold Inspection 247. All rights reserved.</p>
+    <footer style="background-color: #383F51; padding: 40px 20px; color: #FFF;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+  
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 10px; color: #FFF; font-size: 18px;">Contact Us</h3>
+        <p><strong>Phone:</strong> <a href="tel:9547820472">954-782-0472</a><br>
+           <a href="tel:9412285525">941-228-5525</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@moldinspection247.com">info@moldinspection247.com</a></p>
+        <p><strong>Serving:</strong> All of Florida</p>
+      </div>
+  
+      <div style="flex: 1 1 200px;">
+        <h3 style="margin-bottom: 10px; color: #FFF; font-size: 18px;">Quick Links</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li><a href="/why-choose-us/">Why Choose Us</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/choosing-a-pro/">Choosing a Pro</a></li>
+        </ul>
+      </div>
+  
+      <div style="flex: 1 1 200px; ">
+        <h3 style="margin-bottom: 10px; color: #FFF; font-size: 18px;">Business Hours</h3>
+        <p>Mon–Fri: 8am – 6pm<br>Sat: 9am – 3pm<br>Sun: Closed</p>
+      </div>
+  
+    </div>
+  
+    <div style="text-align: center; margin-top: 30px; font-size: 0.9em;">
+      <p>&copy; 2025 Mold Inspection 247. All rights reserved.</p>
+    </div>
   </footer>
   </body>
 

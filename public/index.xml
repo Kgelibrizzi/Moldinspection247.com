@@ -8,6 +8,73 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Commercial Mold Services</title>
+      <link>http://localhost:1313/commercial-mold-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/commercial-mold-services/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+  &lt;meta charset=&#34;UTF-8&#34; /&gt;
+  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; /&gt;
+&lt;/head&gt;
+&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
+
+  
+  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-left justify-left&#34;&gt;
+    &lt;h1 class=&#34;text-4xl font-bold text-left px-4&#34;&gt;Commercial Mold Services&lt;/h1&gt;
+  &lt;/header&gt;
+
+
+&lt;main class=&#34;max-w-4xl mx-auto px-6 py-10 leading-relaxed space-y-10&#34;&gt;
+
+    
+    &lt;section class=&#34;space-y-6&#34;&gt;
+      &lt;h1 class=&#34;text-3xl font-bold&#34;&gt;Residential / Commercial Indoor Air Quality Test&lt;/h1&gt;
+  
+      &lt;p&gt;&lt;strong&gt;What is more important than breathing? What’s in the air you breathe?&lt;/strong&gt; Let us test and see!&lt;/p&gt;
+  
+      &lt;p&gt;
+        Poor indoor air quality (IAQ) affects the elderly, children, people with health conditions like asthma, heart disease,
+        and many others, and those just plain sensitive!
+      &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Residential / Commercial Indoor Air Quality Test</title>
+      <link>http://localhost:1313/residential-commercial-indoor-air-quality-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/residential-commercial-indoor-air-quality-test/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+  &lt;meta charset=&#34;UTF-8&#34; /&gt;
+  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; /&gt;
+&lt;/head&gt;
+&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
+
+  
+  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-left justify-left&#34;&gt;
+    &lt;h1 class=&#34;text-4xl font-bold text-left px-4&#34;&gt;Residental / Commercial Indoor Air Quality Test&lt;/h1&gt;
+  &lt;/header&gt;
+
+  
+  &lt;main class=&#34;max-w-4xl mx-auto px-6 py-10 leading-relaxed&#34;&gt;
+    &lt;section class=&#34;space-y-6&#34;&gt;
+      &lt;p&gt;&lt;strong&gt;What is more important than breathing? What’s in the air you breathe?&lt;/strong&gt; Let us test and see!&lt;/p&gt;
+
+      &lt;p&gt;
+        Poor indoor air quality (IAQ) affects the elderly, children, people with health conditions like asthma, heart disease,
+        and many others, and those just plain sensitive!
+      &lt;/p&gt;
+
+      &lt;p&gt;
+        EPA states that indoor air quality is &lt;strong&gt;5–20 times more polluted than outdoors&lt;/strong&gt;. Yet we spend most of our time indoors—and we can control indoor air quality.
+        So let’s get started now! &lt;strong&gt;Call us! 954-782-0472 / 941-228-5525&lt;/strong&gt;
+      &lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Why Choose Us</title>
       <link>http://localhost:1313/why-choose-us/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
