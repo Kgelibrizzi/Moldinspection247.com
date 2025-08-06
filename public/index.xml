@@ -12,26 +12,47 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;section class=&#34;px-6 py-12 max-w-6xl mx-auto text-gray-800&#34;&gt;
-    &lt;h1 class=&#34;text-4xl font-bold text-center text-blue-900 mb-8&#34;&gt;
-      Certified Mold Inspection in Florida – 24/7 CIH-Led Response
-    &lt;/h1&gt;
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+  &lt;meta charset=&#34;UTF-8&#34; /&gt;
+  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;
+  &lt;title&gt;Certified Mold Inspection in Florida&lt;/title&gt;
+  &lt;link href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; rel=&#34;stylesheet&#34;&gt;
+  &lt;style&gt;
+    .bg-blue-600 {
+      background-color: #4281A4;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
+
   
-    &lt;h2 class=&#34;text-2xl font-semibold mb-4 text-blue-800&#34;&gt;Why Choose Mold Inspection 24/7?&lt;/h2&gt;
-    &lt;ul class=&#34;list-disc ml-6 mb-6&#34;&gt;
-      &lt;li&gt;&lt;strong&gt;Certified Industrial Hygienists&lt;/strong&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;strong&gt;Legally independent:&lt;/strong&gt; Florida law requires mold assessors to be completely separate from remediation companies. We don’t perform cleanups—just clear, unbiased documentation your contractor must follow.
-      &lt;/li&gt;
-    &lt;/ul&gt;
+  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-center px-6&#34;&gt;
+    &lt;h1 class=&#34;text-4xl font-bold max-w-5xl mx-auto text-center&#34;&gt;Certified Mold Inspection in Florida – 24/7 CIH-Led Response&lt;/h1&gt;
+  &lt;/header&gt;
+
   
-    &lt;h2 class=&#34;text-2xl font-semibold mb-4 text-blue-800&#34;&gt;Our Services&lt;/h2&gt;
-    &lt;div class=&#34;grid md:grid-cols-2 gap-6 mb-8&#34;&gt;
-      &lt;div&gt;
-        &lt;h3 class=&#34;text-xl font-bold mb-2&#34;&gt;Mold Inspections &amp; Moisture Mapping&lt;/h3&gt;
-        &lt;p&gt;
-          We assess both visible and hidden mold risks using infrared imaging, moisture meters, and air/surface sampling. From homes to commercial spaces, we deliver conflict-free reports you can act on.
-        &lt;/p&gt;</description>
+  &lt;main class=&#34;max-w-6xl mx-auto px-6 py-12 space-y-12&#34;&gt;
+
+    
+    &lt;section class=&#34;space-y-6&#34;&gt;
+      &lt;h2 class=&#34;text-2xl font-semibold text-blue-800&#34;&gt;Why Choose Mold Inspection 24/7?&lt;/h2&gt;
+      &lt;ul class=&#34;list-disc ml-6 space-y-2&#34;&gt;
+        &lt;li&gt;&lt;strong&gt;Certified Industrial Hygienists&lt;/strong&gt;&lt;/li&gt;
+        &lt;li&gt;
+          &lt;strong&gt;Legally independent:&lt;/strong&gt; Florida law requires mold assessors to be completely separate from remediation companies. We don’t perform cleanups—just clear, unbiased documentation your contractor must follow.
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/section&gt;
+
+    
+    &lt;section class=&#34;space-y-6&#34;&gt;
+      &lt;h2 class=&#34;text-2xl font-semibold text-blue-800&#34;&gt;Our Services&lt;/h2&gt;
+      &lt;div class=&#34;grid md:grid-cols-2 gap-6&#34;&gt;
+        &lt;div&gt;
+          &lt;h3 class=&#34;text-xl font-bold mb-2&#34;&gt;Mold Inspections &amp; Moisture Mapping&lt;/h3&gt;
+          &lt;p&gt;We assess both visible and hidden mold risks using infrared imaging, moisture meters, and air/surface sampling. From homes to commercial spaces, we deliver conflict-free reports you can act on.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Advanced testing</title>
@@ -205,6 +226,41 @@
       &lt;/p&gt;</description>
     </item>
     <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+  &lt;meta charset=&#34;UTF-8&#34; /&gt;
+  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;
+  &lt;title&gt;Contact Us&lt;/title&gt;
+  &lt;link href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; rel=&#34;stylesheet&#34;&gt;
+&lt;/head&gt;
+&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
+
+  
+  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-center px-6&#34;&gt;
+    &lt;h1 class=&#34;text-4xl font-bold&#34;&gt;Contact Us&lt;/h1&gt;
+  &lt;/header&gt;
+
+  
+  &lt;main class=&#34;max-w-4xl mx-auto px-6 py-10 leading-relaxed space-y-10&#34;&gt;
+
+    &lt;section class=&#34;space-y-6&#34;&gt;
+      &lt;h2 class=&#34;text-2xl font-semibold text-blue-800&#34;&gt;We&#39;re Here to Help&lt;/h2&gt;
+      &lt;p&gt;
+        Whether you’re dealing with persistent symptoms, suspect hidden mold, or just want a second opinion — reach out. Our team is ready to guide you through your next steps with expertise and compassion.
+      &lt;/p&gt;
+
+      &lt;div class=&#34;grid md:grid-cols-2 gap-8 mt-10&#34;&gt;
+        
+        &lt;div class=&#34;space-y-4&#34;&gt;
+          &lt;h3 class=&#34;text-xl font-bold&#34;&gt;Contact Information&lt;/h3&gt;
+          &lt;p&gt;&lt;strong&gt;Phone:&lt;/strong&gt; &lt;a href=&#34;tel:19547820472&#34; class=&#34;text-blue-600 underline&#34;&gt;(954) 782-0472&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>faulty spray foam installion</title>
       <link>http://localhost:1313/faulty-spray-foam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -319,51 +375,55 @@
 &lt;html lang=&#34;en&#34;&gt;
 &lt;head&gt;
   &lt;meta charset=&#34;UTF-8&#34; /&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;/&gt;
-  &lt;title&gt;Video Page&lt;/title&gt;
+  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;
+  &lt;title&gt;Certified Mold Inspection Video&lt;/title&gt;
+  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; /&gt;
   &lt;style&gt;
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      background-color: #f4f4f4;
-      color: #333;
+    .bg-blue-600 {
+      background-color: #4281A4;
     }
-
-    h1 {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .video-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    iframe {
-      width: 100%;
-      max-width: 800px;
-      height: 450px;
-      border: none;
+    .text-4xl {
+      color: #fff;
     }
   &lt;/style&gt;
 &lt;/head&gt;
-&lt;body&gt;
+&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
 
-  &lt;h1&gt;Watch Our Certified Mold Inspection Overview&lt;/h1&gt;
+  
+  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-center justify-center px-6 text-center&#34;&gt;
+    &lt;h1 class=&#34;text-4xl font-bold&#34;&gt;Video Fatal Fungus&lt;/h1&gt;
+  &lt;/header&gt;
 
-  &lt;div class=&#34;video-container&#34;&gt;
-    &lt;iframe 
-      src=&#34;https://www.youtube.com/watch?time_continue=6&amp;v=sRLvpODv_oc&amp;embeds_referring_euri=https%3A%2F%2Fmoldinspection247.com%2F&amp;source_ve_path=MjM4NTE&#34; 
-      title=&#34;Certified Mold Inspection Video&#34;
-      allowfullscreen&gt;
-    &lt;/iframe&gt;
-  &lt;/div&gt;
+  
+  &lt;main class=&#34;max-w-4xl mx-auto px-6 py-10&#34;&gt;
+    &lt;div class=&#34;aspect-w-16 aspect-h-9&#34;&gt;
+      &lt;iframe 
+        src=&#34;https://www.youtube.com/embed/sRLvpODv_oc&#34; 
+        title=&#34;Certified Mold Inspection Video&#34; 
+        allowfullscreen 
+        class=&#34;w-full h-[450px] border-none&#34;&gt;
+      &lt;/iframe&gt;
+    &lt;/div&gt;
+  &lt;/main&gt;
 
 &lt;/body&gt;
-&lt;/html&gt;</description>
+&lt;/html&gt;
+
+
+&lt;style&gt;
+  .bg-blue-600 {
+    background-color: #4281A4;
+  }
+  .text-4xl {
+    color: #fff;
+  }
+  .post-header {
+    display: none;
+  }
+  .post-content iframe{
+    height: 60vh;
+  }
+&lt;/style&gt;</description>
     </item>
     <item>
       <title>Why Choose Us</title>

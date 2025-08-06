@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white h-[30vh] flex items-center px-6">
+    <h1 class="text-4xl font-bold">Contact Us</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-6 py-10 leading-relaxed space-y-10">
+
+    <section class="space-y-6">
+      <h2 class="text-2xl font-semibold text-blue-800">We're Here to Help</h2>
+      <p>
+        Whether you’re dealing with persistent symptoms, suspect hidden mold, or just want a second opinion — reach out. Our team is ready to guide you through your next steps with expertise and compassion.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-8 mt-10">
+        <!-- Contact Info -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold">Contact Information</h3>
+          <p><strong>Phone:</strong> <a href="tel:19547820472" class="text-blue-600 underline">(954) 782-0472</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@geriskmanagement.com" class="text-blue-600 underline">info@geriskmanagement.com</a></p>
+          <p><strong>Address:</strong><br>123 Healthy Home Blvd<br>Pompano Beach, FL 33062</p>
+          <p><strong>Hours:</strong><br>Mon–Fri: 9am – 5pm</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Send Us a Message</h3>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="space-y-4">
+            <input type="hidden" name="form-name" value="contact" />
+            <p hidden>
+              <label>Don’t fill this out: <input name="bot-field" /></label>
+            </p>
+          
+            <input type="text" name="name" placeholder="Your Name" required class="w-full border px-4 py-2 rounded" />
+            <input type="email" name="email" placeholder="Your Email" required class="w-full border px-4 py-2 rounded" />
+            <input type="text" name="subject" placeholder="Subject" class="w-full border px-4 py-2 rounded" />
+            <textarea name="message" placeholder="Your Message" rows="5" required class="w-full border px-4 py-2 rounded"></textarea>
+          
+            <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded">Send Message</button>
+          </form>
+          
+          
+        </div>
+      </div>
+
+      <!-- Optional Map -->
+      <div class="mt-16">
+        <h3 class="text-xl font-bold mb-4">Our Location</h3>
+        <div class="w-full h-64 bg-gray-200 flex items-center justify-center text-gray-600">
+          [ Google Map Embed Placeholder ]
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
+
+<style>
+  .bg-blue-600 {
+    background-color: #4281A4;
+  }
+  .text-4xl {
+    color: #fff;
+  }
+  .post-header {
+    display: none;
+  }
+</style>

@@ -2,48 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Video Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certified Mold Inspection Video</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      background-color: #f4f4f4;
-      color: #333;
+    .bg-blue-600 {
+      background-color: #4281A4;
     }
-
-    h1 {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .video-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    iframe {
-      width: 100%;
-      max-width: 800px;
-      height: 450px;
-      border: none;
+    .text-4xl {
+      color: #fff;
     }
   </style>
 </head>
-<body>
+<body class="font-sans text-gray-800 bg-white">
 
-  <h1>Watch Our Certified Mold Inspection Overview</h1>
+  <!-- Hero Section -->
+  <header class="bg-blue-600 text-white h-[30vh] flex items-center justify-center px-6 text-center">
+    <h1 class="text-4xl font-bold">Video Fatal Fungus</h1>
+  </header>
 
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/watch?time_continue=6&v=sRLvpODv_oc&embeds_referring_euri=https%3A%2F%2Fmoldinspection247.com%2F&source_ve_path=MjM4NTE" 
-      title="Certified Mold Inspection Video"
-      allowfullscreen>
-    </iframe>
-  </div>
+  <!-- Video Section -->
+  <main class="max-w-4xl mx-auto px-6 py-10">
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe 
+        src="https://www.youtube.com/embed/sRLvpODv_oc" 
+        title="Certified Mold Inspection Video" 
+        allowfullscreen 
+        class="w-full h-[450px] border-none">
+      </iframe>
+    </div>
+  </main>
 
 </body>
 </html>
+
+
+<style>
+  .bg-blue-600 {
+    background-color: #4281A4;
+  }
+  .text-4xl {
+    color: #fff;
+  }
+  .post-header {
+    display: none;
+  }
+  .post-content iframe{
+    height: 60vh;
+  }
+</style>
