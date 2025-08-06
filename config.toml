@@ -2,3 +2,5 @@ baseURL = "http://Moldinspection247.com"
 languageCode = "en-us"
 title = "Mold Inspection 247"
 theme = "PaperMod"
+[params.assets]
+favicon = "favicon.ico"

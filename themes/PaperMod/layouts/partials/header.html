@@ -1,7 +1,19 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "sitemap.xml" | absURL }}" />
+</head>
+
+
 <header class="site-header">
     <div class="header-container">
-      <h1 class="site-title"><a href="/">Mold Inspection 247</a></h1>
-  
+      <h1 class="site-title">
+        <a href="/">
+          <img src="/images/Mold_Inspection247logo-removebg-preview.png" alt="Mold Inspection 24/7 Logo" class="site-logo" />
+        </a>
+      </h1>
+        
       <!-- Hamburger button -->
       <button id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
         <span class="hamburger-line"></span>
@@ -17,15 +29,23 @@
           <li class="has-dropdown">
             <button aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Mold Services</button>
             <ul class="dropdown">
-              <li><a href="/residential-commercial-indoor-air-quality-test/">Residential / Commercial IAQ Test</a></li>
+              <li><a href="/preventing-mold/">Preventing Mold</a></li>
+              <li><a href="/removing-mold/">Removing Mold</a></li>
+              <li><a href="/mold-testing/">Mold Testing</a></li>
               <li><a href="/commercial-mold-services/">Commercial Mold Services</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <button aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Mold Testing</button>
+            <ul class="dropdown">
+              <li><a href="/advanced-testing/">Advanced Testing</a></li>
+              <li><a href="/residential-commercial-indoor-air-quality-test/">Residential / Commercial IAQ Test</a></li>
               <li><a href="/mold-only-how-it-works/">How It Works – Mold Only</a></li>
               <li><a href="/videofatal-fungus-fungus-is-mold/">Video: Fatal Fungus</a></li>
             </ul>
           </li>
-  
-          <li><a href="/advanced-testing/">Advanced Testing</a></li>
-  
+
           <li class="has-dropdown">
             <button aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Church & Property IAQ</button>
             <ul class="dropdown">
@@ -142,6 +162,15 @@
     .dropdown li a:hover {
       /* background-color: #6BB4DB; */
       color: #fff;
+    }
+
+    .site-logo {
+      max-width: 100px;
+      align-items: center;
+    }
+
+    .site-title {
+      margin-left: 80px;
     }
   
     /* Mobile styles */

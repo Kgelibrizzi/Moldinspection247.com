@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Thank You</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <h1>Thank you for reaching out!</h1>
-  <p>We’ll get back to you as soon as possible.</p>
-  <a href="/">Go back home</a>
+<body class="font-sans text-gray-800 bg-white">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white h-[30vh] flex items-center px-6">
+    <h1 class="text-4xl font-bold">Form Submission Success</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-6 py-10 leading-relaxed space-y-10">
+
+    <section class="space-y-6">
+        <body>
+            <h1>Thank you for reaching out!</h1>
+            <p>We’ll get back to you as soon as possible.</p>
+            <a href="/">Go back home</a>
+          </body>
+    </section>
+
+  </main>
+  
+
 </body>
 </html>
+
+
+
+<style>
+    .bg-blue-600 {
+      background-color: #4281A4;
+    }
+    .text-4xl {
+      color: #fff;
+    }
+    .post-header {
+      display: none;
+    }
+  </style>
