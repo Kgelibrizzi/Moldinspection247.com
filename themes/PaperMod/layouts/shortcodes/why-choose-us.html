@@ -8,14 +8,14 @@
     :root {
       --dark-bg: #2D2E40;
       --light-text: #F5F5F5;
-      --accent: #F15025;
-      --soft-blue: #6BB4DB;
-      --card-bg: #383F51;
+      --accent: #e6c238;
+      --soft-blue: #4b3da0;
+      --card-bg: #222328;
     }
 
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: var(--dark-bg);
       color: var(--light-text);
     }
@@ -65,10 +65,26 @@
     }
 
     .feature-card h4 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      color: var(--soft-blue);
-    }
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 8px;
+    margin-top: 10px !important;
+  }
+
+  .feature-card h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px; 
+    height: 3px;
+    background-color: var(--accent); 
+    border-radius: 2px;
+    margin-top: 5px;
+  }
+
 
     .feature-card p,
     .feature-card ul {
@@ -101,16 +117,26 @@
       transition: background 0.3s ease;
     }
 
+    .cta-button:hover {
+      background-color: #e6c238;
+      color: #000;
+    }
+
     .intro-title {
-        color: #383F51;
+        color: #222328;
     }
 
     .intro {
-        color: #383F51;
+        color: #222328;
     }
 
     .cta-button:hover {
-      background: #d8431f;
+      background: #e6c238;
+      color: #000;
+    }
+
+    .list-disc li {
+      color: #FFF;
     }
 
     @media (max-width: 600px) {
@@ -153,7 +179,7 @@
         </div>
         <div class="feature-card">
           <h4>Who We Help</h4>
-          <ul>
+          <ul class="list-disc">
             <li>Homeowners & renters</li>
             <li>Attorneys & adjusters</li>
             <li>Property managers</li>

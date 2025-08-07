@@ -7,7 +7,7 @@
     <div class="grid">
       <div class="grid-item">
         <h2>Why People Choose Us</h2>
-        <ul>
+        <ul class="why-list">
           <li><strong>Certified Industrial Hygienist (CIH)</strong> — board-certified expert in exposure science</li>
           <li><strong>Not tied to remediation</strong> — we don’t sell cleanups, just truth</li>
           <li><strong>Advanced diagnostics</strong> — moisture mapping, building science, VOC screening</li>
@@ -20,7 +20,7 @@
       <div class="grid-item">
         <h2>What Makes a “Real” Expert?</h2>
         <p>Anyone can buy a mold test kit. Not everyone is trained in exposure pathways, airflow mechanics, or regulatory thresholds.</p>
-        <ul>
+        <ul class="why-list">
           <li>CIH – Certified Industrial Hygienist</li>
           <li>ARM – Associate in Risk Management</li>
           <li>Florida DBPR mold license</li>
@@ -31,7 +31,7 @@
 
     <div class="grid-item">
       <h2>Who We Serve</h2>
-      <ul>
+      <ul class="why-list">
         <li>Homeowners with persistent health or moisture issues</li>
         <li>Commercial property managers & attorneys</li>
         <li>Insurance claims, clearance disputes, expert testimony</li>
@@ -53,7 +53,7 @@
     .why-choose-us-page {
   background: #EFF7F6;
   padding: 60px 20px;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .why-choose-us-page .container {
@@ -64,8 +64,12 @@
 .why-choose-us-page h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: #383F51;
+  color: #222328;
   margin-bottom: 1rem;
+}
+
+.why-list li {
+  color: #222328;
 }
 
 .why-choose-us-page .intro {
@@ -73,7 +77,7 @@
   font-size: 1.2rem;
   max-width: 800px;
   margin: 0 auto 3rem;
-  color: #444;
+  color: #222328;
 }
 
 .grid {
@@ -84,14 +88,14 @@
 
 .grid-item h2 {
   font-size: 1.75rem;
-  color: #4281A4;
+  color: #e6c238;
   margin-bottom: 1rem;
 }
 
 .grid-item ul {
   list-style-type: disc;
   padding-left: 1.5rem;
-  color: #555;
+  color: #222328;
 }
 
 .grid-item li {
@@ -105,7 +109,7 @@
 .who-we-serve h2 {
   text-align: center;
   font-size: 2rem;
-  color: #4281A4;
+  color: #e6c238;
   margin-bottom: 1rem;
 }
 
@@ -114,7 +118,7 @@
   margin: 0 auto;
   list-style-type: disc;
   padding-left: 1.5rem;
-  color: #555;
+  color: #222328;
 }
 
 .cta {
@@ -123,7 +127,7 @@
 }
 
 .cta .button {
-  background: #F15025;
+  background: #e6c238;
   color: white;
   padding: 12px 30px;
   border-radius: 5px;
@@ -133,7 +137,8 @@
 }
 
 .cta .button:hover {
-  background: #c93a1b;
+  background-color: #e6c238;
+      color: #000;
 }
 
 </style>

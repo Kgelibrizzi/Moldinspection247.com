@@ -16,15 +16,21 @@
   <style>
     :root {
       --color-background: #EFF7F6;
-      --color-primary-dark: #383F51;
+      --color-primary-dark: #222328;
       --color-primary: #4281A4;
       --color-primary-light: #6BB4DB;
-      --color-accent: #F15025;
-      --color-text-dark: #383F51;
+      --color-accent: #e6c238;
+      --color-text-dark: #222328;
       --color-text-medium: #444;
       --color-text-light: #f0f0f0;
       --color-link: #6BB4DB;
+    
     }
+
+    body {
+  font-family: 'Poppins', sans-serif;
+}
+
     
     .main {
       margin-top: -20px;
@@ -34,7 +40,7 @@
       position: relative;
       width: 100%;
       min-height: 65vh;
-      background: url('/images/thermal-imaging-inspection_1754442830.jpg') no-repeat center center/cover;
+      background: url('/images/risk-photo-site-home-page.jpeg') no-repeat center center/cover;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -61,6 +67,8 @@
       font-size: 3rem;
       margin-bottom: 1rem;
       color: #fff;
+    line-height: 1.3;
+    font-weight: 600;
     }
   
     .hero-content p {
@@ -80,13 +88,12 @@
   
     .contact-info a {
       color: #ffffff;
-      text-decoration: underline;
     }
   
     .button {
       display: inline-block;
       padding: 12px 30px;
-      background-color: var(--color-primary-dark);
+      background-color: #222328;
       color: white;
       text-decoration: none;
       border-radius: 6px;
@@ -96,7 +103,8 @@
     }
   
     .button:hover {
-      background-color: #c93a1b;
+      background-color: #e6c238;
+      color: #000;
     }
   
     @media (max-width: 768px) {

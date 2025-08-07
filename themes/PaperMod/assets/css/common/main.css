@@ -1,21 +1,38 @@
 :root {
     --color-background: #EFF7F6;  /* light, for backgrounds */
-    --color-primary-dark: #383F51; /* dark slate blue, great for headings */
+    --color-primary-dark: #222328; /* dark slate blue, great for headings */
     --color-primary: #4281A4;      /* medium blue, main brand color */
     --color-primary-light: #6BB4DB; /* lighter blue, accents, hover */
-    --color-accent: #F15025;       /* bright orange/red, for calls to action */
-    --color-text: #383F51;          /* text color matching primary-dark */
+    --color-accent: #e6c238;       /* bright orange/red, for calls to action */
+    --color-text: #222328;          /* text color matching primary-dark */
     --color-white: #ffffff;         /* white */
   }
 
   @font-face {
-    font-family: 'Outfit';
-    src: url('/fonts/Outfit-Regular.woff2') format('woff2'),
-         url('/fonts/Outfit-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+  }
+  
+
 
 
   body {

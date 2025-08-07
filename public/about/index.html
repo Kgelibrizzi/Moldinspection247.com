@@ -46,7 +46,7 @@
           We assess both visible and hidden mold risks using infrared imaging, moisture meters, and air/surface sampling. From homes to commercial spaces, we deliver conflict-free reports you can act on.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/about/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.ae9bd8f08f7439790d30603da82ea95df49609b526a4d0e9a36bb79a98df6628.css" integrity="sha256-rpvY8I90OXkNMGA9qC6pXfSWCbUmpNDpo2u3mpjfZig=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.868387028f3fe35ef682fbb63764ea6bb1df2611ed63311a88c053a8b4195b87.css" integrity="sha256-hoOHAo8/4172gvu2N2Tqa7HfJhHtYzEaiMBTqLQZW4c=" rel="preload stylesheet" as="style">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="shortcut icon" href="/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
@@ -100,6 +100,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  integrity="sha512-dyZ88n1P3lNw6WvQ6N6x+uP8v2k9r1uIkU8jGnexzlWOnv9pVZ+3UJ99qlRvK5bIhSZ1cG1llocPq1M0C5HhHQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
   <link rel="sitemap" type="application/xml" title="Sitemap" href="http://localhost:1313/sitemap.xml" />
 </head>
 
@@ -108,7 +115,7 @@
     <div class="header-container">
       <h1 class="site-title">
         <a href="/">
-          <img src="/images/Mold_Inspection247logo-removebg-preview.png" alt="Mold Inspection 24/7 Logo" class="site-logo" />
+          <img src="/images/Mold_Inspection247logo__1_-removebg-preview.png" alt="Mold Inspection 24/7 Logo" class="site-logo" />
         </a>
       </h1>
         
@@ -120,6 +127,14 @@
       </button>
   
       <nav class="site-nav" id="site-nav" aria-label="Primary Navigation">
+
+        <div class="contact-header">
+          <a href="tel:9412285525">Call us: 941-228-5525</a>
+          <a href="mailto:info@moldinspection247.com">
+            <i class="fas fa-envelope mr-2" style="margin-right: 8px;"></i>info@moldinspection247.com
+          </a>          
+          </div>
+        
         <ul>
           <li><a href="/why-choose-us/">Why Choose Us</a></li>
           <li><a href="/about/">About Us</a></li>
@@ -131,6 +146,8 @@
               <li><a href="/removing-mold/">Removing Mold</a></li>
               <li><a href="/mold-testing/">Mold Testing</a></li>
               <li><a href="/commercial-mold-services/">Commercial Mold Services</a></li>
+              <li><a href="/church-iaq/">Church IAQ</a></li>
+
             </ul>
           </li>
 
@@ -140,15 +157,8 @@
               <li><a href="/advanced-testing/">Advanced Testing</a></li>
               <li><a href="/residential-commercial-indoor-air-quality-test/">Residential / Commercial IAQ Test</a></li>
               <li><a href="/mold-only-how-it-works/">How It Works – Mold Only</a></li>
-              <li><a href="/videofatal-fungus-fungus-is-mold/">Video: Fatal Fungus</a></li>
-            </ul>
-          </li>
-
-          <li class="has-dropdown">
-            <button aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Church & Property IAQ</button>
-            <ul class="dropdown">
-              <li><a href="/church-iaq/">Church IAQ</a></li>
               <li><a href="/faulty-spray-foam/">Faulty Spray Foam Insulation</a></li>
+              <li><a href="/videofatal-fungus-fungus-is-mold/">Video: Fatal Fungus</a></li>
             </ul>
           </li>
   
@@ -160,9 +170,38 @@
   </header>
   
   <style>
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: .5px;
+    transition: all .25s ease;
+    border-radius: .25rem;
+    margin-bottom: 0;
+    line-height: 1.5;
+    }
+
     .site-header {
-      background-color: #383F51;
-      padding: 20px 40px;
+    background: #222328;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 5%);
+    padding: 20px 40px;
+    }
+
+
+    .contact-header {
+  text-align: right;
+  border-bottom: 2px solid #e6c238;  
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+    .contact-header a {
+      color: #FFF;
+    }
+    .contact-header a:hover {
+      color: #e6c238;
     }
     .header-container {
       max-width: 1200px;
@@ -193,7 +232,7 @@
       z-index: 1100;
     }
     #hamburger-btn:focus {
-      outline: 2px solid #F15025;
+      outline: 2px solid #e6c238;
       outline-offset: 2px;
     }
     .hamburger-line {
@@ -231,19 +270,20 @@
     }
     .site-nav ul li a:hover,
     .site-nav ul li button.dropdown-toggle:hover {
-      color: #F15025;
+      color: #e6c238;
     }
   
      
     .has-dropdown .dropdown {
       display: none;
       position: absolute;
-      background-color: #383F51;
+      background-color: #222328;
       top: 100%;
       left: 0;
       min-width: 220px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       z-index: 1000;
+      padding-right: 10px;
     }
      
     @media (min-width: 769px) {
@@ -281,7 +321,7 @@
         position: fixed;
         top: 70px;
         right: 0;
-        background-color: #383F51;
+        background-color: #222328;
         width: 250px;
         height: calc(100% - 70px);
         transform: translateX(100%);
@@ -372,7 +412,7 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     .bg-blue-600 {
-      background-color: #4281A4;
+      background-color: #4b3da0;
     }
   </style>
 </head>
@@ -388,8 +428,8 @@
 
     
     <section class="space-y-6">
-      <h2 class="text-2xl font-semibold text-blue-800">Why Choose Mold Inspection 24/7?</h2>
-      <ul class="list-disc ml-6 space-y-2">
+      <h2 class="text-2xl font-semibold">Why Choose Mold Inspection 24/7?</h2>
+      <ul class="body-text list-disc ml-6 space-y-2">
         <li><strong>Certified Industrial Hygienists</strong></li>
         <li>
           <strong>Legally independent:</strong> Florida law requires mold assessors to be completely separate from remediation companies. We don’t perform cleanups—just clear, unbiased documentation your contractor must follow.
@@ -399,7 +439,7 @@
 
     
     <section class="space-y-6">
-      <h2 class="text-2xl font-semibold text-blue-800">Our Services</h2>
+      <h2 class="text-2xl font-semibold">Our Services</h2>
       <div class="grid md:grid-cols-2 gap-6">
         <div>
           <h3 class="text-xl font-bold mb-2">Mold Inspections & Moisture Mapping</h3>
@@ -418,13 +458,13 @@
 
     
     <section class="space-y-4">
-      <h2 class="text-2xl font-semibold text-blue-800">About Mold Inspection 24/7</h2>
+      <h2 class="text-2xl font-semibold">About Mold Inspection 24/7</h2>
       <p>Led by a Certified Industrial Hygienist (CIH) with over 25 years of experience, we deliver environmental health expertise for homes and commercial properties across Florida—without delay, drama, or inflated pricing.</p>
     </section>
 
     
     <section>
-      <h2 class="text-2xl font-semibold text-blue-800 mb-4">Who We Serve</h2>
+      <h2 class="text-2xl font-semibold mb-4">Who We Serve</h2>
       <div class="grid md:grid-cols-2 gap-4 list-disc ml-6">
         <ul class="space-y-2">
           <li>Homeowners with persistent moisture or health complaints</li>
@@ -439,15 +479,15 @@
 
     
     <section class="space-y-4">
-      <h2 class="text-2xl font-semibold text-blue-800">Contact Us</h2>
+      <h2 class="text-2xl font-semibold">Contact Us</h2>
       <p>Schedule your mold inspection—most appointments available within 24–48 hours.</p>
-      <p><strong>Call/Text:</strong> <a class="text-blue-600 underline" href="tel:9412285525">941-228-5525</a></p>
-      <p><strong>Email:</strong> <a class="text-blue-600 underline" href="mailto:kenneth@geriskmanagement.com">kenneth@geriskmanagement.com</a></p>
+      <p><strong>Call/Text:</strong> <a class="underline" href="tel:9412285525">941-228-5525</a></p>
+      <p><strong>Email:</strong> <a class="underline" href="mailto:kenneth@geriskmanagement.com">kenneth@geriskmanagement.com</a></p>
     </section>
 
     
     <section>
-      <h2 class="text-2xl font-semibold text-blue-800 mb-4">Trusted by Industry Leaders</h2>
+      <h2 class="text-2xl font-semibold mb-4">Trusted by Industry Leaders</h2>
       <p class="mb-4">We’ve delivered expert consulting for organizations in 38 states including:</p>
       <div class="grid md:grid-cols-2 gap-4 list-disc ml-6">
         <ul class="space-y-2">
@@ -471,7 +511,7 @@
 
     
     <section class="space-y-4">
-      <h2 class="text-2xl font-semibold text-blue-800">Memberships & Affiliations</h2>
+      <h2 class="text-2xl font-semibold">Memberships & Affiliations</h2>
       <ul class="list-disc ml-6 space-y-2">
         <li>AIHA (American Industrial Hygiene Association)</li>
         <li>ABIH (American Board of Industrial Hygiene)</li>
@@ -485,7 +525,7 @@
     </section>
 
     
-    <p class="text-center mt-8 text-blue-700 font-semibold">
+    <p class="text-center mt-8 font-semibold">
       For attorneys, HOAs, and property managers:
       <a href="https://moldinspection247.com/commercial-mold-services" class="underline">Explore our Commercial Mold Services</a>
     </p>
@@ -497,15 +537,35 @@
 
 
 <style>
-  .bg-blue-600 {
-    background-color: #4281A4;
+
+  h2 {
+    color: #4b3da0;
   }
+
+
+  .space-y-6 li {
+    color: #222328;
+  }
+
+  .space-y-2 li {
+    color: #222328;
+  }
+
+  a {
+    color: #4b3da0;
+  }
+
+
   .text-4xl {
     color: #fff;
   }
   .post-header {
     display: none;
   }
+  body {
+      font-family: 'Poppins', sans-serif;
+    }
+
 </style>
 
 
@@ -517,38 +577,43 @@
   </footer>
 </article>
     </main>
-    <footer style="background-color: #383F51; padding: 40px 20px; color: #FFF;">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
-  
-      <div style="flex: 1 1 250px;">
-        <h3 style="margin-bottom: 10px; color: #FFF; font-size: 18px;">Contact Us</h3>
-        <p><strong>Phone:</strong> <a href="tel:9547820472">954-782-0472</a><br>
-           <a href="tel:9412285525">941-228-5525</a></p>
-        <p><strong>Email:</strong> <a href="mailto:info@moldinspection247.com">info@moldinspection247.com</a></p>
-        <p><strong>Serving:</strong> All of Florida</p>
-      </div>
-  
-      <div style="flex: 1 1 200px;">
-        <h3 style="margin-bottom: 10px; color: #FFF; font-size: 18px;">Quick Links</h3>
-        <ul style="list-style: none; padding: 0; margin: 0;">
-          <li><a href="/why-choose-us/">Why Choose Us</a></li>
-          <li><a href="/about/">About Us</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a href="/choosing-a-pro/">Choosing a Pro</a></li>
-        </ul>
-      </div>
-  
-      <div style="flex: 1 1 200px; ">
-        <h3 style="margin-bottom: 10px; color: #FFF; font-size: 18px;">Business Hours</h3>
-        <p>Mon–Fri: 8am – 6pm<br>Sat: 9am – 3pm<br>Sun: Closed</p>
-      </div>
-  
-    </div>
-  
-    <div style="text-align: center; margin-top: 30px; font-size: 0.9em;">
-      <p>&copy; 2025 Mold Inspection 247. All rights reserved.</p>
-    </div>
-  </footer>
-  </body>
+    <footer style="background-color: #222328; color: #fff; padding: 40px 20px;">
+  <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+    
+    <h3 style="font-size: 1.2rem; margin-bottom: 10px;" class="contact-txt">Contact Us</h3>
+    <p style="margin: 8px 0;">
+      <strong>Phone:</strong> 
+      <a href="tel:9412285525" style="color: #e6c238; text-decoration: none;">941-228-5525</a>
+    </p>
+    
+    <p style="margin: 8px 0;">
+      <strong>Email:</strong> 
+      <a href="mailto:info@moldinspection247.com" style="color: #e6c238; text-decoration: none;">info@moldinspection247.com</a>
+    </p>
+
+    <p style="margin: 8px 0;"><strong>Serving:</strong> All of Florida (And All 50 States)</p>
+
+    <p style="margin: 16px 0;">
+      <a href="https://geriskmanagement.com/" target="_blank" style="color: #4b3da0;; text-decoration: underline;">Visit our partner site</a>
+    </p>
+
+    <p style="margin-top: 30px; font-size: 0.85rem;">&copy; 2025 Mold Inspection 24/7. All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-txt {
+    color: #FFF;
+  }
+</style>
+</body>
 
 </html>
