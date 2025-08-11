@@ -4,3 +4,5 @@ title = "Mold Inspection 247"
 theme = "PaperMod"
 [params.assets]
 favicon = "favicon.ico"
+enableGitInfo = true
+
