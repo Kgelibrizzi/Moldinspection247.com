@@ -31,6 +31,13 @@
     src: url('/fonts/Poppins-Black.ttf') format('truetype');
     font-weight: 900;
   }
+
+   
+  @font-face {
+    font-family: 'Hind';
+    src: url('/fonts/Hind-Regular.ttf') format('truetype');
+    font-weight: 600;
+  }
   
 
 
