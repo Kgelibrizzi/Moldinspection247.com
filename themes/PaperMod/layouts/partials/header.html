@@ -1,16 +1,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<!-- Font Awesome 5.15.4 via CDN (compatible with fas) -->
-<link
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 5.15.4 via CDN -->
+  <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-  integrity="sha512-dyZ88n1P3lNw6WvQ6N6x+uP8v2k9r1uIkU8jGnexzlWOnv9pVZ+3UJ99qlRvK5bIhSZ1cG1llocPq1M0C5HhHQ=="
   crossorigin="anonymous"
-  referrerpolicy="no-referrer"
 />
+
   <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ "sitemap.xml" | absURL }}" />
 </head>
+
 
 
 <header class="site-header">
@@ -19,6 +23,7 @@
         <a href="/">
           <img src="/images/Mold_Inspection247logo__1_-removebg-preview.png" alt="Mold Inspection 24/7 Logo" class="site-logo" />
         </a>
+        <p class="logo-text">Part of GE Risk Management</p>
       </h1>
         
       <!-- Hamburger button -->
@@ -31,9 +36,9 @@
       <nav class="site-nav" id="site-nav" aria-label="Primary Navigation">
 
         <div class="contact-header">
-          <a href="tel:9412285525">Call us: 941-228-5525</a>
+          <a class="first-call-out" href="tel:9412285525"><span class="call-text">Call us:</span> 941-228-5525</a>
           <a href="mailto:info@moldinspection247.com">
-            <i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>info@moldinspection247.com
+            <i class="fas fa-envelope" style="margin-right: 8px;"></i>info@moldinspection247.com
           </a>          
           </div>
         
@@ -76,7 +81,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: 14px;
     letter-spacing: .5px;
     transition: all .25s ease;
@@ -84,6 +89,14 @@ body {
     margin-bottom: 0;
     line-height: 1.5;
     }
+
+    .contact-header .call-text {
+  color: #919194;
+}
+
+.first-call-out {
+  margin-right: 15px;
+}
 
     .site-header {
     background: #222328;
@@ -100,6 +113,13 @@ body {
   border-bottom: 2px solid #e6c238; /* thin yellow line */
   padding-bottom: 5px;
   margin-bottom: 10px;
+}
+
+.logo-text{
+  font-size: 12px;
+  color: #919194;
+  font-family: 'poppins', sans-serif;
+    font-weight: 500;
 }
 
     .contact-header a {
@@ -163,15 +183,17 @@ body {
     .site-nav ul li a,
     .site-nav ul li button.dropdown-toggle {
       margin-left: 20px;
-      text-decoration: none;
-      color: #EFF7F6;
-      font-weight: 500;
-      transition: color 0.3s ease;
-      padding: 8px 0;
-      background: none;
-      border: none;
-      cursor: pointer;
-      font: inherit;
+      /* padding: 8px 0; */
+      font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .5px;
+    transition: all .25s ease;
+    border-radius: .25rem;
+    margin-bottom: 0;
+    line-height: 1.5;
     }
     .site-nav ul li a:hover,
     .site-nav ul li button.dropdown-toggle:hover {
@@ -188,7 +210,8 @@ body {
       min-width: 220px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       z-index: 1000;
-      padding-right: 10px;
+      padding-right: 0px;
+      padding-top: 10px;
     }
     /* Show dropdown on hover for desktop */
     @media (min-width: 769px) {
@@ -198,10 +221,11 @@ body {
     }
     .dropdown li a {
       margin: 0;
-      padding: 10px 20px;
+      padding: 5px 10px 10px 0px;
       color: #EFF7F6;
       display: block;
     }
+
     .dropdown li a:hover {
       /* background-color: #6BB4DB; */
       color: #fff;

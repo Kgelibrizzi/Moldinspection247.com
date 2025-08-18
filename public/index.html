@@ -83,15 +83,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<link
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  
+  <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-  integrity="sha512-dyZ88n1P3lNw6WvQ6N6x+uP8v2k9r1uIkU8jGnexzlWOnv9pVZ+3UJ99qlRvK5bIhSZ1cG1llocPq1M0C5HhHQ=="
   crossorigin="anonymous"
-  referrerpolicy="no-referrer"
 />
+
   <link rel="sitemap" type="application/xml" title="Sitemap" href="http://localhost:1313/sitemap.xml" />
 </head>
+
 
 
 <header class="site-header">
@@ -100,6 +104,7 @@
         <a href="/">
           <img src="/images/Mold_Inspection247logo__1_-removebg-preview.png" alt="Mold Inspection 24/7 Logo" class="site-logo" />
         </a>
+        <p class="logo-text">Part of GE Risk Management</p>
       </h1>
         
       
@@ -112,9 +117,9 @@
       <nav class="site-nav" id="site-nav" aria-label="Primary Navigation">
 
         <div class="contact-header">
-          <a href="tel:9412285525">Call us: 941-228-5525</a>
+          <a class="first-call-out" href="tel:9412285525"><span class="call-text">Call us:</span> 941-228-5525</a>
           <a href="mailto:info@moldinspection247.com">
-            <i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>info@moldinspection247.com
+            <i class="fas fa-envelope" style="margin-right: 8px;"></i>info@moldinspection247.com
           </a>          
           </div>
         
@@ -157,7 +162,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    text-transform: capitalize;
+     
     font-size: 14px;
     letter-spacing: .5px;
     transition: all .25s ease;
@@ -165,6 +170,14 @@ body {
     margin-bottom: 0;
     line-height: 1.5;
     }
+
+    .contact-header .call-text {
+  color: #919194;
+}
+
+.first-call-out {
+  margin-right: 15px;
+}
 
     .site-header {
     background: #222328;
@@ -181,6 +194,13 @@ body {
   border-bottom: 2px solid #e6c238;  
   padding-bottom: 5px;
   margin-bottom: 10px;
+}
+
+.logo-text{
+  font-size: 12px;
+  color: #919194;
+  font-family: 'poppins', sans-serif;
+    font-weight: 500;
 }
 
     .contact-header a {
@@ -244,15 +264,17 @@ body {
     .site-nav ul li a,
     .site-nav ul li button.dropdown-toggle {
       margin-left: 20px;
-      text-decoration: none;
-      color: #EFF7F6;
-      font-weight: 500;
-      transition: color 0.3s ease;
-      padding: 8px 0;
-      background: none;
-      border: none;
-      cursor: pointer;
-      font: inherit;
+       
+      font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .5px;
+    transition: all .25s ease;
+    border-radius: .25rem;
+    margin-bottom: 0;
+    line-height: 1.5;
     }
     .site-nav ul li a:hover,
     .site-nav ul li button.dropdown-toggle:hover {
@@ -269,7 +291,8 @@ body {
       min-width: 220px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       z-index: 1000;
-      padding-right: 10px;
+      padding-right: 0px;
+      padding-top: 10px;
     }
      
     @media (min-width: 769px) {
@@ -279,10 +302,11 @@ body {
     }
     .dropdown li a {
       margin: 0;
-      padding: 10px 20px;
+      padding: 5px 10px 10px 0px;
       color: #EFF7F6;
       display: block;
     }
+
     .dropdown li a:hover {
        
       color: #fff;
@@ -382,7 +406,7 @@ body {
     });
   </script>
   <main class="main"> 
-<div class="post-content"><p><section class="hero">
+<div class="post-content"><p><section class="hero" alt="CIH‑led mold inspection risk assessment clipboard">
     <div class="hero-overlay">
       <div class="hero-content">
         <h1>Mold Inspection 24/7</h1>
@@ -421,42 +445,41 @@ body {
     }
   
     .hero {
-      position: relative;
-      width: 100%;
-      min-height: 65vh;
-      background: url('/images/risk-photo-site-home-page.jpeg') no-repeat center center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom right, rgba(66, 129, 164, 0.7), rgba(56, 63, 81, 0.7));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 60px 20px;
-      text-align: center;
-    }
-  
-    .hero-content {
-      max-width: 700px;
-      color: white;
-      z-index: 2;
-    }
-  
-    .hero-content h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      color: #fff;
-    line-height: 1.3;
-    font-weight: 600;
-    }
-  
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  background: url('/images/risk-photo-site-home-page.jpeg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, .65);
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: left;
+}
+
+.hero-content {
+  max-width: 1100px;  
+  margin: 0 auto;    
+  color: white;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 1rem;
+  color: #fff;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
     .hero-content p {
-      font-size: 1.2rem;
+      font-size: 18px;
       margin-bottom: 2rem;
       color: var(--color-text-light);
     }
@@ -477,13 +500,13 @@ body {
     .button {
       display: inline-block;
       padding: 12px 30px;
-      background-color: #222328;
-      color: white;
+      background-color: #d1ab1a;
+      color: #000 !important;
       text-decoration: none;
-      border-radius: 6px;
       font-weight: bold;
       transition: background-color 0.3s ease;
       margin-top: 1rem;
+      border-radius: 50px;
     }
   
     .button:hover {
@@ -503,11 +526,11 @@ body {
       }
   
       .hero-content h1 {
-        font-size: 2rem;
+        font-size: 32px;
       }
   
       .hero-content p {
-        font-size: 1.05rem;
+        font-size: 16px;
       }
   
       .button {
@@ -520,6 +543,11 @@ body {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  crossorigin="anonymous"
+/>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Why Choose Mold Inspection 24/7</title>
@@ -658,6 +686,12 @@ body {
       color: #FFF;
     }
 
+
+    .cih-led {
+      text-align: center;
+    }
+
+
     @media (max-width: 600px) {
       .why-choose-us-v2 h2 {
         font-size: 2rem;
@@ -670,6 +704,175 @@ body {
   </style>
 </head>
 <body>
+
+  <section class="reviews-section">
+    <h2 class="cih-led">
+      <div class="review-feature">
+        <i class="fas fa-user-check"></i>
+        <span>CIH‑led inspections</span>
+      </div>
+      <div class="review-feature">
+        <i class="fas fa-certificate"></i>
+        <span>Licensed Mold Assessor – Florida</span>
+      </div>
+      <div class="review-feature">
+        <i class="fas fa-shield-alt"></i>
+        <span>ARM * CSP</span>
+      </div>
+    </h2>
+    
+    
+      
+    <div class="reviews-slider">
+      <div class="review-slide">
+        <p class="review-text">“Ken was a true professional! So happy I hired him. He quickly came out and gave me top notch service and guidance on a mold complaint. Would highly recommend!”</p>
+        <p class="review-author">– Amanda Waye</p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <div class="review-slide">
+        <p class="review-text">“Great service, came out after hours and tested. Prices were good and great customer service. Highly recommend for all your mold issues”</p>
+        <p class="review-author">– Sandro Torchia</p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <div class="review-slide">
+        <p class="review-text">“Working with Ken was fantastic. He came through clutch with assisting and taking care of our HASP plan. Thank you again.”</p>
+        <p class="review-author">– C Bradley</p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <div class="review-slide">
+        <p class="review-text">“After having bad experiences with contractors and companies that tried to scam us I made sure I found a very good company to do our mold inspection. And Kenneth and his team definitely delivered, he personally came to our house and took his time to explain everything in ways we were able to understand, you can see from the moment he walks in he is very experienced in what he does. He did the inspection and again took his time to explain results and recommendations to us. If you are looking for a mold inspection you don’t need to keep looking, you can rest assured he got your back.”</p>
+        <p class="review-author">– Adriana Aldrey</p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <div class="review-slide">
+        <p class="review-text">“Ken was very detailed with the services he provided for us. I would recommend Ken to anyone who would need an industrial hygeinist services. He is through, detailed and delivers in a timely manner. Thank you Ken.”</p>
+        <p class="review-author">– Danielle Peters</p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+    </div>
+  
+    <div class="slider-controls">
+      <button id="prev">‹</button>
+      <button id="next">›</button>
+    </div>
+  </section>
+  
+  <style>
+  .reviews-section {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .cih-led {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #222328;
+  margin-bottom: 30px;
+}
+
+.cih-led .review-feature {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  margin: 10px 0;
+}
+
+.cih-led i {
+  color: #e6c238;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.cih-led span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+  
+  .reviews-slider {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .review-slide {
+    display: none;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  .review-slide.active {
+    display: block;
+  }
+  
+  .review-text {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .review-author {
+    font-weight: bold;
+    color: #222328;
+    margin-bottom: 5px;
+  }
+  
+  .review-stars {
+    color: #e6c238;
+    font-size: 1rem;
+  }
+  
+  .slider-controls button {
+    background: #222328;
+    color: #e6c238;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .slider-controls button:hover {
+    background: #e6c238;
+    color: #222328;
+  }
+  </style>
+  
+  <script>
+  const slides = document.querySelectorAll('.review-slide');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  let currentSlide = 0;
+  
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+  
+  prevBtn.addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  });
+  
+  nextBtn.addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  });
+  
+  
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }, 4000);
+  
+  
+  showSlide(currentSlide);
+  </script>
+  
   <section class="why-choose-us-v2">
     <div class="container">
       <h2 class="intro-title">Why Choose Mold Inspection 24/7?</h2>
@@ -714,6 +917,9 @@ body {
   </section>
 </body>
 </html>
+
+
+
 
 <section class="trusted-by">
     <div class="container">
@@ -839,42 +1045,121 @@ body {
 
 </div>
     </main>
-    <footer style="background-color: #222328; color: #fff; padding: 40px 20px;">
-  <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
-    
-    <h3 style="font-size: 1.2rem; margin-bottom: 10px;" class="contact-txt">Contact Us</h3>
-    <p style="margin: 8px 0;">
-      <strong>Phone:</strong> 
-      <a href="tel:9412285525" style="color: #e6c238; text-decoration: none;">941-228-5525</a>
-    </p>
-    
-    <p style="margin: 8px 0;">
-      <strong>Email:</strong> 
-      <a href="mailto:info@moldinspection247.com" style="color: #e6c238; text-decoration: none;">info@moldinspection247.com</a>
-    </p>
+    <footer>
+  <div class="footer-container">
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p><strong>Phone:</strong> <a href="tel:9412285525">941-228-5525</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@moldinspection247.com">info@moldinspection247.com</a></p>
+      <p><strong>Serving:</strong> All of Florida (And All 50 States)</p>
+    </div>
 
-    <p style="margin: 8px 0;"><strong>Serving:</strong> All of Florida (And All 50 States)</p>
-
-    <p style="margin: 16px 0;">
-      <a href="https://geriskmanagement.com/" target="_blank" style="color: #4b3da0;; text-decoration: underline;">Visit our partner site</a>
-    </p>
-
-    <p style="margin-top: 30px; font-size: 0.85rem;">&copy; 2025 Mold Inspection 24/7. All rights reserved.</p>
+    <div class="footer-links">
+      <ul>
+        <h3 class="second-footer-title">Visit our partner sites</h3>
+        <li><a href="/https://geriskmanagement.com">GE Risk Management
+        <li><a href="/https://industrialhygiene247.com/">Industrial Hygiene 24/7</a></li>
+        <li><a href="/https://advancedlosscontrolsurveys.com/">Advanced Loss Control Surveys</a></li>
+        <li><a href="/https://oshacompliance247.com/">OSHA Compliance 24/7</a></li>
+      </ul>
+    </div>
   </div>
+
+  <p class="footer-copy">&copy; 2025 Mold Inspection 24/7. All rights reserved.</p>
 </footer>
 
 <style>
-  body {
-    font-family: 'Poppins', sans-serif;
+footer {
+  background-color: #222328;
+  color: #ccc;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-contact {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-contact h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.second-footer-title {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-contact p {
+  margin: 6px 0;
+}
+
+.footer-contact a {
+  color: #888;  
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+  color: #e6c238;  
+}
+
+.footer-links {
+  flex: 1 1 250px;
+  margin: 10px;
+  text-align: right;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links ul li a {
+  color: #888;  
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links ul li a:hover {
+  color: #e6c238;
+  text-decoration: underline;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+ 
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
   }
 
-  footer a:hover {
-    text-decoration: underline;
+  .footer-links {
+    text-align: center;
   }
-
-  .contact-txt {
-    color: #FFF;
-  }
+}
 </style>
 </body>
 

@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  crossorigin="anonymous"
+/>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Why Choose Mold Inspection 24/7</title>
@@ -139,6 +144,12 @@
       color: #FFF;
     }
 
+
+    .cih-led {
+      text-align: center;
+    }
+
+
     @media (max-width: 600px) {
       .why-choose-us-v2 h2 {
         font-size: 2rem;
@@ -151,6 +162,175 @@
   </style>
 </head>
 <body>
+
+  <section class="reviews-section">
+    <h2 class="cih-led">
+      <div class="review-feature">
+        <i class="fas fa-user-check"></i>
+        <span>CIH‑led inspections</span>
+      </div>
+      <div class="review-feature">
+        <i class="fas fa-certificate"></i>
+        <span>Licensed Mold Assessor – Florida</span>
+      </div>
+      <div class="review-feature">
+        <i class="fas fa-shield-alt"></i>
+        <span>ARM * CSP</span>
+      </div>
+    </h2>
+    
+    
+      
+    <div class="reviews-slider">
+      <div class="review-slide">
+        <p class="review-text">“Ken was a true professional! So happy I hired him. He quickly came out and gave me top notch service and guidance on a mold complaint. Would highly recommend!”</p>
+        <p class="review-author">– Amanda Waye</p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <div class="review-slide">
+        <p class="review-text">“Great service, came out after hours and tested. Prices were good and great customer service. Highly recommend for all your mold issues”</p>
+        <p class="review-author">– Sandro Torchia</p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <div class="review-slide">
+        <p class="review-text">“Working with Ken was fantastic. He came through clutch with assisting and taking care of our HASP plan. Thank you again.”</p>
+        <p class="review-author">– C Bradley</p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <div class="review-slide">
+        <p class="review-text">“After having bad experiences with contractors and companies that tried to scam us I made sure I found a very good company to do our mold inspection. And Kenneth and his team definitely delivered, he personally came to our house and took his time to explain everything in ways we were able to understand, you can see from the moment he walks in he is very experienced in what he does. He did the inspection and again took his time to explain results and recommendations to us. If you are looking for a mold inspection you don’t need to keep looking, you can rest assured he got your back.”</p>
+        <p class="review-author">– Adriana Aldrey</p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+      <div class="review-slide">
+        <p class="review-text">“Ken was very detailed with the services he provided for us. I would recommend Ken to anyone who would need an industrial hygeinist services. He is through, detailed and delivers in a timely manner. Thank you Ken.”</p>
+        <p class="review-author">– Danielle Peters</p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+    </div>
+  
+    <div class="slider-controls">
+      <button id="prev">‹</button>
+      <button id="next">›</button>
+    </div>
+  </section>
+  
+  <style>
+  .reviews-section {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .cih-led {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #222328;
+  margin-bottom: 30px;
+}
+
+.cih-led .review-feature {
+  display: flex;
+  flex-direction: column; /* stack icon above text */
+  align-items: center;
+  margin: 10px 0;
+}
+
+.cih-led i {
+  color: #e6c238;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.cih-led span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+  
+  .reviews-slider {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .review-slide {
+    display: none;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  .review-slide.active {
+    display: block;
+  }
+  
+  .review-text {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .review-author {
+    font-weight: bold;
+    color: #222328;
+    margin-bottom: 5px;
+  }
+  
+  .review-stars {
+    color: #e6c238;
+    font-size: 1rem;
+  }
+  
+  .slider-controls button {
+    background: #222328;
+    color: #e6c238;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .slider-controls button:hover {
+    background: #e6c238;
+    color: #222328;
+  }
+  </style>
+  
+  <script>
+  const slides = document.querySelectorAll('.review-slide');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  let currentSlide = 0;
+  
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+  
+  prevBtn.addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  });
+  
+  nextBtn.addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  });
+  
+  // Auto-slide every 6 seconds
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }, 4000);
+  
+  // Initialize first slide
+  showSlide(currentSlide);
+  </script>
+  
   <section class="why-choose-us-v2">
     <div class="container">
       <h2 class="intro-title">Why Choose Mold Inspection 24/7?</h2>
@@ -195,3 +375,6 @@
   </section>
 </body>
 </html>
+
+
+

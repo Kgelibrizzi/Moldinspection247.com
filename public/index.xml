@@ -12,337 +12,56 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34; /&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;
-  &lt;title&gt;Certified Mold Inspection in Florida&lt;/title&gt;
-  &lt;link href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; rel=&#34;stylesheet&#34;&gt;
-  &lt;style&gt;
-    .bg-blue-600 {
-      background-color: #4b3da0;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
-
-  
-  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-center px-6&#34;&gt;
-    &lt;h1 class=&#34;text-4xl font-bold max-w-5xl mx-auto text-center&#34;&gt;Certified Mold Inspection in Florida – 24/7 CIH-Led Response&lt;/h1&gt;
-  &lt;/header&gt;
-
-  
-  &lt;main class=&#34;max-w-6xl mx-auto px-6 py-12 space-y-12&#34;&gt;
-
-    
-    &lt;section class=&#34;space-y-6&#34;&gt;
-      &lt;h2 class=&#34;text-2xl font-semibold&#34;&gt;Why Choose Mold Inspection 24/7?&lt;/h2&gt;
-      &lt;ul class=&#34;body-text list-disc ml-6 space-y-2&#34;&gt;
-        &lt;li&gt;&lt;strong&gt;Certified Industrial Hygienists&lt;/strong&gt;&lt;/li&gt;
-        &lt;li&gt;
-          &lt;strong&gt;Legally independent:&lt;/strong&gt; Florida law requires mold assessors to be completely separate from remediation companies. We don’t perform cleanups—just clear, unbiased documentation your contractor must follow.
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/section&gt;
-
-    
-    &lt;section class=&#34;space-y-6&#34;&gt;
-      &lt;h2 class=&#34;text-2xl font-semibold&#34;&gt;Our Services&lt;/h2&gt;
-      &lt;div class=&#34;grid md:grid-cols-2 gap-6&#34;&gt;
-        &lt;div&gt;
-          &lt;h3 class=&#34;text-xl font-bold mb-2&#34;&gt;Mold Inspections &amp; Moisture Mapping&lt;/h3&gt;
-          &lt;p&gt;We assess both visible and hidden mold risks using infrared imaging, moisture meters, and air/surface sampling. From homes to commercial spaces, we deliver conflict-free reports you can act on.&lt;/p&gt;</description>
+      <description>Certified Mold Inspection services in Florida, led by a CIH with 25&#43; years experience. Expert, independent mold testing &amp;amp; inspections available 24/7.</description>
     </item>
     <item>
-      <title>Advanced testing</title>
-      <link>http://localhost:1313/advanced-testing/</link>
+      <title>Certified Mold Inspection Video</title>
+      <link>http://localhost:1313/videofatal-fungus-fungus-is-mold/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/advanced-testing/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34; /&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;
-  &lt;title&gt;More Than Mold? Advanced Testing for Health-Sensitive Homes&lt;/title&gt;
-  &lt;link href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; rel=&#34;stylesheet&#34;&gt;
-&lt;/head&gt;
-&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
-
-  
-  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-center px-6&#34;&gt;
-    &lt;h1 class=&#34;text-4xl font-bold&#34;&gt;More Than Mold? Advanced Testing for Health-Sensitive Homes&lt;/h1&gt;
-  &lt;/header&gt;
-
-  
-  &lt;main class=&#34;max-w-4xl mx-auto px-6 py-10 leading-relaxed space-y-10&#34;&gt;
-
-    &lt;section class=&#34;space-y-6&#34;&gt;
-      &lt;h2 class=&#34;text-2xl font-semibold&#34;&gt;Looking Beyond Visible Mold?&lt;/h2&gt;
-      &lt;p&gt;
-        Most inspectors stop at what they can see. We don’t. Our Certified Industrial Hygienist (CIH) offers advanced environmental testing that can detect hidden or overlooked contaminants affecting your indoor air quality and health.
-      &lt;/p&gt;</description>
+      <guid>http://localhost:1313/videofatal-fungus-fungus-is-mold/</guid>
+      <description>Watch our certified mold inspection video &amp;#39;Fatal Fungus&amp;#39; to understand mold inspection processes and the importance of professional assessments.</description>
     </item>
     <item>
-      <title>Choosing a pro</title>
-      <link>http://localhost:1313/choosing-a-pro/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/choosing-a-pro/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34; /&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;
-  &lt;title&gt;How to Select a Mold / IAQ Assessor&lt;/title&gt;
-  &lt;link href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;/head&gt;
-&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
-
-  
-  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-center px-6&#34;&gt;
-    &lt;h1 class=&#34;text-4xl font-bold&#34;&gt;How to Select a Mold / IAQ Assessor&lt;/h1&gt;
-  &lt;/header&gt;
-
-  
-  &lt;main class=&#34;max-w-4xl mx-auto px-6 py-10 leading-relaxed space-y-8&#34;&gt;
-
-    &lt;section class=&#34;space-y-6&#34;&gt;
-      &lt;h2&gt;Is your mold / IAQ assessor:&lt;/h2&gt;
-      &lt;ul class=&#34;list-disc pl-6 space-y-2 font-semibold&#34;&gt;
-        &lt;li&gt;Licensed?&lt;/li&gt;
-        &lt;li&gt;Certified?&lt;/li&gt;
-        &lt;li&gt;Designated?&lt;/li&gt;
-        &lt;li&gt;Registered?&lt;/li&gt;
-        &lt;li&gt;Insured?&lt;/li&gt;
-      &lt;/ul&gt;
-
-      &lt;h2&gt;Find out if your IAQ / Mold Assessor is:&lt;/h2&gt;
-      &lt;ul class=&#34;list-disc pl-6 space-y-4&#34;&gt;
-        &lt;li&gt;
-          &lt;strong&gt;Licensed&lt;/strong&gt; –  
-          &lt;a href=&#34;https://www.myfloridalicense.com/wl11.asp?mode=1&amp;SID=&amp;brd=&amp;typ=&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;underline&#34;&gt;
-            Check here
-          &lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;strong&gt;Certified Industrial Hygienist (CIH)&lt;/strong&gt; –  
-          &lt;a href=&#34;https://portalabih.cyzap.net/dzapps/dbzap.bin/apps/assess/webmembers/secure/manage?webid=ABIH&amp;pToolCode=cert-verify&amp;pAdd=Yes&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;underline&#34;&gt;
-            Verify here
-          &lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;strong&gt;Designated Risk Manager (ARM)&lt;/strong&gt; –  
-          &lt;a href=&#34;https://web.theinstitutes.org/designee-list&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;underline&#34;&gt;
-            See list here
-          &lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;strong&gt;Registered to do business in FL&lt;/strong&gt; –  
-          &lt;a href=&#34;https://search.sunbiz.org/Inquiry/CorporationSearch/ByName&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;underline&#34;&gt;
-            Search here
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/section&gt;
-
-  &lt;/main&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-
-
-
-&lt;style&gt;
-    .bg-blue-600 {
-      background-color: #4b3da0;
-    }
-    .text-4xl {
-      color: #fff;
-    }
-    .post-header {
-      display: none;
-    }
-    body {
-      font-family: &#39;Poppins&#39;, sans-serif;
-    }
-    .list-disc li {
-      color: #222328;
-    }
-
-    a {
-      color: #4b3da0;
-    }
-  &lt;/style&gt;</description>
-    </item>
-    <item>
-      <title>Church IAQ</title>
+      <title>Church Indoor Air Quality (IAQ) Services</title>
       <link>http://localhost:1313/church-iaq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/church-iaq/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34; /&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;
-  &lt;title&gt;Church Indoor Air Quality (IAQ) Services&lt;/title&gt;
-  &lt;link href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;/head&gt;
-&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
-
-  
-  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-center px-6&#34;&gt;
-    &lt;h1 class=&#34;text-4xl font-bold&#34;&gt;Church Indoor Air Quality (IAQ)&lt;/h1&gt;
-  &lt;/header&gt;
-
-  
-  &lt;main class=&#34;max-w-4xl mx-auto px-6 py-10 leading-relaxed space-y-8&#34;&gt;
-
-    &lt;section class=&#34;space-y-6&#34;&gt;
-      &lt;p&gt;
-        Churches occupants, including elderly, can be susceptible to poor IAQ conditions such as dust mites, mold, bacteria, viruses, dust, and bioaerosols. Asthma, COPD, bronchitis, allergies, and many other health conditions can be worsened by even short but acute exposure to these contaminants. All quite unnecessarily!
-      &lt;/p&gt;</description>
+      <description>Protect your church community with expert indoor air quality services addressing mold, dust, bacteria, and other contaminants to ensure a healthy environment.</description>
     </item>
     <item>
       <title>Commercial Mold Services</title>
       <link>http://localhost:1313/commercial-mold-services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/commercial-mold-services/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34; /&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; /&gt;
-&lt;/head&gt;
-&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
-
-  
-  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-left justify-left&#34;&gt;
-    &lt;h1 class=&#34;text-4xl font-bold text-left px-4&#34;&gt;Commercial Mold Services&lt;/h1&gt;
-  &lt;/header&gt;
-
-
-&lt;main class=&#34;max-w-4xl mx-auto px-6 py-10 leading-relaxed space-y-10&#34;&gt;
-
-    
-    &lt;section class=&#34;space-y-6&#34;&gt;
-      &lt;h1 class=&#34;text-3xl font-bold&#34;&gt;Residential / Commercial Indoor Air Quality Test&lt;/h1&gt;
-  
-      &lt;p&gt;&lt;strong&gt;What is more important than breathing? What’s in the air you breathe?&lt;/strong&gt; Let us test and see!&lt;/p&gt;
-  
-      &lt;p&gt;
-        Poor indoor air quality (IAQ) affects the elderly, children, people with health conditions like asthma, heart disease,
-        and many others, and those just plain sensitive!
-      &lt;/p&gt;</description>
+      <description>Professional mold inspections and advanced indoor air quality testing for commercial properties, HOAs, and legal clients. Certified, licensed, and trusted expertise.</description>
     </item>
     <item>
-      <title>Contact</title>
+      <title>Contact Us</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34; /&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;
-  &lt;title&gt;Contact Us&lt;/title&gt;
-  &lt;link href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; rel=&#34;stylesheet&#34;&gt;
-&lt;/head&gt;
-&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
-
-  
-  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-center px-6&#34;&gt;
-    &lt;h1 class=&#34;text-4xl font-bold&#34;&gt;Contact Us&lt;/h1&gt;
-  &lt;/header&gt;
-
-  
-  &lt;main class=&#34;max-w-4xl mx-auto px-6 py-10 leading-relaxed space-y-10&#34;&gt;
-
-    &lt;section class=&#34;space-y-6&#34;&gt;
-      &lt;h2 class=&#34;text-2xl font-semibold&#34;&gt;We&#39;re Here to Help&lt;/h2&gt;
-      &lt;p&gt;
-        Whether you’re dealing with persistent symptoms, suspect hidden mold, or just want a second opinion — reach out. Our team is ready to guide you through your next steps with expertise and compassion.
-      &lt;/p&gt;
-
-      &lt;div class=&#34;grid md:grid-cols-2 gap-8 mt-10&#34;&gt;
-        
-        &lt;div class=&#34;space-y-4&#34;&gt;
-          &lt;h3 class=&#34;text-xl font-bold&#34;&gt;Contact Information&lt;/h3&gt;
-          &lt;p&gt;&lt;strong&gt;Phone:&lt;/strong&gt; &lt;a href=&#34;tel:9412285525&#34; class=&#34;underline&#34;&gt;(941)-228-5525&lt;/a&gt;&lt;/p&gt;
-          &lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:info@geriskmanagement.com&#34; class=&#34;underline&#34;&gt;info@geriskmanagement.com&lt;/a&gt;&lt;/p&gt;
-          &lt;p&gt;&lt;strong&gt;Service Areas:&lt;/strong&gt;&lt;br&gt;all of South / Central / North Florida&lt;br&gt;especially in hurricane affected areas&lt;/p&gt;</description>
+      <description>Get in touch with Mold Inspection 24/7 for expert advice, mold assessments, and support. Serving all of Florida, especially hurricane-affected areas.</description>
     </item>
     <item>
-      <title>faulty spray foam installion</title>
+      <title>Faulty Spray Foam Insulation</title>
       <link>http://localhost:1313/faulty-spray-foam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/faulty-spray-foam/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34; /&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;
-  &lt;title&gt;Faulty Spray Foam Insulation - IAQ Services&lt;/title&gt;
-  &lt;link href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;/head&gt;
-&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
-
-  
-  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-center px-6&#34;&gt;
-    &lt;h1 class=&#34;text-4xl font-bold&#34;&gt;Faulty Spray Foam Insulation&lt;/h1&gt;
-  &lt;/header&gt;
-
-  
-  &lt;main class=&#34;max-w-4xl mx-auto px-6 py-10 leading-relaxed space-y-8&#34;&gt;
-
-    &lt;section class=&#34;space-y-6&#34;&gt;
-      &lt;p&gt;
-        Spray foam insulation is praised for its energy efficiency and air-sealing benefits. But when installed incorrectly, it can become a hidden source of indoor air quality (IAQ) and moisture issues — especially in Florida’s humid climate.
-      &lt;/p&gt;
-
-      &lt;h2 class=&#34;text-2xl font-semibold&#34;&gt;Signs of faulty spray foam may include:&lt;/h2&gt;
-      &lt;ul class=&#34;list-disc pl-6 space-y-2&#34;&gt;
-        &lt;li&gt;Persistent chemical odors or musty smells&lt;/li&gt;
-        &lt;li&gt;Peeling paint, rusting metal, or condensation in attics or wall cavities&lt;/li&gt;
-        &lt;li&gt;Mold growth in areas where moisture should be controlled&lt;/li&gt;
-        &lt;li&gt;Hot rooms or unexpected utility spikes (due to blocked ventilation)&lt;/li&gt;
-      &lt;/ul&gt;
-
-      &lt;p&gt;
-        These issues often stem from poor installation practices — such as overapplication, improper mixing, or failure to maintain airflow in critical areas like attics or rooflines.
-      &lt;/p&gt;</description>
+      <description>Discover signs of faulty spray foam insulation affecting indoor air quality and moisture in Florida homes. Get expert diagnostic inspections from Mold Inspection 24/7.</description>
     </item>
     <item>
-      <title>Mold Only How it Works</title>
+      <title>How It Works – Mold Only</title>
       <link>http://localhost:1313/mold-only-how-it-works/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/mold-only-how-it-works/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34; /&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; /&gt;
-  &lt;title&gt;How It Works – Mold Only&lt;/title&gt;
-&lt;/head&gt;
-&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
-
-  
-  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-center px-6&#34;&gt;
-    &lt;h1 class=&#34;text-4xl font-bold&#34;&gt;How It Works &amp; What to Expect – Mold Only&lt;/h1&gt;
-  &lt;/header&gt;
-
-  
-  &lt;main class=&#34;max-w-4xl mx-auto px-6 py-10 leading-relaxed space-y-10&#34;&gt;
-
-    &lt;section class=&#34;space-y-6&#34;&gt;
-      &lt;p&gt;
-        We provide &lt;strong&gt;three levels of Assessment&lt;/strong&gt;. Each investigation is conducted by a &lt;strong&gt;Certified Industrial Hygienist (CIH)&lt;/strong&gt;, &lt;strong&gt;Licensed Mold Assessor&lt;/strong&gt;, AND a &lt;strong&gt;Risk Manager&lt;/strong&gt;!
-      &lt;/p&gt;
-
-      &lt;p&gt;
-        Why is this important? The highly technical CIH training ensures environmental health competency. Florida licensure ensures things are done legally (critical when dealing with insurance). The risk manager puts it all into a real-world context—so you understand practical options and avoid upsells or blind spots.
-      &lt;/p&gt;</description>
+      <description>Learn about our three levels of mold assessment conducted by Certified Industrial Hygienists, Licensed Mold Assessors, and Risk Managers. Understand the process and what to expect.</description>
+    </item>
+    <item>
+      <title>How to Select a Mold / IAQ Assessor</title>
+      <link>http://localhost:1313/choosing-a-pro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/choosing-a-pro/</guid>
+      <description>Learn how to choose a qualified mold and indoor air quality assessor. Verify licensing, certifications, and registration to ensure expert, trustworthy service.</description>
     </item>
     <item>
       <title>Mold Testing</title>
@@ -352,102 +71,32 @@
       <description>Certified Mold Testing &amp;amp; Evaluation Services by MoldInspection247. Independent, evidence-based mold testing aligned with Florida regulations and national best practices.</description>
     </item>
     <item>
+      <title>More Than Mold? Advanced Testing for Health-Sensitive Homes</title>
+      <link>http://localhost:1313/advanced-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/advanced-testing/</guid>
+      <description>Discover advanced home environmental testing beyond visible mold. Our Certified Industrial Hygienist offers ERMI, VOC screening, bacterial sampling, and more to protect your indoor air quality.</description>
+    </item>
+    <item>
       <title>Preventing Mold</title>
       <link>http://localhost:1313/preventing-mold/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/preventing-mold/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34; /&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;
-  &lt;title&gt;Preventing Mold | MoldInspection247&lt;/title&gt;
-  &lt;link href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;/head&gt;
-&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
-
-  
-  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-center px-6&#34;&gt;
-    &lt;h1 class=&#34;text-4xl font-bold&#34;&gt;Preventing Mold&lt;/h1&gt;
-  &lt;/header&gt;
-
-  
-  &lt;main class=&#34;max-w-4xl mx-auto px-6 py-10 leading-relaxed space-y-8&#34;&gt;
-
-    &lt;section class=&#34;space-y-6&#34;&gt;
-      &lt;p&gt;
-        In most cases preventing mold prevention (and even small clean up) can easily be managed by good maintenance personnel, a good homeowner, a responsible tenant or a similar diligent individual.
-      &lt;/p&gt;
-
-      &lt;p&gt;
-        Often people find mold in bathrooms caused by basic and easy-to-control elevated humidity level. Occupants of a premise where mold has occurred in the bathroom need to make routinely conscious decisions to make sure that the bathroom is well ventilated especially immediately after taking showers and especially hot steamy showers. For individuals that are not fortunate enough to have a window in their bathroom, they need to make sure that they use their ventilation fan, and landlords or property owners need to play their role and make sure that a structure has adequate ventilation within especially the bathrooms.
-      &lt;/p&gt;</description>
+      <description>Practical advice on preventing mold growth through proper maintenance, ventilation, and timely cleanup. Certified inspection services to guide your mold prevention efforts.</description>
     </item>
     <item>
       <title>Removing Mold</title>
       <link>http://localhost:1313/removing-mold/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/removing-mold/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34; /&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34; /&gt;
-  &lt;title&gt;Removing Mold | MoldInspection247&lt;/title&gt;
-  &lt;link href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;/head&gt;
-&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
-
-  
-  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-center px-6&#34;&gt;
-    &lt;h1 class=&#34;text-4xl font-bold&#34;&gt;Removing Mold&lt;/h1&gt;
-  &lt;/header&gt;
-
-  
-  &lt;main class=&#34;max-w-4xl mx-auto px-6 py-10 leading-relaxed space-y-8&#34;&gt;
-
-    &lt;section class=&#34;space-y-6&#34;&gt;
-      &lt;p&gt;
-        In some cases, removing mold is very simple. In other cases, it can be quite challenging and even dangerous. We help you determine what category your situation falls under and what level of risk may apply in your case.
-      &lt;/p&gt;
-
-      &lt;p&gt;
-        Common mold situations like shower mold, small surface spotting on walls, or mild odor in closets often don’t require laboratory testing or professional remediation — but larger visible growth or mold resulting from a plumbing leak, storm event, or hidden water intrusion may.
-      &lt;/p&gt;</description>
+      <description>Guidance on when and how to remove mold safely, including professional inspection recommendations and risk assessment based on your situation.</description>
     </item>
     <item>
       <title>Residential / Commercial Indoor Air Quality Test</title>
       <link>http://localhost:1313/residential-commercial-indoor-air-quality-test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/residential-commercial-indoor-air-quality-test/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34; /&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; /&gt;
-&lt;/head&gt;
-&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
-
-  
-  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-left justify-left&#34;&gt;
-    &lt;h1 class=&#34;text-4xl font-bold text-left px-4&#34;&gt;Residental / Commercial Indoor Air Quality Test&lt;/h1&gt;
-  &lt;/header&gt;
-
-  
-  &lt;main class=&#34;max-w-4xl mx-auto px-6 py-10 leading-relaxed&#34;&gt;
-    &lt;section class=&#34;space-y-6&#34;&gt;
-      &lt;p&gt;&lt;strong&gt;What is more important than breathing? What’s in the air you breathe?&lt;/strong&gt; Let us test and see!&lt;/p&gt;
-
-      &lt;p&gt;
-        Poor indoor air quality (IAQ) affects the elderly, children, people with health conditions like asthma, heart disease,
-        and many others, and those just plain sensitive!
-      &lt;/p&gt;
-
-      &lt;p&gt;
-        EPA states that indoor air quality is &lt;strong&gt;5–20 times more polluted than outdoors&lt;/strong&gt;. Yet we spend most of our time indoors—and we can control indoor air quality.
-        So let’s get started now! &lt;strong&gt;Call us! 954-782-0472 / 941-228-5525&lt;/strong&gt;
-      &lt;/p&gt;</description>
+      <description>Comprehensive indoor air quality testing for residential and commercial properties. Protect your health with certified assessments, symptom identification, and expert guidance.</description>
     </item>
     <item>
       <title>Thank You</title>
@@ -504,94 +153,11 @@
   &lt;/style&gt;</description>
     </item>
     <item>
-      <title>Video Fatal Fungus</title>
-      <link>http://localhost:1313/videofatal-fungus-fungus-is-mold/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/videofatal-fungus-fungus-is-mold/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&#34;en&#34;&gt;
-&lt;head&gt;
-  &lt;meta charset=&#34;UTF-8&#34; /&gt;
-  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt;
-  &lt;title&gt;Certified Mold Inspection Video&lt;/title&gt;
-  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css&#34; /&gt;
-  &lt;style&gt;
-    .bg-blue-600 {
-      background-color: #4b3da0;
-    }
-    .text-4xl {
-      color: #fff;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body class=&#34;font-sans text-gray-800 bg-white&#34;&gt;
-
-  
-  &lt;header class=&#34;bg-blue-600 text-white h-[30vh] flex items-center justify-center px-6 text-center&#34;&gt;
-    &lt;h1 class=&#34;text-4xl font-bold&#34;&gt;Video Fatal Fungus&lt;/h1&gt;
-  &lt;/header&gt;
-
-  
-  &lt;main class=&#34;max-w-4xl mx-auto px-6 py-10&#34;&gt;
-    &lt;div class=&#34;aspect-w-16 aspect-h-9&#34;&gt;
-      &lt;iframe 
-        src=&#34;https://www.youtube.com/embed/sRLvpODv_oc&#34; 
-        title=&#34;Certified Mold Inspection Video&#34; 
-        allowfullscreen 
-        class=&#34;w-full h-[450px] border-none&#34;&gt;
-      &lt;/iframe&gt;
-    &lt;/div&gt;
-  &lt;/main&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-
-
-&lt;style&gt;
-  .bg-blue-600 {
-    background-color: #4b3da0;
-  }
-  .text-4xl {
-    color: #fff;
-  }
-  .post-header {
-    display: none;
-  }
-  .post-content iframe{
-    height: 60vh;
-  }
-  body {
-      font-family: &#39;Poppins&#39;, sans-serif;
-    }
-&lt;/style&gt;</description>
-    </item>
-    <item>
-      <title>Why Choose Us</title>
+      <title>Why Choose Mold Inspection 24/7</title>
       <link>http://localhost:1313/why-choose-us/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/why-choose-us/</guid>
-      <description>&lt;section class=&#34;why-choose-us-page&#34;&gt;
-  &lt;div class=&#34;container&#34;&gt;
-
-    &lt;h1&gt;Why Choose Mold Inspection 24/7&lt;/h1&gt;
-    &lt;p class=&#34;intro&#34;&gt;We do more than “check for mold.” We use applied science, professional credentials, and decades of experience to investigate root causes and document risk clearly.&lt;/p&gt;
-
-    &lt;div class=&#34;grid&#34;&gt;
-      &lt;div class=&#34;grid-item&#34;&gt;
-        &lt;h2&gt;Why People Choose Us&lt;/h2&gt;
-        &lt;ul class=&#34;why-list&#34;&gt;
-          &lt;li&gt;&lt;strong&gt;Certified Industrial Hygienist (CIH)&lt;/strong&gt; — board-certified expert in exposure science&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;Not tied to remediation&lt;/strong&gt; — we don’t sell cleanups, just truth&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;Advanced diagnostics&lt;/strong&gt; — moisture mapping, building science, VOC screening&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;Clear reports&lt;/strong&gt; — designed for legal defensibility&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;Fast turnaround&lt;/strong&gt; — 24/7 availability for urgent cases&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;Florida licensed mold assessor&lt;/strong&gt; — license #MRSA2531&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-
-      &lt;div class=&#34;grid-item&#34;&gt;
-        &lt;h2&gt;What Makes a “Real” Expert?&lt;/h2&gt;
-        &lt;p&gt;Anyone can buy a mold test kit. Not everyone is trained in exposure pathways, airflow mechanics, or regulatory thresholds.&lt;/p&gt;</description>
+      <description>Discover why Mold Inspection 24/7 is trusted for expert mold testing and inspections. Certified industrial hygienists, advanced diagnostics, fast turnaround, and clear reports.</description>
     </item>
   </channel>
 </rss>
