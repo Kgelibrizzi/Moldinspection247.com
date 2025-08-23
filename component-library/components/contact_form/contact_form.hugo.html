@@ -1,0 +1,52 @@
+<section class="contact-form-wrap section-sm">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7 col-sm-12">
+				<div class="contact-content pl-lg-5 mt-5 mt-lg-0">
+					<h2 class="mb-5">{{ .heading }}</h2>
+					<ul class="address-block list-unstyled mb-5">
+						{{ if .address }}
+						<li>
+							<i class="ti-direction mr-3"></i>{{ .address }}
+						</li>
+						{{ end }}
+						{{ if .email }}
+						<li>
+							<i class="ti-email mr-3"></i>Email: 
+							<a href="mailto:{{ .email }}">{{ .email }}</a>
+						</li>
+						{{ end }}
+						{{ if .phone }}
+						<li>
+							<i class="ti-mobile mr-3"></i>Call: 
+							<a href="tel:{{ .phone }}">{{ .phone }}</a>
+						</li>
+						{{ end }}
+						{{ if .phone_2 }}
+						<li>
+							<i class="ti-mobile mr-3"></i>Call: 
+							<a href="tel:{{ .phone_2 }}">{{ .phone_2 }}</a>
+						</li>
+						{{ end }}
+					</ul>
+					<span class="text-muted">{{ .preheading }}</span>
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-12 col-sm-12">
+				<form id="contact-form" class="contact__form" method="POST" action="/" data-netlify="true" name="contact">
+					<h3 class="text-md mb-4">{{ .form_heading }}</h3>
+					<div class="form-group">
+						<input name="name" type="text" class="form-control rounded" placeholder="Your Name" required>
+					</div>
+					<div class="form-group">
+						<input name="email" type="email" class="form-control rounded" placeholder="Email Address" required>
+					</div>
+					<div class="form-group-2 mb-4">
+						<textarea name="message" class="form-control rounded" rows="4" placeholder="Your Message" required></textarea>
+					</div>
+					<button class="btn btn-main btn-round-full" name="submit" type="submit">Send Message</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

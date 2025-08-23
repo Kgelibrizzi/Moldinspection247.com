@@ -1,0 +1,17 @@
+<section class="cta-2" >
+	<div class="container">
+		<div class="cta-block p-5 rounded"  style="background-image: url('{{ .background_image }}');">
+			<div class="row justify-content-center align-items-center ">
+				<div class="col-lg-7 text-center text-lg-left">
+					<span class="text-color">{{ .preheading }}</span>
+					<h2 class="mt-2 text-white">{{ .heading }}</h2>
+				</div>
+				{{ with .button }}
+					<div class="col-lg-4 text-center text-lg-right mt-4 mt-lg-0">
+						<a href="{{ .url }}" class="btn btn-main btn-round-full">{{ .text }}</a>
+					</div>
+				{{ end }}
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <div data-pagefind-body>
+    {{ partial "bookshop_bindings" `.Params` }}
+    {{ partial "bookshop" (slice "hero" .Params) }}
+    {{ partial "bookshop_bindings" `.Params.content_blocks` }}
+    {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}
+  <div>
+  {{ if .Content }}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="single-blog-item bg-white">
+          <div class="blog-item-content bg-white p-5">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+{{ end }}

@@ -1,0 +1,20 @@
+{{ $heroImage := default $.Site.Data.company.default_hero_bg_image .Params.hero.background_image }}
+<section class="page-title bg-1" style="background-image:url('{{ $heroImage }}');">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block text-center">
+					<span class="text-white" style="font-size: 20px;">
+						{{ .Params.hero.preheading | default .Params.seo_options.description }}
+					</span>
+					<h1 class="text-capitalize mb-4 text-lg">{{ .Params.hero.title | default .Params.title }}</h1>
+					<ul class="list-inline">
+						<li class="list-inline-item"><a href="/" class="text-white">Home</a></li>
+						<li class="list-inline-item"><span class="text-white">/</span></li>
+						<li class="list-inline-item text-white-50">{{ .Params.title }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

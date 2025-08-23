@@ -1,0 +1,32 @@
+.slider{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 10% top 20%;
+  padding:180px 0;
+  position: relative;
+  background-attachment: fixed;
+  @include tablet {
+    padding:70px 0;
+  }
+  @extend .overly;
+  .block{
+    h1{
+      font-size: 3rem;
+      line-height: 1.3;
+      font-weight: 600;
+      color: $light;
+
+    }
+    p{
+      margin-bottom:30px;
+      color:#b9b9b9;
+      font-size: 2.0rem;
+      line-height: 1.25;
+      font-weight: 300;
+    }
+
+    span{
+      letter-spacing: 1px;
+    }
+  }
+}

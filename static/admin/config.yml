@@ -1,0 +1,259 @@
+backend:
+  name: github
+  repo: Kgelibrizzi/geriskmanagement---hugo # Path to your GitHub repository
+  branch: main # Branch to update (optional; defaults to master)
+  base_url: https://geriskmanagement.com/
+  auth_endpoint: /.netlify/functions/auth
+media_folder: "static/images/" # Folder where user uploaded files should go
+public_folder: "/images/"
+
+editor:
+  preview: false
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "content/_index.md"
+        fields:
+          - { name: title, label: Meta Title(SEO), widget: string, required: true }
+          - { name: seo, label: SEO, widget: object, fields: [
+              { name: page_description, label: Meta Description(SEO), widget: string, required: true },
+              { name: canonical_url, label: Canonical URL, widget: string, required: false },
+              { name: featured_image, label: Featured Image, widget: string, required: false },
+              { name: author_twitter_handle, label: Author Twitter Handle, widget: string, required: false },
+            ]}
+          - { name: big_hero, label: Big Hero Section, widget: object, fields: [
+              { name: heading, label: Heading (Big Text), widget: string },
+              { name: preheading, label: Text, widget: string },
+              { name: background_image, label: Background Image, widget: image, required: false },
+              { name: link, label: Primary Link, widget: object, fields: [
+                { name: text, label: Link Text, widget: string },
+                { name: url, label: Link URL, widget: string }
+              ]},
+              { name: link_2, label: Secondary Link, widget: object, fields: [
+                { name: text ,label: Link Text, widget: string },                 
+                { name: url ,label: Link URL, widget: string }
+              ]}
+            ]}
+          - { name: services, label: Services Section, widget: object, fields: [
+              { name: preheading, label: Preheading(Small Text), widget: string },
+              { name: heading, label: Heading (Big Text), widget: string },
+              { name: sections, label: Services List, widget: list, fields: [
+                { name: title, label: Service Title, widget: string },
+                { name: icon_path, label: Service Icon, widget: image },
+                { name: content, label: Service Description, widget: string },
+                { name: url, label: Service Page Link, widget: string }
+              ]}
+            ]}
+          - { name: certification, label: Certifications Section, widget: object, fields: [
+              { name: preheading, label: Preheading(Small Text), widget: string },
+              { name: heading, label: Heading (Big Text), widget: string },
+              { name: sections, label: Certifications List, widget: list, fields: [
+                { name: image_path, label: certification/ partner badge, widget: image },
+                { name: image_alt, label: Image Alternative Text, widget: string },
+              ]}
+            ]}
+          - { name: counter, label: Industries Section, widget: object, fields: [
+              { name: heading, label: Heading (Big Text), widget: string },
+              { name: numbers, label: Industries List, widget: list, fields: [
+                { name: icon_path, label: Icon, widget: image },
+                { name: number, label: Number, widget: number },
+                { name: suffix, label: Suffix, widget: string },
+                { name: text, label: Industry, widget: string },
+              ]}
+            ]}
+          - { name: cta, label: CTA Section, widget: object, fields: [
+              { name: preheading, label: Preheading(Small Text), widget: string },
+              { name: heading, label: Heading (Big Text), widget: string },
+              { name: content, label: content, widget: string },
+              { name: phone, label: Phone, widget: string },
+            ]}
+      - name: "about"
+        label: "About Page"
+        file: "content/about.md"
+        fields:
+          - { name: title, label: Meta Title(SEO), widget: string, required: true }
+          - { name: url, label: Page URL, widget: string, required: true }
+          - { name: layout, label: Layout, widget: select, options: ["about"], required: true }
+          - { name: seo, label: SEO, widget: object, fields: [
+              { name: page_description, label: Meta Description(SEO), widget: string, required: true },
+              { name: canonical_url, label: Canonical URL, widget: string, required: false },
+              { name: featured_image, label: Featured Image, widget: string, required: false },
+              { name: author_twitter_handle, label: Author Twitter Handle, widget: string, required: false },
+            ]}
+          - { name: hero, label: Hero Section, widget: object, fields: [
+              { name: title, label: Heading H1 (Big Text), widget: string },
+              { name: preheading, label: Text, widget: string },
+              { name: background_image, label: Background Image, widget: image, required: false },
+            ]}
+          - { name: start, label: About Section, widget: object, fields: [
+              { name: preheading, label: Preheading(Small Text), widget: string },  
+              { name: heading, label: Heading (Big Text), widget: string, required: true },  
+              { name: content, label: content, widget: text },
+              { name: image_path, label: About Photo, widget: image, required: false },
+              { name: image_alt, label: Image alt text, widget: string },
+              { name: button, label: About Button, widget: object, fields: [
+                { name: text, label: Link Text, widget: string },                   
+                { name: url, label: Link URL, widget: string } 
+              ]}
+            ]}
+
+      - name: "contact"
+        label: "Contact Us Page"
+        file: "content/contact.md"
+        fields:
+          - { name: title, label: Meta Title(SEO), widget: string, required: true }
+          - { name: layout, label: Layout, widget: select, options: ["contact"], required: true }
+          - { name: url, label: Page URL, widget: string, required: true }
+          - { name: seo, label: SEO, widget: object, fields: [
+              { name: page_description, label: Meta Description(SEO), widget: string, required: true },
+              { name: canonical_url, label: Canonical URL, widget: string, required: false },
+              { name: featured_image, label: Featured Image, widget: string, required: false },
+              { name: author_twitter_handle, label: Author Twitter Handle, widget: string, required: false },
+            ]}
+          - { name: hero, label: Hero Section, widget: object, fields: [
+              { name: title, label: Heading H1 (Big Text), widget: string, required: true },
+              { name: preheading, label: Text, widget: string },
+              { name: background_image, label: Background Image, widget: image, required: false },
+            ]}
+          - { name: contact_form, label: Contact Section, widget: object, fields: [
+              { name: preheading, label: Preheading(Small Text), widget: string },
+              { name: heading, label: Heading (Big Text), widget: string },
+              { name: form_heading, label: Form Heading, widget: string },
+              { name: phone, label: phone 1, widget: string },
+              { name: phone_2, label: Phone 2, widget: string },
+              { name: email, label: Email Address, widget: string },
+              { name: contact_form_enabled, label: Enable Contact Form, widget: boolean, default: false,
+               hint: "Toggle to enable/ disable it. Once enabled here, remember to also enable forms on Netlify so that you can start receiving contact form submissions. Contact form responses can only be viewed on the Netlify.com dashboard."
+              }
+            ]}
+      - name: "payment"
+        label: "Payment Page"
+        file: "content/payment.md"
+        fields:
+          - { name: title, label: Meta Title(SEO), widget: string, required: true }
+          - { name: seo, label: SEO, widget: object, fields: [
+              { name: page_description, label: Meta Description(SEO), widget: string, required: true },
+              { name: canonical_url, label: Canonical URL, widget: string, required: false },
+              { name: featured_image, label: Featured Image, widget: string, required: false },
+              { name: author_twitter_handle, label: Author Twitter Handle, widget: string, required: false },
+              { name: no_index, label: Prevent Search Engine Indexing, widget: boolean, required: false },
+            ]}
+          - { name: hero, label: Hero Section, widget: object, fields: [
+              { name: title, label: Heading H1 (Big Text), widget: string, required: true },
+            ]}
+          - { name: body, label: Page Content, widget: markdown, required: true }
+          
+      - name: "404"
+        label: "404 Page"
+        file: "content/404.md"
+        fields:
+          - { name: title, label: Meta Title(SEO), widget: string, required: true }
+          - { name: url, label: Page URL, widget: string, required: true }
+          - { name: layout, label: Layout , widget: select, options: ["services"], required: true }
+          - { name: hero, label: Hero Section, widget: object, fields: [
+              { name: title, label: Heading H1 (Big Text), widget: string, required: true },
+              { name: preheading, label: Text, widget: string },
+              { name: background_image, label: Background Image, widget: image, required: false },
+            ]}
+          - { name: body, label: Page Content, widget: markdown, required: true }
+
+  - name: "services"
+    label: "Services"
+    label_singular: "Service"
+    folder: "content/services"
+    path: "{{slug}}/index"
+    create: true
+    fields:
+      - { name: title, label: Meta Title(SEO), widget: string, required: true }
+      - { name: url, label: Page URL, widget: string, required: true }
+      - { name: layout, label: Layout , widget: hidden, default: "services" }
+      - { name: seo, label: SEO, widget: object, fields: [
+          { name: page_description, label: Meta Description(SEO), widget: string, required: true },
+          { name: canonical_url, label: Canonical URL, widget: string, required: false },
+          { name: featured_image, label: Featured Image, widget: string, required: false },
+          { name: author_twitter_handle, label: Author Twitter Handle, widget: string, required: false },
+        ]}
+      - { name: hero, label: Hero Section, widget: object, fields: [
+              { name: title, label: Heading H1 (Big Text), widget: string, required: true },
+              { name: preheading, label: Preheading(Small Text), widget: string, required: false },
+              { name: background_image, label: Background Image, widget: image, required: false },
+            ]}
+      - { name: body, label: Page Content, widget: markdown, required: true }
+      - { name: cta_mini, label: CTA, widget: object, fields: [
+          { name: preheading, label: Preheading(Small Text), widget: string },
+          { name: heading, label: Heading(Big Text), widget: string, required: true },
+          { name: button, label: Button, widget: object, fields: [
+            { name: text, label: Link Text, widget: string },                    
+            { name: url, label: Link URL, widget: string }
+          ]}
+        ]}
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "company"
+        label: "Company Details"
+        file: "data/company.yml"
+        fields:
+          - { name: BaseURL, label: Full Website Address, widget: string, hint: "Use the full website address. Example: https://geriskmanagement.com" }
+          - { name: SEO_options, label: SEO Options, widget: object, fields: [
+              { name: site_title, label: Site Title, widget: string },
+              { name: description, label: Meta Description, widget: string }
+            ]}
+          - { name: open_graph_type, label: Open Graph Type , widget: select, options: ["website"]}
+          - { name: twitter_handle, label: Twitter Handle, widget: string, required: false }
+          - { name: social_media_share_image, label: Website Icon(.png), widget: image, required: false }
+          - { name: google_analytics_key, label: Google Analytics Key, widget: string, required: false }
+          - { name: favicon, label: Favicon, widget: image }
+          - { name: logo_dark, label: Logo for Dark Background, widget: image }
+          - { name: logo_light, label: Logo for Light Background, widget: image }
+          - { name: facebook, label: Facebook , widget: string, required: false }
+          - { name: twitter, label: Twitter, widget: string, required: false }
+          - { name: github, label: GitHub, widget: string, required: false }
+          - { name: pinterest, label: Pinterest, widget: string, required: false }
+          - { name: support, label: Contact Details, widget: object, fields: [      
+              { name: phone, label: phone 1, widget:  string },
+              { name: phone_2, label: phone 2, widget:  string, required: false },
+              { name: email, label: Email Address, widget: string }
+            ]}
+          - { name: copyright_html, label: Copyright Footer Text, widget: string }
+          - { name: default_hero_bg_image, label: Default Hero Background Image, widget: image }
+          - { name: about_footer_title, label: About Us Footer Title, widget: string }
+          - { name: about_footer_content, label: About Us Footer Content, widget: text }
+      - name: "nav"
+        label: "Navbar Links"
+        file: "data/nav.yml"
+        fields:
+          - { name: menu_items, label: Nav Links List , widget: list, label_singular: Nav Link, fields: [
+              { name: name, label: Link Text, widget: string },
+              { name: url, label: Link URL, widget: string },
+              { name: "_id", label: ID, widget: select, options: ["link"]  },
+              {  name: open_in_new_tab, label: Link Opens in a New Tab, widget: boolean, default: false }
+            ]}
+      - name: "footer"
+        label: "Footer Details"
+        file: "data/footer.yml"
+        fields:
+          - { name: column, label: Column , widget: list,  fields: [
+              { name: heading, label: Heading (Big Text), widget: string },
+              { name: items, label: Links List, widget: list, fields: [ 
+                { name: name, label: Link text, widget: string },
+                { name: url, label: Link URL, widget: string },
+                { name: open_in_new_tab, label: Link Opens in a New Tab, widget: boolean, default: false }
+              ]}
+            ]}
+      - name: "cta_mini"
+        label: "Mini CTA"
+        file: "data/cta_mini.yml"
+        fields:
+          - { name: enabled, label: Enabled on Mini CTA on All Services Pages, widget: boolean }
+          - { name: preheading, label: Preheading(Small Text), widget: string }
+          - { name: heading, label: Heading (Big Text), widget: string }
+          - { name: background_image, label: Background Image, widget: image }
+          - { name: button, label: Button Link, widget: object, fields: [
+              { name: url, label: Link URL, widget: string },
+              { name: text, label: Link Text, widget: string }
+            ]}

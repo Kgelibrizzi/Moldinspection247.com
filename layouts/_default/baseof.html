@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.LanguageCode }}">
+<head>
+
+
+ {{ partial "head.html" . }}
+
+
+
+</head>
+
+<body>
+
+<!-- Header Start -->
+<header class="navigation">
+  <div class="header-top ">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-2 col-md-4">
+          <div class="header-top-socials text-center text-lg-left text-md-left">
+            {{ if .Site.Data.company.facebook }}
+              <a href="{{ .Site.Data.company.facebook }}" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+            {{ end }}
+            {{ if .Site.Data.company.twitter }}
+              <a href="{{ .Site.Data.company.twitter }}" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+            {{ end }}
+            {{ if .Site.Data.company.pinterest }}
+              <a href="{{ .Site.Data.company.pinterest }}"><i class="fab fa-pinterest-p mr-2 "></i></a></li>
+            {{ end }}
+            {{ if .Site.Data.company.github }}
+              <a href="{{ .Site.Data.company.github }}" aria-label="github"><i class="fab fa-github"></i></a>
+            {{ end }}
+          </div>
+        </div>
+        <div class="col-lg-10 col-md-8 text-center text-lg-right text-md-right">
+          <div class="header-top-info mb-2 mb-md-0">
+            {{ if .Site.Data.company.support.phone }}
+              <a href="tel:{{ .Site.Data.company.support.phone }}">Call Us : <span>{{ .Site.Data.company.support.phone }}</span></a>
+            {{ end }}
+            {{ if .Site.Data.company.support.email }}
+              <a href="mailto:{{ .Site.Data.company.support.email }}"><i class="fas fa-envelope mr-2"></i><span>{{ .Site.Data.company.support.email }}</span></a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{ partial "nav.html" . }}
+</header>
+<!-- Header Close -->
+{{- block "main" . }}{{- end }}
+
+{{ partial "footer.html" . }}
+
+<!--Scroll to top-->
+<div id="scroll-to-top" class="scroll-to-top">
+  <span class="icon fa fa-angle-up"></span>
+</div>
+
+
+<!-- 
+Essential Scripts
+=====================================-->
+<!-- Main jQuery -->
+<script src="/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4.3.1 -->
+<script src="/plugins/bootstrap/bootstrap.min.js"></script>
+<!--  Magnific Popup-->
+<script src="/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<!-- Slick Slider -->
+<script src="/plugins/slick/slick.min.js"></script>
+<!-- Counterup -->
+<script src="/plugins/counterup/jquery.waypoints.min.js"></script>
+<script src="/plugins/counterup/jquery.counterup.min.js"></script>
+
+<!-- Google Map -->
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
+<script src="/plugins/google-map/map.js" defer></script> -->
+
+<script src="/js/script.js"></script>
+
+</body>
+
+</html>

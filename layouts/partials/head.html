@@ -1,0 +1,97 @@
+ <!-- ** Basic Page Needs ** -->
+ <meta charset="utf-8">
+
+ <!-- ** Mobile Specific Metas ** -->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+ <meta name="generator" content="Hugo">
+
+<!-- Page description for SEO -->
+{{ if .Params.seo.page_description }}
+    <meta name="description" content="{{ .Params.seo.page_description }}">
+    <meta property="og:description" content="{{ .Params.seo.page_description }}" />
+{{ else }}
+    <meta name="description" content="{{ .Site.Data.SEO_options.description }}">  
+    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Data.SEO_options.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+{{ end }}
+
+<!-- Canonical URL for SEO -->
+{{ if .Params.seo.canonical_url }}
+    <link rel="canonical" href="{{ .Params.seo.canonical_url }}" />
+{{ else }}
+    <link rel="canonical" href="{{ site.Data.company.BaseURL }}{{ .RelPermalink}}" />
+{{ end }}
+
+<!-- Featured Image -->
+{{ if .Params.seo.featured_image }}
+<meta name="og:image" content="{{ .Params.seo.featured_image }}" />
+<meta name="twitter:image" content="{{ .Params.seo.featured_image }}" />
+{{ else }}
+
+<meta property="og:image" content="{{ .Site.Data.company.social_media_share_image | absURL }}">
+<meta name="twitter:image" content="{{ .Site.Data.company.social_media_share_image | absURL }}">
+{{ end }}
+
+<!-- Twiter Handle -->
+{{ with .Params.seo.author_twitter_handle }}  
+    <meta name="twitter:creator" content="{{ . }}" />
+    {{ else }}
+    <meta name="twitter:creator" content="{{ .Site.Data.company.twitter_handle }}" />
+    {{ end }}
+
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Data.SEO_options.site_title }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Data.meta.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+
+  <!-- Facebook OpenGraph -->
+  {{ with ( or .Params.seo.open_graph_type .Site.Data.company.open_graph_type ) }}
+    <meta property="og:type" content="{{ . }}" />
+    {{ else }}
+    <meta property="og:type" content="website" />
+    {{ end }}
+
+
+  <meta property="og:title" content="{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Data.SEO_options.site_title }}">
+
+ <title>{{ print .Page.Title " - " (or .Site.Title .Site.Data.SEO_options.site_title )  }}</title>
+
+
+ <!-- bootstrap.min css -->
+ <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css">
+ <!-- Icon Font Css -->
+ <link rel="stylesheet" href="/plugins/fontawesome/css/all.min.css">
+ <link rel="stylesheet" href="/plugins/magnific-popup/magnific-popup.css">
+ <!-- Owl Carousel CSS -->
+ <link rel="stylesheet" href="/plugins/slick/slick.css">
+ <link rel="stylesheet" href="/plugins/slick/slick-theme.css">
+
+ <!-- Main Stylesheet -->
+ {{ $style := resources.Get "/scss/style.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+ <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+ 
+ <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+ {{ if .Params.hero.background_image }}
+  <link rel="preload" fetchpriority="high" as="image" href="{{ .Params.hero.background_image }}" type="image/jpg">
+ {{ end }}
+ 
+ <!--Favicon-->
+ <link rel="icon" href="{{ .Site.Data.company.favicon }}" type="image/x-icon">
+
+ <!-- Google Analytics -->
+{{ if .Site.Data.company.google_analytics_key }}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Data.company.google_analytics_key }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ .Site.Data.company.google_analytics_key }}');
+</script>
+{{ end }}
+
+{{ with .Params.seo.no_index }}
+<meta name="robots" content="noindex" />
+{{ end }}

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Install and run generate
+npm i
+npx "@bookshop/generate"
+
+# Install pagefind
+npx -y pagefind@latest --source public
+echo "📚 ✅ : Postbuild script finished"

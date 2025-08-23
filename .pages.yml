@@ -1,0 +1,536 @@
+media:
+  input: /static/images/
+  output: /images/
+
+settings:
+  hide: true
+  content:
+    merge: true
+
+components:
+  seo:
+    label: SEO
+    type: object
+    fields:
+      - name: page_description
+        label: Meta Description
+        type: string
+        required: true
+      - name: canonical_url
+        label: Canonical URL
+        type: string
+      - name: featured_image
+        label: Featured Image
+        type: string
+      - name: author_twitter_handle
+        label: Author Twitter Handle
+        type: string
+      - name: no_index
+        label: Disable Search Engines Indexing
+        type: boolean
+        default: false
+  big_hero: 
+    label: Big Hero
+    type: object
+    fields:
+      - name: preheading
+        label: Preheading
+        type: string
+      - name: heading
+        label: Heading(H1)
+        type: string
+        required: true
+      - name: background_image
+        type: image
+      - name: link
+        label: Primary Link
+        type: object
+        fields:
+          - name: text
+            label: Link Text
+            type: string                    
+          - name: url
+            label: Link URL
+            type: string
+      - name: link_2
+        label: Secondary Link
+        type: object
+        fields:
+          - name: text
+            label: Link Text
+            type: string                    
+          - name: url
+            label: Link URL
+            type: string    
+  services:
+    label: Services
+    type: object
+    fields:
+      - name: preheading
+        label: Preheading
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+        required: true
+      - name: sections
+        label: Services List
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Service Title
+            type: string
+          - name: icon_path
+            label: Service Icon
+            type: image
+          - name: content
+            label: Service Description
+            type: string
+          - name: url
+            label: Service Page Link
+            type: string
+  certification: 
+    label: Certifications
+    type: object
+    fields:
+      - name: preheading
+        label: Preheading
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+        required: true
+      - name: sections
+        label: Services List
+        type: object
+        list: true
+        fields:
+          - name: image_path
+            label: certification/ partner badge
+            type: image
+          - name: image_alt
+            label: Image Alternative Text
+            type: string
+  counter: 
+    label: Industries
+    type: object
+    fields:
+      - name: heading
+        label: Heading
+        type: string
+        required: true
+      - name: numbers
+        label: Stats List
+        type: object
+        list: true
+        fields:
+          - name: icon_path
+            label: Icon
+            type: image
+          - name: number
+            label: Number
+            type: number
+          - name: suffix
+            label: Suffix
+            type: string
+          - name: text
+            label: Industry
+            type: string
+  cta: 
+    label: CTA
+    type: object
+    fields:
+      - name: preheading
+        label: Preheading
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+        required: true
+      - name: content
+        label: content
+        type: string
+      - name: phone
+        label: Phone
+        type: string
+  cta_mini: 
+    label: CTA
+    type: object
+    fields:
+      - name: preheading
+        label: Preheading
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+        required: true
+      - name: button
+        label: Button
+        type: object
+        fields:
+          - name: text
+            label: Link Text
+            type: string                    
+          - name: url
+            label: Link URL
+            type: string
+  about: 
+    label: About
+    type: object
+    fields:
+      - name: preheading
+        label: Preheading
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+        required: true
+      - name: content
+        label: content
+        type: rich-text
+        options:
+          media: false
+      - name: link
+        label: Primary CTA
+        type: object
+        fields:
+          - name: text
+            label: Link Text
+            type: string                    
+          - name: url
+            label: Link URL
+            type: string
+  start: 
+    label: About
+    type: object
+    fields:
+      - name: preheading
+        label: Preheading
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+        required: true
+      - name: content
+        label: content
+        type: rich-text
+      - name: image_path
+        label: About Photo
+        type: image
+      - name: image_alt
+        label: Image alt text
+        type: string
+      - name: button
+        label: About Button
+        type: object
+        fields:
+          - name: text
+            label: Link Text
+            type: string                    
+          - name: url
+            label: Link URL
+            type: string
+  hero: 
+    label: Hero
+    type: object
+    fields:
+      - name: preheading
+        label: Preheading
+        type: string
+      - name: title
+        label: Heading(H1)
+        type: string
+        required: true
+      - name: background_image
+        label: Hero Background Image
+        type: image
+  contact_form:
+    label: Contact
+    type: object
+    fields:
+      - name: preheading
+        label: Preheading
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+      - name: form_heading
+        label: Form Heading
+        type: string
+      - name: phone
+        label: phone 1
+        type: string
+      - name: phone_2
+        label: Phone 2
+        type: string
+      - name: email
+        label: Email Address
+        type: string
+      
+
+content:
+  - name: home
+    label: Home Page
+    path: content/_index.md
+    type: file
+    fields:
+      - name: title
+        label: Meta Title
+        type: string
+        required: true
+      - name: seo
+        label: SEO
+        component: seo
+      - name: big_hero
+        label: Big Hero
+        component: big_hero
+      - name: services
+        label: Services
+        component: services
+      - name: certification
+        label: Certification
+        component: certification
+      - name: counter
+        label: Counter
+        component: counter
+      - name: cta
+        label: CTA
+        component: cta
+      - name: about
+        label: About
+        component: about
+  - name: services
+    label: Services
+    path: content/services
+    type: collection
+    fields:
+      - name: title
+        label: Meta Title
+        type: string
+        required: true
+      - name: seo
+        label: SEO
+        component: seo
+      - name: url
+        label: Page URL
+        type: string
+      - name: layout
+        label: Layout
+        type: string
+        default: services
+      - name: hero
+        label: Hero
+        component: hero
+      - name: body
+        label: Body
+        type: rich-text
+      - name: cta_mini
+        label: Mini CTA
+        component: cta_mini
+  - name: about
+    label: About
+    path: content/about.md
+    type: file
+    fields:
+      - name: title
+        label: Meta Title
+        type: string
+        required: true
+      - name: seo
+        label: SEO
+        component: seo
+      - name: url
+        label: Page URL
+        type: string
+      - name: hero
+        label: Hero
+        component: hero
+      - name: start
+        label: About
+        component: start
+  - name: contact
+    label: Contact
+    path: content/contact.md
+    type: file
+    fields:
+      - name: title
+        label: Meta Title
+        type: string
+        required: true
+      - name: seo
+        label: SEO
+        component: seo
+      - name: url
+        label: Page URL
+        type: string
+      - name: hero
+        label: Hero
+        component: hero
+      - name: contact_form
+        label: Contact
+        component: contact_form
+  - name: company
+    label: Company - Global 
+    path: data/company.yml
+    type: file
+    format: yaml
+    fields: 
+      - name: BaseURL
+        label: Full Website Address
+        type: string
+        default: https://geriskmanagement.com
+      - name: SEO_options
+        label: SEO Options
+        type: object
+        fields: 
+            - name: site_title
+              label: Site Title
+              type: string
+            - name: description
+              label: Meta Description
+              type: string
+      - name: open_graph_type
+        label: Open Graph Type 
+        type: select
+        options:
+          values: [website]
+      - name: twitter_handle
+        label: Twitter Handle
+        type: string
+      - name: social_media_share_image
+        label: Website Icon(.png)
+        type: image
+      - name: google_analytics_key
+        label: Google Analytics Key
+        type: string
+      - name: favicon
+        label: Favicon
+        type: image
+      - name: logo_dark
+        label: Logo for Dark Background
+        type: image
+      - name: logo_light
+        label: Logo for Light Background
+        type: image
+      - name: facebook
+        label: Facebook 
+        type: string
+      - name: twitter
+        label: Twitter
+        type: string
+      - name: github
+        label: GitHub
+        type: string
+      - name: pinterest
+        label: Pinterest
+        type: string
+      - name: support
+        label: Contact Details
+        type: object
+        fields:       
+          - name: phone
+            label: phone 1
+            type:  string
+          - name: phone_2
+            label: phone 2
+            type:  string
+          - name: email
+            label: Email Address
+            type: string
+      - name: copyright_html
+        label: Copyright Footer Text
+        type: string
+      - name: default_hero_bg_image
+        label: Default Hero Background Image
+        type: image
+      - name: about_footer_title
+        label: About Us Footer Title
+        type: string
+      - name: about_footer_content
+        label: About Us Footer Content
+        type: string
+  - name: nav
+    label: Nav Links - Global 
+    path: data/nav.yml
+    type: file
+    format: yaml
+    fields: 
+      - name: menu_items
+        label: Nav Links List 
+        type: object
+        list: true
+        fields: 
+            - name: _id
+              label: ID
+              type: select
+              options:
+                values: [ link ]
+              name: name
+              label: Link Text
+              type: string
+            - name: url
+              label: Link URL
+              type: string
+            - name: open_in_new_tab
+              label: Link Opens in a New Tab
+              type: boolean
+              default: false
+  - name: footer
+    label: Footer Links - Global 
+    path: data/footer.yml
+    type: file
+    format: yaml
+    fields: 
+      - name: column
+        label: Column 
+        type: object
+        list: true
+        fields: 
+            - name: heading
+              label: Heading
+              type: string
+            - name: items
+              label: Links List
+              type: object
+              list: true
+              fields: 
+                - name: name
+                  label: Link text
+                  type: string
+                - name: url
+                  label: Link URL
+                  type: string
+                - name: open_in_new_tab
+                  label: Link Opens in a New Tab
+                  type: boolean
+                  default: false
+  - name: cta_mini
+    label: Mini CTA - Global 
+    path: data/cta_mini.yml
+    type: file
+    format: yaml
+    fields:
+      - name: enabled
+        label: Enabled
+        type: boolean
+      - name: preheading
+        label: Preheading
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+      - name: background_image
+        label: Background Image
+        type: image
+      - name: button
+        label: Button Link
+        type: object
+        fields:
+          - name: url
+            label: Link URL
+            type: string
+          - name: text
+            label: Link Text
+            type: string
+  

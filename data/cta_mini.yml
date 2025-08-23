@@ -1,0 +1,7 @@
+enabled: true
+preheading: "Proven. Credentialed. Field-Tested."
+heading: "Request a Risk Consultation with a CIH & Safety Professional"
+background_image: "/images/bg/home-new-3.jpg"
+button:
+  url: "/contact/"
+  text: "Contact Us"

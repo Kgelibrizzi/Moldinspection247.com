@@ -1,0 +1,28 @@
+{{ with .Params.counter }}
+<section class="section-sm counter pt-0">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-7 text-center">
+				<div class="section-title">
+					<h2 class="mt-3 content-title ">{{ .heading }}</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			{{ range .numbers }}
+				<div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+						<div class="counter-item text-center mb-4 mb-lg-0">
+							{{ if .icon_path }}
+							<div class="mb-3 px-5">
+								<img src="{{ .icon_path }}" alt="{{ .text }}" class="img-fluid">
+							</div>
+							{{ end }}
+							<p class="mb-0 h3"><span class="counter-stat font-weight-bold">{{ .number }}</span> {{ .suffix }}</p>
+							<p class="text-muted">{{ .text }}</p>
+						</div>
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+{{ end }}

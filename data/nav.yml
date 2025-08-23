@@ -1,0 +1,25 @@
+menu_items:
+  - _id: link
+    name: Mold Testing
+    url: /mold-testing/
+    open_in_new_tab: false
+  - _id: link
+    name: Industrial Hygiene
+    url: /industrial-hygiene/
+    open_in_new_tab: false
+  - _id: link
+    name: Osha Compliance
+    url: /osha-compliance/
+    open_in_new_tab: false
+  - _id: link
+    name: AIHA Referral
+    url: /aiha-referral/
+    open_in_new_tab: false
+  - _id: link
+    name: Loss Control Surveys
+    url: /loss-control-surveys/
+    open_in_new_tab: false
+  - _id: link
+    name: Contact
+    url: /contact/
+    open_in_new_tab: false

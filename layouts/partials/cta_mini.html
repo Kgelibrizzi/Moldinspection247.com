@@ -1,0 +1,39 @@
+{{ $globalCTA := site.Data.cta_mini }}
+{{ $pageCTA := .Params.cta_mini }}
+{{ $showCTA := true }}
+{{ $cta := $globalCTA }}
+
+{{ if $pageCTA }}
+  {{ if isset $pageCTA "enabled" }}
+    {{ $showCTA = $pageCTA.enabled }}
+  {{ end }}
+  {{ if $showCTA }}
+    {{ $cta = merge $globalCTA $pageCTA }}
+  {{ end }}
+{{ else }}
+  {{ $showCTA = $globalCTA.enabled }}
+{{ end }}
+
+{{ if $showCTA }}
+<section class="cta-2 bg-gray pb-5">
+	<div class="container">
+		<div class="cta-block p-5 rounded" style="background-image: url('{{ $cta.background_image }}');">
+			<div class="row justify-content-center align-items-center ">
+				<div class="col-lg-7 text-center text-lg-left">
+					{{ with $cta.preheading }}
+						<span class="text-white">{{ . }}</span>
+					{{ end }}
+					{{ with $cta.heading }}
+						<h2 class="mt-2 text-white">{{ . }}</h2>
+					{{ end }}
+				</div>
+				{{ with $cta.button }}
+					<div class="col-lg-4 text-center text-lg-right mt-4 mt-lg-0">
+						<a href="{{ .url }}" class="btn btn-main btn-round-full">{{ .text }}</a>
+					</div>
+				{{ end }}
+			</div>
+		</div>
+	</div>
+</section>
+{{ end }}
