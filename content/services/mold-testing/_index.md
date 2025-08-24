@@ -15,8 +15,8 @@ hero:
 
 cta_mini:
   enabled: true
-  preheading: "Proven. Credentialed. Field-Tested."
-  heading: "Need Help with OSHA, IAQ, or Risk Issues? Let’s Talk"
+  preheading: ""
+  heading: 
   button:
     url: "/contact/"
     text: "Contact Us"

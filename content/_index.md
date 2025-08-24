@@ -1,15 +1,13 @@
 ---
-title: Certified Industrial Hygienist
+title: South Florida Licensed Mold Testing & Water Damage Investigations
 seo:
-  page_description: CIH-led exposure and compliance services for Florida & beyond
+  page_description: Licensed Florida Mold Assessor & CIH-led evaluations for homes, businesses, and insurance.
   canonical_url: null
   featured_image: null
   author_twitter_handle: null
 big_hero:
-  preheading: Real-world field assessments, high-trust documentation, and
-    expert-level service across Florida and the U.S.
-  heading: Full-Service Industrial Hygiene, OSHA, Environmental & Insurance
-    Compliance Risk Consulting — CIH-Led Since 2009
+  preheading: Licensed Florida Mold Assessor & CIH-led evaluations for homes, businesses, and insurance.
+  heading: South Florida Licensed Mold Testing & Water Damage Investigations
   background_image: /images/risk-photo-for-ge-site-home-page.jpeg
   link:
     text: Request Consultation
@@ -21,50 +19,23 @@ services:
   preheading: Our Services
   heading: Get expert risk & safety consulting services across Florida and beyond.
   sections:
-    - title: Industrial Hygiene
-      icon_path: /images/icon-microscope.svg
-      content: Comprehensive exposure assessments, air monitoring, and site-specific
-        IH documentation by a certified CIH
-      url: /industrial-hygiene/
     - title: Mold Testing
       icon_path: /images/icon-mold.svg
-      content: Accurate, professional mold and IAQ evaluations by a certified CIH
+      content: 
       url: /mold-testing/
-    - title: OSHA Compliance
+    - title: Moisture/IR
+      icon_path: /images/icon-microscope.svg
+      content: 
+      url: /moisture-ir/
+    - title: S500/S520 protocols
       icon_path: /images/icon-clipboard.svg
-      content: Workplace safety program review, written plans, and site audits
-      url: /osha-compliance/
-    - title: Loss Control Surveys
+      content: 
+      url: /protocols/
+    - title: Clearance
       icon_path: /images/icon-factory-insurance-1.svg
-      content: Independent field-level loss control for commercial accounts
-      url: /loss-control-surveys/
-    - title: AIHA Referral
-      icon_path: /images/icon-aiha.jpg
-      content: Referred by AIHA? You've found the right expert — CIH, CSP, and AIHA
-        member for 30+ years
-      url: /aiha-referral/
-    - title: Noise Monitoring
-      icon_path: /images/icon-headphones.svg
-      content: On-site noise dosimetry and expert compliance documentation
-      url: /industrial-hygiene/noise-monitoring/
-    - title: Silica Compliance
-      icon_path: /images/icon-paint-bucket.svg
-      content: OSHA silica rule sampling and reporting for construction,
-        manufacturing, and high-risk sectors nationwide
-      url: /industrial-hygiene/silica-compliance/
-    - title: Dust Hazard Analysis
-      icon_path: /images/icon-dust-cloud.svg
-      content: NFPA-aligned DHA documentation and site-level combustible risk
-      url: /industrial-hygiene/dust-hazard-analysis/
-    - title: VOCs/Odors
-      icon_path: /images/icon-spray.svg
-      content: VOCs, chemical odors, and IAQ hazards evaluated by a CIH
-      url: /industrial-hygiene/vocs-odors/
-    - title: Expert Testimony & Litigation Support
-      icon_path: /images/icon-court.svg
-      content: Courtroom-ready environmental health consulting, exposure testimony,
-        and expert CIH services for litigation support
-      url: /expert-witness/
+      content: 
+      url: /clearance/
+      
 certification:
   preheading: Nationally Certified & Industry-Affiliated
   heading: Our Credentials & Partners
@@ -129,22 +100,16 @@ counter:
 cta:
   background_image: /images/bg/home-new-3.jpg
   preheading: Proven. Credentialed. Field-Tested.
-  heading: Talk to a Certified Expert About Your Safety & Compliance Needs
-  content: "Request a Consultation:"
+  heading: Talk to a Certified Expert About Your Mold Testing & Water Damage Investigations Needs
+  content: "Call, text, or email:"
   phone: 941-228-5525
+  email: info@geriskmanagement.com
+  legal: Most appointments are available within 24–48 hours. We’re fast, professional, and ready to give you real answers—no pressure, no upsells
 about:
   preheading: Led by Kenneth Librizzi, MA, MS, CIH, CSP, ARM, LMA, WSC
   heading: Led by a Certified Industrial Hygienist (CIH) with 30+ years of experience
   subheading: Two-time former ASSP president, certified in MA, MS, CIH, CSP, ARM, LMA, WSC
-  content: GE Risk Management LLC was founded in 2009 by Kenneth Librizzi, MA, MS,
-    CIH, CSP, ARM, LMA, WSC. With more than three decades of cross-sector
-    experience, Ken has worked for government, industry, consulting firms, and
-    the largest insurer in the world. He's a two-time former chapter president
-    of American Society of Safety Professionals (formerly ASSE) and brings rare
-    credential depth — certified in Safety (CSP), Industrial Hygiene (CIH), Risk
-    Management (ARM), and more. <br> GE Risk Management operates with a
-    high-trust, low-noise model — bringing clarity, documentation, and authority
-    to complex environmental and safety risks.
+  content: Led by a Certified Industrial Hygienist (CIH) with 30+ years of experience, Mold Inspection 24/7 delivers high-level environmental health expertise in a format clients can actually use. We serve both residential and commercial properties across Florida, from condos and single-family homes to offices and managed communities. Whether you’re a homeowner, property manager, or legal professional, we bring clarity, confidence, and regulatory-level knowledge to every inspection—without delay, drama, or inflated pricing.
   background_image: /images/bg/home-new-8.jpg
   link:
     text: Request Consultation
