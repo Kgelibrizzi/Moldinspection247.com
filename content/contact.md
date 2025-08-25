@@ -1,5 +1,5 @@
 ---
-title: Contact GE Risk Management
+title: Contact
 layout: contact
 url: /contact/
 seo:
@@ -10,14 +10,14 @@ seo:
   open_graph_type: null
 hero:
   preheading: Call, email, or message us for expert environmental health support
-  title: Contact GE Risk Management
+  title: Contact Mold Inspection 24/7
   background_image: null
 contact_form:
   preheading: We'll follow up within one business day.
   heading: Ready to get started? Let’s talk.
+  address: "Service area: South Florida + U.S. support"
   form_heading: Contact Form
   phone: 941-228-5525
-  phone_2: 954-782-0472
   email: Kenneth@GERiskManagement.Com
   contact_form_enabled: false
 ---
