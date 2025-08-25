@@ -1,23 +1,38 @@
 menu_items:
+  - _id: drop_down_menu
+    label: Services
+    sub_menu_items:
+      - _id: sub_menu_link
+        name: Mold Testing
+        url: /mold-testing/
+        open_in_new_tab: false
+      - _id: sub_menu_link
+        name: Moisture Mapping & Infrared
+        url: /moisture-mapping-ifrared/
+        open_in_new_tab: false
+      - _id: sub_menu_link
+        name: IICRC S500 Water Damage Protocols
+        url: /iicrc-s500-water-damage-protocols/
+        open_in_new_tab: false
+      - _id: sub_menu_link
+        name: IICRC S520 Mold Remediation Protocols
+        url: /iicrc-s520-mold-remediation-protocols/
+        open_in_new_tab: false
+      - _id: sub_menu_link
+        name: Clearance / Post-Remediation Verification
+        url: /clearance-post-remediation/
+        open_in_new_tab: false
+      - _id: sub_menu_link
+        name: Advanced Building Forensics
+        url: /advanced-building-forensics/ 
+        open_in_new_tab: false
   - _id: link
-    name: Mold Testing
-    url: /mold-testing/
+    name: Why Choose Us
+    url: /why-choose-us/
     open_in_new_tab: false
   - _id: link
-    name: Industrial Hygiene
-    url: /industrial-hygiene/
-    open_in_new_tab: false
-  - _id: link
-    name: Osha Compliance
-    url: /osha-compliance/
-    open_in_new_tab: false
-  - _id: link
-    name: AIHA Referral
-    url: /aiha-referral/
-    open_in_new_tab: false
-  - _id: link
-    name: Loss Control Surveys
-    url: /loss-control-surveys/
+    name: About Us
+    url: /about/
     open_in_new_tab: false
   - _id: link
     name: Contact
