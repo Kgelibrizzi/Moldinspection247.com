@@ -24,23 +24,23 @@ services:
       content: air, spore traps, ERMI if included but not front and center
       url: /mold-testing/
     - title: Moisture Mapping & Infrared
-      icon_path: /images/icon-microscope.svg
+      icon_path: /images/icon-mapping.svg
       content: 
       url: /moisture-mapping-ifrared/
     - title: IICRC S500 Water Damage Protocols
-      icon_path: /images/icon-clipboard.svg
+      icon_path: /images/icon-flood.svg
       content: 
       url: /iicrc-s500-water-damage-protocols/
     - title: IICRC S520 Mold Remediation Protocols
-      icon_path: /images/icon-clipboard.svg
+      icon_path: /images/icon-spray-bottle.svg
       content: 
       url: /iicrc-s520-mold-remediation-protocols/
     - title: Clearance / Post-Remediation Verification
-      icon_path: /images/icon-factory-insurance-1.svg
+      icon_path: /images/icon-clipboard.svg
       content: 
       url: /clearance-post-remediation/
     - title: Advanced Building Forensics
-      icon_path: /images/icon-factory-insurance-1.svg
+      icon_path: /images/icon-forensic.svg
       content: HVAC, drainage, spray foam hazards
       url: /advanced-building-forensics/ 
     
@@ -48,6 +48,11 @@ services:
 certification:
   preheading: Nationally Certified & Industry-Affiliated
   heading: Why Choose Us
+  credentials:
+    - heading: CIH – Certified Industrial Hygienist
+    - heading: ARM – Associate in Risk Management
+    - heading: Florida DBPR mold license
+    - heading:  30+ years experience in forensic IAQ
   sections:
     - image_path: /images/credential-aiha-full.png
       image_alt: Certified Industrial Hygienist - AIHA
@@ -118,7 +123,7 @@ about:
   preheading: Led by Kenneth Librizzi, MA, MS, CIH, CSP, ARM, LMA, WSC
   heading: Led by a Certified Industrial Hygienist (CIH) with 30+ years of experience
   subheading: Two-time former ASSP president, certified in MA, MS, CIH, CSP, ARM, LMA, WSC
-  content: Led by a Certified Industrial Hygienist (CIH) with 30+ years of experience, Mold Inspection 24/7 delivers high-level environmental health expertise in a format clients can actually use. We serve both residential and commercial properties across Florida, from condos and single-family homes to offices and managed communities. Whether you’re a homeowner, property manager, or legal professional, we bring clarity, confidence, and regulatory-level knowledge to every inspection—without delay, drama, or inflated pricing.
+  content: GE Risk Management LLC was founded in 2009 by Kenneth Librizzi, MA, MS,CIH, CSP, ARM, LMA, WSC. With more than three decades of cross-sector experience, Ken has worked for government, industry, consulting firms, and the largest insurer in the world. He's a two-time former chapter president of American Society of Safety Professionals (formerly ASSE) and brings rare credential depth — certified in Safety (CSP), Industrial Hygiene (CIH), Risk Management (ARM), and more. <br> GE Risk Management operates with a high-trust, low-noise model — bringing clarity, documentation, and authority to complex environmental and safety risks.
   background_image: /images/bg/home-new-8.jpg
   link:
     text: Request Consultation

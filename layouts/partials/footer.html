@@ -20,7 +20,7 @@
 			  	<li class="mb-2">{{ partial "utilities/link.html" . }}</li>
 			  {{ end }}
 			</ul>
-			<p class="text-capitalize mb-4 h4">{{- (index .Site.Data.footer.column 2).heading  -}}</p>
+			<p class="text-capitalize mb-4 mt-4 h4">{{- (index .Site.Data.footer.column 2).heading  -}}</p>
 			<ul class="list-unstyled footer-menu">
 			  {{ range (index .Site.Data.footer.column 2).items }}
 				<li class="mb-2">{{ partial "utilities/link.html" . }}</li>

@@ -20,25 +20,25 @@ services:
       content: air, spore traps, ERMI if included but not front and center
       url: /mold-testing/
     - title: Moisture Mapping & Infrared
-      icon_path: /images/icon-microscope.svg
+      icon_path: /images/icon-mapping.svg
       content: 
       url: /moisture-mapping-ifrared/
     - title: IICRC S500 Water Damage Protocols
-      icon_path: /images/icon-clipboard.svg
+      icon_path: /images/icon-flood.svg
       content: 
       url: /iicrc-s500-water-damage-protocols/
     - title: IICRC S520 Mold Remediation Protocols
-      icon_path: /images/icon-clipboard.svg
+      icon_path: /images/icon-spray-bottle.svg
       content: 
       url: /iicrc-s520-mold-remediation-protocols/
     - title: Clearance / Post-Remediation Verification
-      icon_path: /images/icon-factory-insurance-1.svg
+      icon_path: /images/icon-clipboard.svg
       content: 
       url: /clearance-post-remediation/
     - title: Advanced Building Forensics
-      icon_path: /images/icon-factory-insurance-1.svg
+      icon_path: /images/icon-forensic.svg
       content: HVAC, drainage, spray foam hazards
-      url: /advanced-building-forensics/
+      url: /advanced-building-forensics/ 
       
 certification:
   preheading:
