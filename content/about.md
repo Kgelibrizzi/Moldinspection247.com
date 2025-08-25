@@ -17,10 +17,7 @@ hero:
 start:
   preheading: "Led by Kenneth Librizzi, MA, MS, CIH, CSP, ARM, LMA, WSC"
   heading: "Led by a Certified Industrial Hygienist (CIH) with 30+ years of experience"
-  content: >-
-    GE Risk Management LLC was founded in 2009 by Kenneth Librizzi, MA, MS, CIH, CSP, ARM, LMA, WSC. With more than three decades of cross-sector experience, Ken has worked for government, industry, consulting firms, and the largest insurer in the world. He’s a two-time former president of the American Society of Safety Professionals (formerly ASSE) and brings rare credential depth — certified in Safety (CSP), Industrial Hygiene (CIH), Risk Management (ARM), and more.
-    <br>
-    GE Risk operates with a high-trust, low-noise model — bringing clarity, documentation, and authority to complex environmental and safety risks.
+  content: Led by a Certified Industrial Hygienist (CIH) with 30+ years of experience, Mold Inspection 24/7 delivers high-level environmental health expertise in a format clients can actually use. We serve both residential and commercial properties across Florida, from condos and single-family homes to offices and managed communities. Whether you're a homeowner, property manager, or legal professional, we bring clarity, confidence, and regulatory-level knowledge to every inspection—without delay, drama, or inflated pricing.
   image_path: "/images/bg/home-new-8.jpg"
   button:
     text: "Request Consultation"
