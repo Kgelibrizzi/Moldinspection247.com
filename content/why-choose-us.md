@@ -1,21 +1,16 @@
 ---
-title: Why Choose Mold Inspection 24/7
+title: Why Choose Us
 layout: why-choose-us
 seo:
-  page_description: Licensed Florida Mold Assessor & CIH-led evaluations for homes, businesses, and insurance.
+  page_description: waiting for content
   canonical_url: null
   featured_image: null
   author_twitter_handle: null
-big_hero:
-  preheading: Licensed Florida Mold Assessor & CIH-led evaluations for homes, businesses, and insurance.
-  heading: Why Choose Mold Inspection 24/7
+hero:
+  preheading: waiting for content
+  title: Why Choose Us
   background_image: /images/risk-photo-for-ge-site-home-page.jpeg
-  link:
-    text: Request Consultation
-    url: /contact/
-  link_2:
-    text: Explore Our Services
-    url: "#services"
+  
 services:
   preheading: Our Services
   heading: Our Services

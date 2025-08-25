@@ -13,9 +13,6 @@ hero:
   preheading: Waiting for content
   background_image: 
 
-cta_mini:
-  enabled: true
-  heading: 
 ---
 
 Waiting for content
