@@ -17,24 +17,33 @@ big_hero:
     url: "#services"
 services:
   preheading: Our Services
-  heading: Get expert risk & safety consulting services across Florida and beyond.
+  heading: Our Services
   sections:
-    - title: Mold Testing
+    - title: Mold Testing 
       icon_path: /images/icon-mold.svg
-      content: 
+      content: air, spore traps, ERMI if included but not front and center
       url: /mold-testing/
-    - title: Moisture/IR
+    - title: Moisture Mapping & Infrared
       icon_path: /images/icon-microscope.svg
       content: 
-      url: /moisture-ir/
-    - title: S500/S520 protocols
+      url: /moisture-mapping-ifrared/
+    - title: IICRC S500 Water Damage Protocols
       icon_path: /images/icon-clipboard.svg
       content: 
-      url: /protocols/
-    - title: Clearance
+      url: /iicrc-s500-water-damage-protocols/
+    - title: IICRC S520 Mold Remediation Protocols
+      icon_path: /images/icon-clipboard.svg
+      content: 
+      url: /iicrc-s520-mold-remediation-protocols/
+    - title: Clearance / Post-Remediation Verification
       icon_path: /images/icon-factory-insurance-1.svg
       content: 
-      url: /clearance/
+      url: /clearance-post-remediation/
+    - title: Advanced Building Forensics
+      icon_path: /images/icon-factory-insurance-1.svg
+      content: HVAC, drainage, spray foam hazards
+      url: /advanced-building-forensics/ 
+    
       
 certification:
   preheading: Nationally Certified & Industry-Affiliated
