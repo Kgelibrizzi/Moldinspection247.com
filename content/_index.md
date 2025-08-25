@@ -47,7 +47,7 @@ services:
       
 certification:
   preheading: Nationally Certified & Industry-Affiliated
-  heading: Our Credentials & Partners
+  heading: Why Choose Us
   sections:
     - image_path: /images/credential-aiha-full.png
       image_alt: Certified Industrial Hygienist - AIHA
@@ -109,11 +109,11 @@ counter:
 cta:
   background_image: /images/bg/home-new-3.jpg
   preheading: Proven. Credentialed. Field-Tested.
-  heading: Talk to a Certified Expert About Your Mold Testing & Water Damage Investigations Needs
+  heading: Talk to a Certified Expert About Your Mold Testing Needs
   content: "Call, text, or email:"
   phone: 941-228-5525
   email: info@geriskmanagement.com
-  legal: Most appointments are available within 24–48 hours. We’re fast, professional, and ready to give you real answers—no pressure, no upsells
+  legal: 
 about:
   preheading: Led by Kenneth Librizzi, MA, MS, CIH, CSP, ARM, LMA, WSC
   heading: Led by a Certified Industrial Hygienist (CIH) with 30+ years of experience

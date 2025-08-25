@@ -1,7 +1,7 @@
 ---
-title: "Clearance"
+title: IICRC S520 Mold Remediation Protocols
 layout: services
-url: /clearance/
+url: /iicrc-s520-mold-remediation-protocols/
 seo:
   page_description: Waiting for content
   canonical_url:
@@ -9,14 +9,13 @@ seo:
   author_twitter_handle:
   
 hero:
-  title: "Clearance"
+  title: IICRC S520 Mold Remediation Protocols
   preheading: Waiting for content
   background_image: 
 
 cta_mini:
   enabled: true
-
-
+  heading: 
 ---
 
 Waiting for content

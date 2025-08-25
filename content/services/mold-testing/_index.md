@@ -1,5 +1,5 @@
 ---
-title: "South Florida Licensed Mold Testing & Water Damage Investigations"
+title: Mold Testing
 layout: services
 url: /mold-testing/
 seo:

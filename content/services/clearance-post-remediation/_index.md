@@ -1,7 +1,7 @@
 ---
-title: S500/S520 protocols
+title: Clearance / Post-Remediation Verification
 layout: services
-url: /protocols/
+url: /clearance-post-remediation/
 seo:
   page_description: Waiting for content
   canonical_url:
@@ -9,13 +9,14 @@ seo:
   author_twitter_handle:
   
 hero:
-  title: "S500/S520 protocols"
+  title: Clearance / Post-Remediation Verification
   preheading: Waiting for content
   background_image: 
 
 cta_mini:
   enabled: true
-  heading: 
+
+
 ---
 
 Waiting for content
