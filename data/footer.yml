@@ -21,6 +21,9 @@ column:
         open_in_new_tab: false
   - heading: Quick Links
     items:
+      - name: Why Choose Us
+        url: /why-choose-us/
+        open_in_new_tab: false
       - name: About
         url: /about/
         open_in_new_tab: false
