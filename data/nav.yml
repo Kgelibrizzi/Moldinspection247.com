@@ -8,21 +8,34 @@ menu_items:
     url: /moisture-mapping-ifrared/
     open_in_new_tab: false
   - _id: link
-    name: IICRC S500
+    name: Water Damage
     url: /iicrc-s500-water-damage-protocols/
     open_in_new_tab: false
   - _id: link
-    name: IICRC S520
+    name: Mold Remediation Protocols
     url: /iicrc-s520-mold-remediation-protocols/
     open_in_new_tab: false
-  - _id: link
-    name: Clearance
-    url: /clearance-post-remediation/
-    open_in_new_tab: false
-  - _id: link
-    name: Advanced Forensics
-    url: /advanced-building-forensics/ 
-    open_in_new_tab: false
+  - _id: drop_down_menu
+    label: More
+    sub_menu_items:
+      - _id: sub_menu_link
+        name: Clearance / Post-Remediation Verification
+        url: /clearance-post-remediation/
+        open_in_new_tab: false
+      - _id: sub_menu_link
+        name: Advanced Forensics
+        url: /advanced-building-forensics/ 
+        open_in_new_tab: false
+      - _id: sub_menu_link
+        name: Services
+        url: /services/
+      - _id: sub_menu_link
+        name: Why Choose Us
+        url: /why-choose-us/
+        open_in_new_tab: false
+      - _id: sub_menu_link
+        name: About Us
+        url: /about/
   - _id: link
     name: Contact
     url: /contact/

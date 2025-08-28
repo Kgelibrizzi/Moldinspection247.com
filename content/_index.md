@@ -1,7 +1,7 @@
 ---
-title: South Florida Licensed Mold Testing & Water Damage Investigations
+title: Licensed Florida Mold Testing & Water Damage Investigations
 seo:
-  page_description: Licensed Florida Mold Assessor & CIH-led evaluations for homes, businesses, and insurance.
+  page_description: Licensed Florida Mold Assessor & CIH-led inspections for mold, water damage, and IAQ. Defensible reports trusted by homeowners, insurers, and attorneys.
   canonical_url: null
   featured_image: null
   author_twitter_handle: null
@@ -18,20 +18,21 @@ big_hero:
 services:
   preheading: Our Services
   heading: Our Services
+  content: Mold Inspection 24/7 provides licensed, defensible mold and water damage evaluations across South Florida. Our inspections are led by a Certified Industrial Hygienist (CIH) and Licensed Florida Mold Assessor, ensuring your results stand up for real estate, insurance, or litigation.
   sections:
     - title: Mold Testing 
       icon_path: /images/icon-mold.svg
-      content: air, spore traps, ERMI if included but not front and center
+      content: 
       url: /mold-testing/
     - title: Moisture Mapping & Infrared
       icon_path: /images/icon-mapping.svg
       content: 
       url: /moisture-mapping-ifrared/
-    - title: IICRC S500 Water Damage Protocols
+    - title: Water Damage (IICRC S500)
       icon_path: /images/icon-flood.svg
       content: 
       url: /iicrc-s500-water-damage-protocols/
-    - title: IICRC S520 Mold Remediation Protocols
+    - title: Mold Remediation Protocols (IICRC S520)
       icon_path: /images/icon-spray-bottle.svg
       content: 
       url: /iicrc-s520-mold-remediation-protocols/
@@ -41,7 +42,7 @@ services:
       url: /clearance-post-remediation/
     - title: Advanced Building Forensics
       icon_path: /images/icon-forensic.svg
-      content: HVAC, drainage, spray foam hazards
+      content:
       url: /advanced-building-forensics/ 
     
       
@@ -123,7 +124,7 @@ about:
   preheading: Led by Kenneth Librizzi, MA, MS, CIH, CSP, ARM, LMA, WSC
   heading: Led by a Certified Industrial Hygienist (CIH) with 30+ years of experience
   subheading: Two-time former ASSP president, certified in MA, MS, CIH, CSP, ARM, LMA, WSC
-  content: GE Risk Management LLC was founded in 2009 by Kenneth Librizzi, MA, MS,CIH, CSP, ARM, LMA, WSC. With more than three decades of cross-sector experience, Ken has worked for government, industry, consulting firms, and the largest insurer in the world. He's a two-time former chapter president of American Society of Safety Professionals (formerly ASSE) and brings rare credential depth — certified in Safety (CSP), Industrial Hygiene (CIH), Risk Management (ARM), and more. <br> GE Risk Management operates with a high-trust, low-noise model — bringing clarity, documentation, and authority to complex environmental and safety risks.
+  content: Mold Inspection 24/7 is led by Kenneth Librizzi, MA, MS, CIH, CSP, ARM, LMA, WSC — a Certified Industrial Hygienist and Licensed Florida Mold Assessor with more than 30 years of experience. We combine technical expertise with practical, standards-based inspections. Unlike many firms, we don’t just collect samples — we interpret results so you can act with confidence. Our history includes thousands of mold and IAQ projects for homes, businesses, schools, healthcare facilities, and insurers across South Florida.
   background_image: /images/bg/home-new-8.jpg
   link:
     text: Request Consultation

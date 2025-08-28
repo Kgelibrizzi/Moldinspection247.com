@@ -3,18 +3,18 @@ title: Moisture Mapping & Infrared
 layout: services
 url: /moisture-mapping-ifrared/
 seo:
-  page_description: Waiting for content
+  page_description: 
   canonical_url:
   featured_image:
   author_twitter_handle:
 
 hero:
   title: Moisture Mapping & Infrared
-  preheading: Waiting for content
+  preheading: 
   background_image: 
 
 
   
 ---
 
-Waiting for content
+Moisture is often the root cause of mold. We use infrared (IR) thermal imaging and moisture meters to identify hidden leaks, condensation, and building envelope issues. This allows us to provide practical recommendations before costly damage spreads.

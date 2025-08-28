@@ -1,19 +1,19 @@
 ---
-title: Contact
+title: Contact Mold Inspection 24/7 | Schedule Your Licensed Mold Assessment
 layout: contact
 url: /contact/
 seo:
-  page_description: "Call, email, or message us for expert environmental health support "
+  page_description: Schedule your mold testing or water damage inspection today. Call 941-228-5525 or email info@GERiskManagement.com for expert, defensible results.
   canonical_url: null
   featured_image: null
   author_twitter_handle: null
   open_graph_type: null
 hero:
-  preheading: Call, email, or message us for expert environmental health support
+  preheading: Call, email, or complete the form below to schedule your inspection.
   title: Contact Mold Inspection 24/7
   background_image: null
 contact_form:
-  preheading: We'll follow up within one business day.
+  preheading: Serving South Florida with licensed mold assessments you can trust.
   heading: Ready to get started? Let’s talk.
   address: "Service area: South Florida + U.S. support"
   form_heading: Contact Form

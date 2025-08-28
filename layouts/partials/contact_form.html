@@ -34,7 +34,7 @@
 						</li>
 						{{ end }}
 					</ul>
-					<span class="text-muted">{{ .preheading }}</span>
+					<p class="text-muted">{{ .preheading }}</p>
 				</div>
 			</div>
 			{{ if .contact_form_enabled }}
@@ -46,6 +46,9 @@
 					</div>
 					<div class="form-group">
 						<input name="email" type="email" class="form-control rounded" placeholder="Email Address" required>
+					</div>
+					<div class="form-group">
+						<input name="phone" type="phone" class="form-control rounded" placeholder="Phone Number" required>
 					</div>
 					<div class="form-group-2 mb-4">
 						<textarea name="message" class="form-control rounded" rows="4" placeholder="Your Message" required></textarea>

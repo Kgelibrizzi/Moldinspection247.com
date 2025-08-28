@@ -1,54 +1,25 @@
 ---
-title: Why Choose Us
+title: Why Choose Mold Inspection 24/7 | Licensed CIH & Mold Assessor
 layout: why-choose-us
 seo:
-  page_description: waiting for content
+  page_description: Dual-credentialed Licensed Mold Assessor & CIH. Over 30 years of experience, standards-based methods, and defensible reports trusted across Florida.
   canonical_url: null
   featured_image: null
   author_twitter_handle: null
 hero:
   preheading: waiting for content
-  title: Why Choose Us
+  title: Why Choose Mold Inspection 24/7?
   background_image: /images/risk-photo-for-ge-site-home-page.jpeg
-  
-services:
-  preheading: Our Services
-  heading: Our Services
-  sections:
-    - title: Mold Testing 
-      icon_path: /images/icon-mold.svg
-      content: air, spore traps, ERMI if included but not front and center
-      url: /mold-testing/
-    - title: Moisture Mapping & Infrared
-      icon_path: /images/icon-mapping.svg
-      content: 
-      url: /moisture-mapping-ifrared/
-    - title: IICRC S500 Water Damage Protocols
-      icon_path: /images/icon-flood.svg
-      content: 
-      url: /iicrc-s500-water-damage-protocols/
-    - title: IICRC S520 Mold Remediation Protocols
-      icon_path: /images/icon-spray-bottle.svg
-      content: 
-      url: /iicrc-s520-mold-remediation-protocols/
-    - title: Clearance / Post-Remediation Verification
-      icon_path: /images/icon-clipboard.svg
-      content: 
-      url: /clearance-post-remediation/
-    - title: Advanced Building Forensics
-      icon_path: /images/icon-forensic.svg
-      content: HVAC, drainage, spray foam hazards
-      url: /advanced-building-forensics/ 
       
 certification:
   preheading:
-  heading: What Makes a “Real” Expert?
-  content: Anyone can buy a mold test kit. Not everyone is trained in exposure pathways, airflow mechanics, or regulatory thresholds.
+  heading: 
+  content: 
   credentials:
-    - heading: CIH – Certified Industrial Hygienist
-    - heading: ARM – Associate in Risk Management
-    - heading: Florida DBPR mold license
-    - heading:  30+ years experience in forensic IAQ
+    - heading: Licensed Florida Mold Assessor & CIH — dual credentials most competitors can’t match.
+    - heading: 30+ years of experience, thousands of projects completed.
+    - heading: Standards-based inspections aligned with IICRC, ASHRAE, and NIOSH guidance.
+    - heading: Clear, defensible reports for insurance, litigation, and real estate.
   sections:
     - image_path: /images/credential-aiha-full.png
       image_alt: Certified Industrial Hygienist - AIHA
@@ -84,6 +55,7 @@ certification:
       image_alt: National Organization of Remediators and Microbial Inspectors - NORMI
     - image_path: /images/credential-aiaqc-full.png
       image_alt: Havard School of Public Health
+
 counter:
   heading: Industries we werve
   numbers:
@@ -110,9 +82,9 @@ counter:
 cta:
   background_image: /images/bg/home-new-3.jpg
   preheading: Proven. Credentialed. Field-Tested.
-  heading: Talk to a Certified Expert About Your Mold Testing & Water Damage Investigations Needs
+  heading: Schedule Your Inspection Today
   content: "Call, text, or email:"
   phone: 941-228-5525
   email: info@geriskmanagement.com
-  legal: Most appointments are available within 24–48 hours. We’re fast, professional, and ready to give you real answers—no pressure, no upsells
+  legal: 
 ---
