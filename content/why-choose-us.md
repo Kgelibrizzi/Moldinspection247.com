@@ -7,7 +7,7 @@ seo:
   featured_image: null
   author_twitter_handle: null
 hero:
-  preheading: waiting for content
+  preheading: 
   title: Why Choose Mold Inspection 24/7?
   background_image: /images/risk-photo-for-ge-site-home-page.jpeg
       

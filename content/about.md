@@ -12,7 +12,7 @@ seo:
 hero:
   title: About Mold Inspection 24/7
   preheading:  Licensed Florida Mold Assessor & CIH-Led Expertise
-  background_image: "/images/bg/home-new-3.jpg"
+  background_image: "/images/risk-photo-for-ge-site-home-page.jpeg"
 
 start:
   preheading: "Led by Kenneth Librizzi, MA, MS, CIH, CSP, ARM, LMA, WSC"
