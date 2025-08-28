@@ -21,7 +21,13 @@
 						{{ if .icon_path }}
 						<img src="{{ .icon_path }}" alt="{{ .title }}">
 						{{ end }}
-						<h3 class="mb-1 h4"><a href="{{ .url }}">{{ .title }}</a></h3>
+						<h3 class="mb-1 h4">
+							{{ if .url }}
+							<a href="{{ .url }}">{{ .title }}</a>
+							{{ else }}
+							<span>{{ .title }}</span>
+							{{ end }}
+						</h3>
 						<p class="mb-1">{{ .content | markdownify }}</p>
 						<!-- <a href="{{ .url }}"  class="d-flex align-items-center" aria-label="Get started">Read more<i class="btn-icon fa fa-angle-right ml-2 "></i></a> -->
 					</div>
