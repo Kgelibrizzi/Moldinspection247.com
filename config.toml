@@ -6,7 +6,7 @@ pagination.path = "/"
 summaryLength = 10
 
 [taxonomies]
-category = "categories"
+# category = "categories"
 
 [permalinks]
   posts = ":section/:year/:month/:day/:title/"
