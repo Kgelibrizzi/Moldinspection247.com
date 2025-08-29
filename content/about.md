@@ -1,9 +1,9 @@
 ---
-title: "Ken Librizzi - CIH, CSP, ARM, LMA, WSC"
+title: "About Mold Inspection 24/7 | Kenneth Librizzi, Licensed Mold Assessor & CIH"
 layout: about
 url: /about/
 seo:
-  page_description: "30+ years experience across government, insurance, and consulting"
+  page_description: "Led by Kenneth Librizzi, CIH & Licensed Florida Mold Assessor, Mold Inspection 24/7 delivers trusted evaluations with 30+ years of experience."
   canonical_url:
   featured_image:
   author_twitter_handle:

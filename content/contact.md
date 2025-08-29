@@ -20,4 +20,12 @@ contact_form:
   phone: 941-228-5525
   email: Kenneth@GERiskManagement.Com
   contact_form_enabled: false
+  button:
+    text: Pay by Credit Card
+    url: https://www.paypal.com/ncp/payment/LUWR3W8ALGBW2
+    open_in_new_tab: true
+  qrcode:
+    image_path: /images/payment_qrcode.png
+    placeholder: Pay with PayPal
+    text: Or Pay with PayPal
 ---

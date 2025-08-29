@@ -65,6 +65,9 @@ input[type="email"],input[type="password"],input[type="text"],input[type="tel"]{
     background: lighten( $primary-color, 10% );
     color: $light;
   }
+  &:focus {
+    color: $light;
+  }
 }
 
 

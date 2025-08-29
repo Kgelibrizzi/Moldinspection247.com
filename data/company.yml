@@ -19,8 +19,11 @@ pinterest:
 support:
   phone: "941-228-5525"
   email: info@GERiskManagement.com
+  button:
+    text: Pay by Credit Card
+    url: https://www.paypal.com/ncp/payment/LUWR3W8ALGBW2
 copyright_html: Copyright &copy; 2025 <a href="/"> GE Risk Management LLC</a>
-backlink: <a href="/">Mold Inspection 24/7</a> is part of the <a href="https://geriskmanagement.com"> GE Risk Management LLC</a> family of services.
+backlink: Part of the <a href="https://geriskmanagement.com"> GE Risk Management LLC</a> – National Risk & Industrial Hygiene Consulting.
 default_hero_bg_image: /images/risk-photo-for-ge-site-home-page.jpeg
 about_footer_title: About Us
 about_footer_content: >-

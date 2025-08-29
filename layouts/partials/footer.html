@@ -54,6 +54,12 @@
 			{{ if .Site.Data.company.support.phone }}
 				<a href="tel:{{ .Site.Data.company.support.phone }}"><span class="text-color h4">{{ .Site.Data.company.support.phone }}</span></a>
 			{{ end }}
+			{{ with .Site.Data.company.support.button }}
+				<a href="{{ .url }}" class="btn btn-tertiary-color btn-round-full mt-4" {{ if .open_in_new_tab }}target="_blank"{{ end }}>
+					{{ .text }}
+					<i class="btn-icon fa fa-angle-right ml-2"></i>
+				</a>	
+			{{ end }}
 		  </div>
 		</div>
 	  </div>

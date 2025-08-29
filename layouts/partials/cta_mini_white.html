@@ -1,0 +1,26 @@
+{{ with .Params.cta }}
+<section class="cta-2 bg-white">
+  <div class="container">
+    <div class="cta-block p-5 rounded" style="background-image: url('{{ .background_image }}');">
+      <div class="row justify-content-center align-items-center ">
+        <div class="col-xl-7 text-center text-xl-left">
+          {{ with .preheading }}
+            <span class="text-white">{{ . }}</span>
+          {{ end }}
+          {{ with .heading }}
+            <h2 class="mt-2 text-white">{{ . }}</h2>
+          {{ end }}
+        </div>
+        <div class="col-xl-5 text-center text-xl-right mt-4 mt-xl-0">
+          {{ with .button }}
+            <a href="{{ .url }}" class="btn btn-main btn-round-full">{{ .text }}</a>
+          {{ end }}
+          {{ with .button_2 }}
+            <a href="{{ .url }}" class="btn btn-tertiary-color btn-round-full ml-sm-3 mt-3 mt-sm-0">{{ .text }}</a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
