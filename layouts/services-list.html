@@ -4,7 +4,32 @@
     {{ partial "services" . }}
     {{ partial "certification" . }}
     {{ partial "counter" . }}
-	<div class="mb-5"></div>
-  {{ partial "cta" . }}
+	  <div class="mb-5"></div>
+    {{ with .Params.cta }}
+    <section class="cta-2 bg-white">
+      <div class="container">
+        <div class="cta-block p-5 rounded" style="background-image: url('{{ .background_image }}');">
+          <div class="row justify-content-center align-items-center ">
+            <div class="col-lg-6 text-center text-lg-left">
+              {{ with .preheading }}
+                <span class="text-white">{{ . }}</span>
+              {{ end }}
+              {{ with .heading }}
+                <h2 class="mt-2 text-white">{{ . }}</h2>
+              {{ end }}
+            </div>
+            <div class="col-lg-6 text-center text-lg-right mt-4 mt-lg-0">
+              {{ with .button }}
+                <a href="{{ .url }}" class="btn btn-main btn-round-full">{{ .text }}</a>
+              {{ end }}
+              {{ with .button_2 }}
+                <a href="{{ .url }}" class="btn btn-tertiary-color btn-round-full ml-lg-3 mt-3 mt-sm-0">{{ .text }}</a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{ end }}
   </div>
 {{ end }}

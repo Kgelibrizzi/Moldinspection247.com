@@ -11,9 +11,6 @@ summaryLength = 10
 [permalinks]
   posts = ":section/:year/:month/:day/:title/"
 
-  [permalinks.section]
-    services = "/:slug/"
-
 [markup.goldmark.renderer]
 unsafe = true
 

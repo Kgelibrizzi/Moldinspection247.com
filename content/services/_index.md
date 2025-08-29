@@ -1,8 +1,8 @@
 ---
-title: Services
+title: Mold Testing & Inspection Services
 layout: services-list
 seo:
-  page_description: 
+  page_description: Full-service mold testing, moisture mapping, IICRC S500/S520 protocols, clearance inspections, and advanced building forensics in South Florida.
   canonical_url: null
   featured_image: null
   author_twitter_handle: null
@@ -13,8 +13,8 @@ hero:
 
 services:
   preheading: 
-  heading: 
-  content: 
+  heading: Mold Services – Basic & Advanced
+  content: Licensed Florida Mold Assessor & CIH-led evaluations. We identify the source, document the risk, and give you a defensible plan that satisfies insurance, real estate, and remediation requirements.
   sections:
     - title: Mold Testing 
       icon_path: /images/icon-mold.svg
@@ -30,24 +30,26 @@ services:
       url: 
     - title: IICRC S520 Mold Remediation Protocols
       icon_path: /images/icon-spray-bottle.svg
-      content: For established mold contamination, we design remediation protocols consistent with IICRC S520. These protocols include engineering controls, work practices, PPE, and post-remediation verification steps to ensure mold is safely removed.
+      content: For established contamination, we design protocols consistent with IICRC S520 (engineering controls, work practices, PPE, and post-remediation verification). Technical practices include water categories, classes of intrusion, and conditions of contents where applicable.
       url: 
     - title: Clearance / Post-Remediation Verification
       icon_path: /images/icon-clipboard.svg
-      content: After remediation, we conduct clearance inspections and testing to verify that the work meets industry standards. Our reports are CIH-reviewed and defensible, ensuring your project is truly complete and occupants are safe.
+      content: We conduct clearance inspections and testing to verify work meets industry standards. CIH-reviewed, defensible reports so the project is truly complete.
       url: 
     - title: Advanced Building Forensics
       icon_path: /images/icon-forensic.svg
-      content: We go beyond testing. Our advanced forensics identify underlying building science problems such as HVAC issues, air pressurization failures, condensation, or drainage defects. This expertise prevents recurring mold and protects long-term property health
+      content: We diagnose underlying issues (HVAC/pressurization, condensation, drainage) so mold doesn't recur.
       url: 
 
 cta:
   background_image: /images/bg/home-new-3.jpg
   preheading: Proven. Credentialed. Field-Tested.
-  heading: Schedule Your Inspection Today
-  content: "Call, text, or email:"
-  phone: 941-228-5525
-  email: info@geriskmanagement.com
-  legal: 
+  heading: Ready to schedule?
+  button:
+    text: Request Consultation
+    url: /contact/
+  button_2:
+    text: Contact Us
+    url: /contact/
 
 ---
