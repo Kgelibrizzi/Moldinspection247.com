@@ -30,6 +30,9 @@ column:
       - name: Contact
         url: /contact/
         open_in_new_tab: false
+      - name: Pay by Credit Card
+        url: https://www.paypal.com/ncp/payment/LUWR3W8ALGBW2
+        open_in_new_tab: true
   - heading: Related Services
     items:
       - name: OSHA Compliance Services

@@ -8,7 +8,7 @@ seo:
   author_twitter_handle: null
 hero:
   preheading: 
-  title: Services
+  title: Mold & Water Damage Services
   background_image: /images/risk-photo-for-ge-site-home-page.jpeg
 
 services:

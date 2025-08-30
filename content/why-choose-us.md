@@ -8,18 +8,18 @@ seo:
   author_twitter_handle: null
 hero:
   preheading: 
-  title: Why Choose Mold Inspection 24/7?
+  title: Why Choose a Licensed Mold Assessor & CIH-Led Team
   background_image: /images/risk-photo-for-ge-site-home-page.jpeg
       
 certification:
   preheading:
-  heading: 
-  content: 
+  heading: Our Professional Credentials & Affiliations
+  content: With over 30 years of experience in industrial hygiene and environmental risk management, we combine nationally recognized credentials (AIHA, ACGIH, CSP, CIH) with real-world expertise. Every inspection is defensible, compliant with IICRC standards, and trusted by insurance, legal, and real estate professionals.
   credentials:
-    - heading: Licensed Florida Mold Assessor & CIH — dual credentials most competitors can’t match.
-    - heading: 30+ years of experience, thousands of projects completed.
-    - heading: Standards-based inspections aligned with IICRC, ASHRAE, and NIOSH guidance.
-    - heading: Clear, defensible reports for insurance, litigation, and real estate.
+    - heading: Licensed Florida Mold Assessor & CIH – dual credentials ensuring compliance with Florida law and national best practices.
+    - heading: Standards-based inspections aligned with IICRC, AIHA, and OSHA guidelines.
+    - heading: Trusted across 30+ industries including healthcare, insurance, litigation, and real estate.
+    - heading: Experience with 25,000+ structures surveyed and documented.
   sections:
     - image_path: /images/credential-aiha-full.png
       image_alt: Certified Industrial Hygienist - AIHA
@@ -58,6 +58,7 @@ certification:
 
 counter:
   heading: Industries we werve
+  content: We've provided defensible mold and water damage inspections across industries nationwide.
   numbers:
     - number: 25
       suffix: +
