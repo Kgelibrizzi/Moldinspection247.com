@@ -1,0 +1,19 @@
+menu_items:
+  - _id: link
+    name: Home
+    url: /
+  - _id: link
+    name: Services
+    url: /services/
+    open_in_new_tab: false
+  - _id: link
+    name: Why Choose Us
+    url: /why-choose-us/
+    open_in_new_tab: false
+  - _id: link
+    name: About Us
+    url: /about/
+  - _id: link
+    name: Contact
+    url: /contact/
+    open_in_new_tab: false

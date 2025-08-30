@@ -1,0 +1,46 @@
+column:
+  - heading: Services
+    items:
+      - name: Mold Testing
+        url: /services/
+        open_in_new_tab: false
+      - name: Moisture Mapping & Infrared
+        url: /services/
+        open_in_new_tab: false
+      - name: IICRC S500 Water Damage Protocols
+        url: /services/
+        open_in_new_tab: false
+      - name: IICRC S520 Mold Remediation Protocols
+        url: /services/
+        open_in_new_tab: false
+      - name: Clearance / Post-Remediation Verification
+        url: /services/
+        open_in_new_tab: false
+      - name: Advanced Building Forensics
+        url: /services/ 
+        open_in_new_tab: false
+  - heading: Quick Links
+    items:
+      - name: Why Choose Us
+        url: /why-choose-us/
+        open_in_new_tab: false
+      - name: About
+        url: /about/
+        open_in_new_tab: false
+      - name: Contact
+        url: /contact/
+        open_in_new_tab: false
+      - name: Pay by Credit Card
+        url: https://www.paypal.com/ncp/payment/LUWR3W8ALGBW2
+        open_in_new_tab: true
+  - heading: Related Services
+    items:
+      - name: OSHA Compliance Services
+        url: "https://oshacompliance247.com/"
+        open_in_new_tab: true
+      - name: Advanced Loss Control Surveys
+        url: "https://advancedlosscontrolsurveys.com/"
+        open_in_new_tab: true
+      - name: Industrial Hygiene Consulting
+        url: "https://industrialhygiene247.com/"
+        open_in_new_tab: true

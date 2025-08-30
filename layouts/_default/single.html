@@ -1,0 +1,33 @@
+{{ define "main" }}
+  <div data-pagefind-body>
+    {{ partial "bookshop_bindings" `.Params` }}
+    {{ partial "bookshop" (slice "hero" .Params) }}
+    {{ partial "bookshop_bindings" `.Params.content_blocks` }}
+    {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}
+  <div>
+  {{ if .Content }}
+  <section class="section-sm blog-wrap bg-gray pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8" data-pagefind-body>
+          <div class="single-blog-item">
+            <div class="blog-item-content bg-white p-5">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="p-5 bg-white">
+            <h4 class="text-capitalize mb-4">All Services</h4>
+            <ul class="list-unstyled footer-menu mb-35">
+              {{ range (index .Site.Data.footer.column 0).items }}
+                <li class="mb-1">{{ partial "utilities/link.html" . }}</li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}

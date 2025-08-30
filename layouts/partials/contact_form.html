@@ -1,0 +1,75 @@
+{{ with .Params.contact_form }}
+<section class="contact-form-wrap section-sm">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7 col-sm-12">
+				<div class="contact-content pl-lg-5 mt-5 mt-lg-0">
+					<h2 class="mb-5">{{ .heading }}</h2>
+					<ul class="address-block list-unstyled mb-5">
+						{{ $mainEmail := default $.Site.Data.company.support.email .email }}
+						{{ if $mainEmail }}
+						<li class="lead">
+							<svg class="mr-3 text-color" fill="#000000A6" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 1694.235h1920V226H0v1468.235ZM112.941 376.664V338.94H1807.06v37.723L960 1111.233l-847.059-734.57ZM1807.06 526.198v950.513l-351.134-438.89-88.32 70.475 378.353 472.998H174.042l378.353-472.998-88.32-70.475-351.134 438.89V526.198L960 1260.768l847.059-734.57Z" fill-rule="evenodd"/>
+							</svg>
+							Email: 
+							<a class="font-weight-bold" href="mailto:{{ $mainEmail }}">{{ $mainEmail }}</a>
+						</li>
+						{{ end }}
+						{{ $mainPhone := default $.Site.Data.company.support.phone .phone }}
+						<li class="lead">
+							<svg class="mr-3 text-color"fill="#000000A6"  width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6 2.524v19.952A1.524 1.524 0 0 0 7.524 24h9.952A1.524 1.524 0 0 0 19 22.476V2.524A1.524 1.524 0 0 0 17.476 1H7.524A1.524 1.524 0 0 0 6 2.524zm12 19.953a.524.524 0 0 1-.524.523H14v-1h-3v1H7.524A.524.524 0 0 1 7 22.477V21h11zM18 20H7V4h11zm-.524-18a.524.524 0 0 1 .524.523V3H7v-.477A.524.524 0 0 1 7.524 2z"/>
+								<path fill="none" d="M0 0h24v24H0z"/>
+							</svg>
+							Call: 
+							<a class="font-weight-bold" href="tel:{{ $mainPhone }}">{{ $mainPhone }}</a>
+						</li>
+						{{ if .address }}
+						<li class="lead">
+							<svg class="mr-3 text-color" fill="#000000A6" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<path d="M30.216 9.318l-5.598-6c-0.19-0.203-0.454-0.317-0.732-0.317h-8.348l-0.031-2.063c0-0.517-0.448-0.938-1-0.938s-0.938 0.42-0.938 0.938l-0.030 2.063h-11.024c-0.552 0-1 0.447-1 1v12c0 0.552 0.448 1 1 1h11.011v14.063c0 0.517 0.448 0.938 1 0.938s1-0.42 1-0.938v-14.063h8.361c0.277 0 0.542-0.115 0.732-0.317l5.598-6c0.358-0.384 0.358-0.98 0-1.365zM23.452 15h-19.936v-10h19.936l4.665 5z"></path>
+							</svg>
+							{{ .address }}
+						</li>
+						{{ end }}
+					</ul>
+					<p class="text-muted">{{ .preheading }}</p>
+					{{ with .button }}
+					<div>
+						<a href="{{ .url }}" class="btn btn-main btn-round-full" {{ if .open_in_new_tab }}target="_blank"{{ end }}>
+							{{ .text }}
+							<i class="btn-icon fa fa-angle-right ml-2"></i>
+						</a>
+					</div>
+					{{ end }}
+					{{ with .qrcode }}
+						<p class="mt-4">{{ .text }}</p>
+						<img src="{{ .image_path }}" alt="{{ .placeholder }}">
+					{{ end }}
+				</div>
+			</div>
+			{{ if .contact_form_enabled }}
+			<div class="col-lg-5 col-md-12 col-sm-12">
+				<form id="contact-form" class="contact__form" method="POST" action="/" data-netlify="true" name="contact">
+					<h3 class="text-md mb-4">{{ .form_heading }}</h3>
+					<div class="form-group">
+						<input name="name" type="text" class="form-control rounded" placeholder="Your Name" required>
+					</div>
+					<div class="form-group">
+						<input name="email" type="email" class="form-control rounded" placeholder="Email Address" required>
+					</div>
+					<div class="form-group">
+						<input name="phone" type="phone" class="form-control rounded" placeholder="Phone Number" required>
+					</div>
+					<div class="form-group-2 mb-4">
+						<textarea name="message" class="form-control rounded" rows="4" placeholder="Your Message" required></textarea>
+					</div>
+					<button class="btn btn-main btn-round-full" name="submit" type="submit">Send Message</button>
+				</form>
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+{{ end }}

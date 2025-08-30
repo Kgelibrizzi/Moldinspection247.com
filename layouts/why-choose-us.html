@@ -1,0 +1,81 @@
+{{ define "main" }}
+  <div data-pagefind-body> 
+    {{ partial "hero" . }}
+    {{ partial "services" . }}
+    {{ with .Params.certification }}
+    <section class="section-sm portfolio pb-0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <div class="section-title">
+              <span class="h6 text-color">{{ .preheading }}</span>
+              <p class="mb-5">{{ .content }}</p>
+              <h2 class="content-title">{{ .heading }}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          {{ range .sections }}
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+              <div class="portfolio-item mb-4 d-flex justify-content-center align-items-center h-100">
+                <img src="{{ .image_path }}" {{ if .image_alt }} alt="{{ .image_alt }}" {{ else }} alt="certification badge/ partner" {{ end }} class="img-fluid">
+              </div>
+            </div>
+          {{ end }}
+        </div>
+
+        <div class="row justify-content-center mt-3">
+          {{ range .credentials }}
+          <div class="col-md-6 col-12 mb-4">
+            <div class="border card h-100">
+              <div class="d-flex p-3 p-lg-4">
+                <div class="text-color">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                </div>
+              <p class="ml-3 mb-0">{{ .heading }}</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    {{ end }}
+    
+    {{ with .Params.counter }}
+    <section class="section-sm counter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <div class="section-title">
+              <h2 class="mt-3 content-title ">{{ .heading }}</h2>
+              <p class="mb-5">{{ .content }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          {{ range .numbers }}
+            <div class="col-xl-2 col-lg-3 col-sm-4 col-6">
+                <div class="counter-item text-center mb-4 mb-lg-0">
+                  {{ if .icon_path }}
+                  <div class="mb-3 px-5">
+                    <img src="{{ .icon_path }}" alt="{{ .text }}" class="img-fluid">
+                  </div>
+                  {{ end }}
+                  <p class="mb-0 h3"><span class="counter-stat font-weight-bold">{{ .number }}</span> {{ .suffix }}</p>
+                  <p class="text-muted">{{ .text }}</p>
+                </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    {{ end }}
+    {{ partial "cta" . }}
+  </div>
+{{ end }}

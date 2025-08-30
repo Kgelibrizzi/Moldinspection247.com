@@ -1,0 +1,25 @@
+.cta{
+	background: url("../images/bg/home-3.jpg") fixed 50% 50%;
+	background-size: cover;
+	background-position: center;
+	padding: 120px 0px;
+	@extend .overly;
+}
+.cta-block{
+	background: url("../images/bg/home-3.jpg")no-repeat;
+	background-size: cover;
+	background-position: center;
+	@extend .overly-2;
+}
+
+.cta-contacts {
+	font-size: 1.2rem;
+	font-weight: 600;
+	word-break: break-word;
+}
+
+@media(min-width:480px){
+  	.cta-contacts {
+		font-size: 1.5rem;
+	}
+}

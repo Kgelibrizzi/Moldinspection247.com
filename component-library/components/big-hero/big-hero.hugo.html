@@ -1,0 +1,23 @@
+{{ $heroImage := default "/images/bg/home-new-1.jpg" .background_image }}
+<section class="slider" style="background-image: url('{{  $heroImage }}')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9 col-md-10">
+				<div class="block">
+					<h1 class="display-5 animated fadeInUp mb-3">{{ .heading | markdownify }}</h1>
+					<p class="d-block mb-5 text-white">{{ .preheading }}</p>
+					{{ with .link }}
+						<a href="{{ .url }}"  class="btn btn-main animated fadeInUp btn-round-full" aria-label="{{ .text }}">
+							{{ .text }}<i class="btn-icon fa fa-angle-right ml-2"></i>
+						</a>
+					{{ end }}
+					{{ with .link_2 }}
+						<a href="{{ .url }}"  class="ml-lg-3 mt-3 mt-sm-0 btn btn-tertiary-color animated fadeInUp btn-round-full" aria-label="{{ .text }}">
+							{{ .text }}<i class="btn-icon fa fa-angle-right ml-2"></i>
+						</a>
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

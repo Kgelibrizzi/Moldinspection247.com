@@ -1,0 +1,30 @@
+<section class="section-sm service pb-0">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-10 text-center">
+				<div class="section-title">
+					<span class="h6 text-color">{{ .preheading }}</span>
+					<h2 class="mt-3 content-title "  id="#services">{{ .heading }}</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			{{ range .sections }}
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="service-item mb-4">
+						{{ if .icon }}
+						<i class="{{ .icon }}"></i>
+						{{ end }}
+						{{ if .icon_path }}
+						<img src="{{ .icon_path }}" alt="{{ .title }}">
+						{{ end }}
+						<h3 class="mb-1 h4"><a href="{{ .url }}">{{ .title }}</a></h3>
+						<p class="mb-1">{{ .content | markdownify }}</p>
+						<a href="{{ .url }}"  class="d-flex align-items-center" aria-label="Get started">Read more<i class="btn-icon fa fa-angle-right ml-2 "></i></a>
+					</div>
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>

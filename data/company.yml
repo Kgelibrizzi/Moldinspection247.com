@@ -1,0 +1,30 @@
+BaseURL: https://moldinspection247.com
+SEO_options:
+  site_title: Mold Inspection 24/7
+  description: "Licensed Florida Mold Assessor & CIH-led evaluations for homes, businesses, and insurance."
+  author: Kenneth
+
+open_graph_type: website
+twitter_handle:
+social_media_share_image: /images/logo.png
+
+google_analytics_key: 
+favicon: /images/favicon.png
+logo_dark: /images/logo.svg
+logo_light: /images/logo.svg
+facebook: 
+twitter: 
+github: 
+pinterest: 
+support:
+  phone: "941-228-5525"
+  email: info@GERiskManagement.com
+  button:
+    text: Pay by Credit Card
+    url: https://www.paypal.com/ncp/payment/LUWR3W8ALGBW2
+copyright_html: Copyright &copy; 2025 <a href="/"> GE Risk Management LLC</a>
+backlink: Part of the <a href="https://geriskmanagement.com"> GE Risk Management LLC</a> – National Risk & Industrial Hygiene Consulting.
+default_hero_bg_image: /images/risk-photo-for-ge-site-home-page.jpeg
+about_footer_title: About Us
+about_footer_content: >-
+  Mold Inspection 24/7 is led by Kenneth Librizzi, MA, MS, CIH, CSP, ARM, LMA, WSC — a Certified Industrial Hygienist and Licensed Florida Mold Assessor with more than 30 years of experience. We combine technical expertise with practical, standards-based inspections. 

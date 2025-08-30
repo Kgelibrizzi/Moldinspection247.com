@@ -1,0 +1,82 @@
+
+<footer class="footer section-sm">
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-3 col-md-6 col-sm-6">
+		  <div class="widget">
+			<p class="text-capitalize mb-4 h4">{{- (index .Site.Data.footer.column 0).heading  -}}</p>
+			<ul class="list-unstyled footer-menu">
+			  {{ range (index .Site.Data.footer.column 0).items }}
+				<li class="mb-2">{{ partial "utilities/link.html" . }}</li>
+			  {{ end }}
+			</ul>
+		  </div>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-6">
+		  <div class="widget">
+			<p class="text-capitalize mb-4 h4">{{- (index .Site.Data.footer.column 1).heading  -}}</p>
+			<ul class="list-unstyled footer-menu mb-35">
+			  {{ range (index .Site.Data.footer.column 1).items }}
+			  	<li class="mb-2">{{ partial "utilities/link.html" . }}</li>
+			  {{ end }}
+			</ul>
+			<p class="text-capitalize mb-4 mt-4 h4">{{- (index .Site.Data.footer.column 2).heading  -}}</p>
+			<ul class="list-unstyled footer-menu">
+			  {{ range (index .Site.Data.footer.column 2).items }}
+				<li class="mb-2">{{ partial "utilities/link.html" . }}</li>
+			  {{ end }}
+			</ul>
+		  </div>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-6 mx-auto">
+		  <div class="widget">
+			<p class="text-capitalize mb-4 h4">{{ .Site.Data.company.about_footer_title }}</p>
+			<p>
+				{{ .Site.Data.company.about_footer_content }}
+			</p>
+		  </div>
+		</div>
+  
+		<div class="col-lg-3 col-sm-6">
+		  <div class="widget">
+			<p class="text-capitalize mb-4 h4">Contact Us</p>
+			<div class="logo mb-4">
+				{{ if .Site.Data.company.logo_dark }}
+					<img src="{{ .Site.Data.company.logo_dark }}" alt="Company Logo">
+				{{ else }}
+					<img src="{{ .Site.Data.company.logo_light }}" alt="Company Logo">
+				{{ end }}
+			</div>
+			{{ if .Site.Data.company.support.email }}
+				<p class="h6"><a href="mailto:{{ .Site.Data.company.support.email }}">{{ .Site.Data.company.support.email }}</a></p>
+			{{ end }}
+
+			{{ if .Site.Data.company.support.phone }}
+				<a href="tel:{{ .Site.Data.company.support.phone }}"><span class="text-color h4">{{ .Site.Data.company.support.phone }}</span></a>
+			{{ end }}
+			{{ with .Site.Data.company.support.button }}
+				<a href="{{ .url }}" class="btn btn-tertiary-color btn-round-full mt-4" {{ if .open_in_new_tab }}target="_blank"{{ end }}>
+					{{ .text }}
+					<i class="btn-icon fa fa-angle-right ml-2"></i>
+				</a>	
+			{{ end }}
+		  </div>
+		</div>
+	  </div>
+  
+	  <div class="footer-btm pt-4 pb-2">
+		<div class="row">
+		  <div class="col-lg-6 mb-3 mb-lg-0">
+			  <div class="copyright">
+				{{ .Site.Data.company.backlink | safeHTML }}
+	          </div>
+		  </div>
+		  <div class="col-lg-6 text-left text-lg-right">
+			<div class="copyright">
+				{{ .Site.Data.company.copyright_html | safeHTML }}
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </footer>
