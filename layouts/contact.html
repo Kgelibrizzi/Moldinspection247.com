@@ -2,7 +2,5 @@
   <div data-pagefind-body> 
     {{ partial "hero" . }}
     {{ partial "contact_form" . }}
-    {{ partial "bookshop_bindings" `.Params.content_blocks` }}
-    {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}
   </div>
 {{ end }}

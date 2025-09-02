@@ -18,7 +18,7 @@ contact_form:
   address: "Service area: South Florida + U.S. support"
   form_heading: Contact Form
   phone: 941-228-5525
-  email: Kenneth@GERiskManagement.Com
+  email: info@GERiskManagement.Com
   contact_form_enabled: false
   button:
     text: Pay by Credit Card

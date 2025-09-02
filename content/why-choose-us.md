@@ -12,7 +12,6 @@ hero:
   background_image: /images/risk-photo-for-ge-site-home-page.jpeg
       
 certification:
-  preheading:
   heading: Our Professional Credentials & Affiliations
   content: With over 30 years of experience in industrial hygiene and environmental risk management, we combine nationally recognized credentials (AIHA, ACGIH, CSP, CIH) with real-world expertise. Every inspection is defensible, compliant with IICRC standards, and trusted by insurance, legal, and real estate professionals.
   credentials:

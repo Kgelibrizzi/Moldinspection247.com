@@ -90,7 +90,7 @@ certification:
     - image_path: /images/credential-aiaqc-full.png
       image_alt: Havard School of Public Health
 counter:
-  heading: Industries we werve
+  heading: Industries we Serve
   numbers:
     - number: 25
       suffix: +
@@ -123,7 +123,6 @@ cta:
 about:
   preheading: Led by Kenneth Librizzi, MA, MS, CIH, CSP, ARM, LMA, WSC
   heading: Led by a Certified Industrial Hygienist (CIH) with 30+ years of experience
-  subheading: Two-time former ASSP president, certified in MA, MS, CIH, CSP, ARM, LMA, WSC
   content: Mold Inspection 24/7 is led by Kenneth Librizzi, MA, MS, CIH, CSP, ARM, LMA, WSC — a Certified Industrial Hygienist and Licensed Florida Mold Assessor with more than 30 years of experience. We combine technical expertise with practical, standards-based inspections. Unlike many firms, we don’t just collect samples — we interpret results so you can act with confidence. Our history includes thousands of mold and IAQ projects for homes, businesses, schools, healthcare facilities, and insurers across South Florida.
   background_image: /images/bg/home-new-8.jpg
   link:
