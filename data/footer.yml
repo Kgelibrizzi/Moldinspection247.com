@@ -2,22 +2,22 @@ column:
   - heading: Services
     items:
       - name: Mold Testing
-        url: /services/
+        url: /services/#mold-testing
         open_in_new_tab: false
       - name: Moisture Mapping & Infrared
-        url: /services/
+        url: /services/#moisture-mapping
         open_in_new_tab: false
       - name: IICRC S500 Water Damage Protocols
-        url: /services/
+        url: /services/#water-damage-protocols
         open_in_new_tab: false
       - name: IICRC S520 Mold Remediation Protocols
-        url: /services/
+        url: /services/#mold-remediation-protocols
         open_in_new_tab: false
       - name: Clearance / Post-Remediation Verification
-        url: /services/
+        url: /services/#post-remediation-verification
         open_in_new_tab: false
       - name: Advanced Building Forensics
-        url: /services/ 
+        url: /services/#advanced-building-forensics
         open_in_new_tab: false
   - heading: Quick Links
     items:

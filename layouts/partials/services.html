@@ -13,7 +13,7 @@
 
 		<div class="row justify-content-center">
 			{{ range .sections }}
-				<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="col-lg-4 col-md-6 col-sm-6" {{ with .id }} id="{{ . }}"{{ end }}>
 					<div class="service-item mb-4">
 						{{ if .icon }}
 						<i class="{{ .icon }}"></i>
@@ -29,7 +29,6 @@
 							{{ end }}
 						</h3>
 						<p class="mb-1">{{ .content | markdownify }}</p>
-						<!-- <a href="{{ .url }}"  class="d-flex align-items-center" aria-label="Get started">Read more<i class="btn-icon fa fa-angle-right ml-2 "></i></a> -->
 					</div>
 				</div>
 			{{ end }}

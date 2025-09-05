@@ -23,27 +23,27 @@ services:
     - title: Mold Testing 
       icon_path: /images/icon-mold.svg
       content: 
-      url: /services/
+      url: /services/#mold-testing
     - title: Moisture Mapping & Infrared
       icon_path: /images/icon-mapping.svg
       content: 
-      url: /services/
+      url: /services/#moisture-mapping
     - title: Water Damage (IICRC S500)
       icon_path: /images/icon-flood.svg
       content: 
-      url: /services/
+      url: /services/#water-damage-protocols
     - title: Mold Remediation Protocols (IICRC S520)
       icon_path: /images/icon-spray-bottle.svg
       content: 
-      url: /services/
+      url: /services/#mold-remediation-protocols
     - title: Clearance / Post-Remediation Verification
       icon_path: /images/icon-clipboard.svg
       content: 
-      url: /services/
+      url: /services/#post-remediation-verification
     - title: Advanced Building Forensics
       icon_path: /images/icon-forensic.svg
       content:
-      url: /services/ 
+      url: /services/#advanced-building-forensics
     
       
 certification:
