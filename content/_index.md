@@ -90,7 +90,7 @@ certification:
     - image_path: /images/credential-aiaqc-full.png
       image_alt: Havard School of Public Health
 counter:
-  heading: Industries we Serve
+  heading: Industries We Serve
   numbers:
     - number: 25
       suffix: +
