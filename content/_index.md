@@ -67,10 +67,10 @@ certification:
       image_alt: Certified Industrial Hygienist - ABIH
     - image_path: /images/credential-abih-full.png
       image_alt: Board for Global EHS Credentialing(BGC) formerly ABIH
-    - image_path: /images/credential-acac-full.png
-      image_alt: Certified Indoor Environmental Consultant -ACAC
-    - image_path: /images/credential-iaqa-full.png
-      image_alt: Indooor Air Quality Association Member - IAQA
+    - image_path: /images/credential-dbpr-florida.png
+      image_alt: Florida Department of Business and Professional Regulation
+    - image_path: /images/credential-the-institutes.png
+      image_alt: The Institutes
     - image_path: /images/credential-acoem-full.png
       image_alt: American College of Occupational and Environmental Medicine - ACOEM
     - image_path: /images/credential-iicrc-full.png
@@ -87,8 +87,10 @@ certification:
       image_alt: Board of Certification in Professional Ergonomics - BCPE
     - image_path: /images/credential-normi-full.png
       image_alt: National Organization of Remediators and Microbial Inspectors - NORMI
-    - image_path: /images/credential-aiaqc-full.png
-      image_alt: Havard School of Public Health
+    - image_path: /images/credential-florida-safety-council.png
+      image_alt: Florida Safety Council
+    - image_path: /images/credential-rims.png
+      image_alt: The risk Management Society - RIMS
 counter:
   heading: Industries We Serve
   numbers:
