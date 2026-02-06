@@ -1,6 +1,12 @@
+@include desktop{
+	.bg-1 {
+	  background-position: left 0% bottom 0%;
+	}
+}
 .bg-1 {
-	background: url("../images/bg/home-2.jpg") no-repeat 50% 50%;
-	background-size: cover;
+  background-size: cover;
+  background-position: left 0% bottom 20%;
+
 }
 
 .bg-2 {
