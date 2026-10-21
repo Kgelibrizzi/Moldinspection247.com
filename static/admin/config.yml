@@ -1,3 +1,4 @@
+local_backend: true
 backend:
   name: github
   repo: Kgelibrizzi/Moldinspection247.com # Path to your GitHub repository
@@ -284,7 +285,13 @@ collections: # A list of collections the CMS should be able to edit
                 { name: open_in_new_tab, label: Open in new tab, widget: boolean, default: true },
               ]},
             ]}
-          - { name: copyright_html, label: Copyright Footer Text, widget: string }
+          - { name: copyright, label: Copyright, widget: object, fields: [
+              { name: content, label: Copyright Text, widget: string },
+              { name: link, label: link, widget: object, fields: [
+                { name: text, label: Link Text, widget: string },
+                { name: url, label: Link URL, widget: string },
+              ]}
+            ]}
           - { name: backlink, label: Backlink Text, widget: string }
           - { name: default_hero_bg_image, label: Default Hero Background Image, widget: image }
           - { name: about_footer_title, label: About Us Footer Title, widget: string }

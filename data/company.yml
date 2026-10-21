@@ -22,7 +22,11 @@ support:
   button:
     text: Pay by Credit Card
     url: https://www.paypal.com/ncp/payment/LUWR3W8ALGBW2
-copyright_html: Copyright &copy; 2025 <a href="/"> GE Risk Management LLC</a>
+copyright:
+  content: Copyright &copy; 2009–
+  link: 
+    text: GE Risk Management LLC
+    url: "/"
 backlink: Part of the <a href="https://geriskmanagement.com"> GE Risk Management LLC</a> – National Risk & Industrial Hygiene Consulting.
 default_hero_bg_image: /images/risk-photo-for-ge-site-home-page.jpeg
 about_footer_title: About Us

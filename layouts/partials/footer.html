@@ -72,11 +72,24 @@
 	          </div>
 		  </div>
 		  <div class="col-lg-6 text-left text-lg-right">
+			{{ if hugo.Data.company.copyright }}
 			<div class="copyright">
-				{{ .Site.Data.company.copyright_html | safeHTML }}
+				{{ if hugo.Data.company.copyright.content }}
+					<span>{{ hugo.Data.company.copyright.content | safeHTML }}</span><span id="current-year"></span>
+				{{ end }}
+				
+				{{ if hugo.Data.company.copyright.link }}
+					<a href="{{ hugo.Data.company.copyright.link.url }}"> {{ hugo.Data.company.copyright.link.text }}</a>
+				{{ end }}
 			</div>
+			{{ end }}
 		  </div>
 		</div>
 	  </div>
 	</div>
   </footer>
+  <script>
+	const currentDate = new Date();
+	const currentYear = document.getElementById("current-year");
+	currentYear.textContent = currentDate.getFullYear();
+  </script>
