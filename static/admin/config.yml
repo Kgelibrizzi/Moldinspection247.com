@@ -1,4 +1,3 @@
-local_backend: true
 backend:
   name: github
   repo: Kgelibrizzi/Moldinspection247.com # Path to your GitHub repository
