@@ -72,14 +72,14 @@
 	          </div>
 		  </div>
 		  <div class="col-lg-6 text-left text-lg-right">
-			{{ if hugo.Data.company.copyright }}
+			{{ if .Site.Data.company.copyright }}
 			<div class="copyright">
-				{{ if hugo.Data.company.copyright.content }}
-					<span>{{ hugo.Data.company.copyright.content | safeHTML }}</span><span id="current-year"></span>
+				{{ if .Site.Data.company.copyright.content }}
+					<span>{{ .Site.Data.company.copyright.content | safeHTML }}</span><span id="current-year"></span>
 				{{ end }}
 				
-				{{ if hugo.Data.company.copyright.link }}
-					<a href="{{ hugo.Data.company.copyright.link.url }}"> {{ hugo.Data.company.copyright.link.text }}</a>
+				{{ if .Site.Data.company.copyright.link }}
+					<a href="{{ .Site.Data.company.copyright.link.url }}"> {{ .Site.Data.company.copyright.link.text }}</a>
 				{{ end }}
 			</div>
 			{{ end }}
